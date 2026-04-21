@@ -1,0 +1,1973 @@
+{
+  "blue": {
+    "modelUrl": "https://www.sherwin-williams.com/en-us/color/color-family/blue-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json",
+    "data": {
+      "variation": "family",
+      "category": "95fbe344-23a8-47c7-a5e3-6b020d19dadb",
+      "groupId": "95fbe344-23a8-47c7-a5e3-6b020d19dadb",
+      "orderButton": {
+        "icon": "false",
+        "url": "https://samples.sherwin-williams.com/view/blue",
+        "text": "Order Color Samples",
+        "accessibilityLabel": "Order Color Samples",
+        "backgroundColor": "Primary Dark",
+        "border": "Outlined",
+        "styleAsLink": false,
+        "openNewTab": true,
+        "urlMegamenu": "https://samples.sherwin-williams.com/view/blue",
+        "empty": false
+      },
+      "expertPicksList": [
+        {
+          "title": "Expert Picks",
+          "description": "Elevate your home with these blue paint colors, chosen by the experts, that are sure to imbue your home with lasting beauty and style.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9641,sw-6253,sw-9683,sw-6241,sw-9644,sw-2819,sw-9635,sw-9684",
+            "text": "Visualize Top Blues",
+            "accessibilityLabel": "Visualize Top Blues",
+            "backgroundColor": "Primary Dark",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9641,sw-6253,sw-9683,sw-6241,sw-9644,sw-2819,sw-9635,sw-9684",
+            "empty": false
+          },
+          "buttonCta2": {
+            "icon": "true",
+            "url": "https://samples.sherwin-williams.com/?colors=SW9641-S,SW9635-S,SW9644-S,SW9640-S,SW9685-S,SW2819-S,SW9684-S,SW6241-S,SW9683-S,SW6253-S",
+            "text": "Order These Free Color Chips",
+            "accessibilityLabel": "Order These Free Color Chips",
+            "backgroundColor": "Primary Dark",
+            "border": "Borderless",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "https://samples.sherwin-williams.com/?colors=SW9641-S,SW9635-S,SW9644-S,SW9640-S,SW9685-S,SW2819-S,SW9684-S,SW6241-S,SW9683-S,SW6253-S",
+            "empty": false
+          },
+          "microchip1": {
+            "chipName": "Aleutian",
+            "chipNumber": "SW 6241",
+            "chipColor": "#98A9B7",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/blue-paint-colors/sw6241-aleutian",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/blue-paint-colors/sw6241-aleutian",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/optimized-images/sw-6241-aleutian-living-room-672x478-optimized.jpg",
+            "altText": "An open living room with vaulted ceiling, couch, ottoman and light blue walls",
+            "empty": false
+          },
+          "filterUUID": "223cd91a-86ed-4858-ae54-802f2a4c02c9",
+          "filterDisplayName": "Expert Picks",
+          "filterDisplayOrder": "1"
+        }
+      ],
+      "popularList": [
+        {
+          "title": "Popular Blues",
+          "description": "Find your perfect shade of blue within Sherwin-Williams' selection of popular blue paint colors, each designed to bring beauty and character to your home.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "",
+            "backgroundColor": "Primary Light",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": false,
+            "empty": true
+          },
+          "microchip1": {
+            "chipName": "Windy Blue",
+            "chipNumber": "SW 6240",
+            "chipColor": "#AABAC6",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/blue-paint-colors/sw6240-windy-blue",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/blue-paint-colors/sw6240-windy-blue",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "microchip2": {
+            "chipName": "Naval",
+            "chipNumber": "SW 6244",
+            "chipColor": "#2F3D4C",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/blue-paint-colors/sw6244-naval",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/blue-paint-colors/sw6244-naval",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/blue/sw-6240-windy-blue-dining-room.png",
+            "altText": "A dining room with round table and sky blue walls",
+            "empty": false
+          },
+          "image2": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/blue/sw-6243-distance-living-room.png",
+            "altText": "A living room with vaulted ceiling and dark blue statement wall",
+            "empty": false
+          },
+          "filterUUID": "f58d993c-ba15-49d7-85b0-debe76a2cdaa",
+          "filterDisplayName": "Popular Blues",
+          "filterDisplayOrder": "2"
+        }
+      ],
+      "allLayout": {
+        "title": "All Blues",
+        "imageDetailsList": [
+          {
+            "secondaryTitle": "Bright Blues",
+            "description": "Bring some vibrancy to a relaxing hue with our brighter shades of blue.",
+            "filterUUID": "50bc8f49-2f16-4d08-a713-673f1b403459",
+            "filterDisplayName": "Bright Blues",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/blue/Cojo_ColorFamily_All_Blue_Bright_144x144_dektop_x2.png",
+            "caption": "Bright",
+            "altText": "Bright blues",
+            "buttonColor": "#CCE2E7",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Mid-Tone Blues",
+            "description": "Nothing creates a calmer mood than our mid-tone blues.",
+            "filterUUID": "f38a9d24-370e-4b3a-8e80-b9914d4094f1",
+            "filterDisplayName": "Mid-Tone Blues",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/blue/Cojo_ColorFamily_All_Blue_MidTone_144x144_dektop_x2.png",
+            "caption": "Mid-Tone",
+            "altText": "Mid-Tone Blues",
+            "buttonColor": "#A4BAC2",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Muted Blues",
+            "description": "Our muted blues appear almost neutral and maximize your serenity.",
+            "filterUUID": "f9e62e32-5686-44ff-95b1-665273c27881",
+            "filterDisplayName": "Muted Blues",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/blue/Cojo_ColorFamily_All_Blue_Muted_144x144_dektop_x2.png",
+            "caption": "Muted",
+            "altText": "Muted Blues",
+            "buttonColor": "#84959C",
+            "buttonFontColor": "dark",
+            "empty": false
+          }
+        ]
+      },
+      "dropdownTypeList": [
+        {
+          "dynamicDropDown": "Expert Picks",
+          "heroTitle": "Blue Paint Colors",
+          "heroDescription": "<p>From the ocean's vast depths to the endless expanse of the sky, blue is a calming, versatile hue that offers a spectrum of moods. Whether you're creating a tranquil retreat, a vibrant, energetic hub or want to make a dramatic statement, the perfect blue color paint awaits.&nbsp;</p>\r\n",
+          "metaTitle": "Blue Paint Colors | Expert Picks | Sherwin-Williams",
+          "metaDescription": "Discover the blue paint colors that designers adore, from energizing to calming shades. Find the perfect blue hue for your space."
+        },
+        {
+          "dynamicDropDown": "Popular Blues",
+          "heroTitle": "Popular Blue Paint Colors",
+          "heroDescription": "<p>Blue typically evokes calm, peace and serenity, much like the sky and ocean. With so many options, it's no wonder blue paint is popular among DIYers and professionals alike. If you want to incorporate blue into your space, check out these popular blues that have been long-time crowd favorites.</p>\r\n",
+          "metaTitle": "Our Most Popular Blue Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover our most popular blue paint colors from Sherwin-Williams — a curated collection of timeless, designer-approved hues ranging from soft mid-tones to rich navy. Explore tips on undertones, room lighting, and perfect pairings to find your ideal blue. "
+        },
+        {
+          "dynamicDropDown": "Light Blues",
+          "heroTitle": "Light Blue Paint Colors",
+          "heroDescription": "<p>The subtle elegance of light blues soothe the senses, making them an impeccable choice for creating serene retreats. Whether you envision a calming bedroom, a refreshing bathroom or other spa-like sanctuary, the delicate charm of light blue offers an inviting embrace.</p>\r\n",
+          "metaTitle": "Light Blue Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover a soothing selection of light blue paint colors from Sherwin-Williams — soft pastels and airy sky tones ideal for guest baths, laundry rooms, nurseries, or any space craving calm. Explore undertones, lighting tips, and design-friendly pairings."
+        },
+        {
+          "dynamicDropDown": "Dark Blues",
+          "heroTitle": "Dark Blue Paint Colors",
+          "heroDescription": "<p>Blue is a foundational hue in nature and design, celebrated for its ability to inspire serenity, confidence and creative thought. Among blue's vast spectrum, the darker shades are particularly alluring. Dark blue paint colors are more than a trend; they're a statement that offers richness and drama that transforms your space into something unique and truly extraordinary.</p>\r\n",
+          "metaTitle": "Dark Blue Paint Colors | Sherwin-Williams",
+          "metaDescription": "Explore deep and sophisticated blue paint ideas on Sherwin-Williams. Our dark blue paint colors bring bold elegance to cabinets, living rooms, exterior walls, and more — with expert tips on lighting, undertones, and styling for the perfect finish."
+        },
+        {
+          "dynamicDropDown": "Cool Blues",
+          "heroTitle": "Cool Blue Paint Colors",
+          "heroDescription": "<p>Cool blues are a versatile palette that can evoke everything from crisp energy to profound serenity. These cool-toned hues truly excel at creating spaces for quiet contemplation. Infuse your space with an expansive, fresh, calming hue, perfect for a bedroom retreat or a welcoming living room.</p>\r\n",
+          "metaTitle": "Cool Blue Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover a curated palette of cool blue paint colors from Sherwin-Williams — from soft pastels to deep navy hues. Find the perfect blue for your living room, bathroom, or exterior and explore expert tips on undertones, lighting, and trending home decor styles."
+        },
+        {
+          "dynamicDropDown": "Warm Blues",
+          "heroTitle": "Warm Blue Paint Colors",
+          "heroDescription": "<p>Imagine blue, but with the comforting glow of a sunset. While typically evoking cool serenity, a unique spectrum of warm blue paint colors is ready to redefine your space. These aren't just blues; they're an invitation to experience a &quot;hug-like&quot; feeling, wrapping your home in tranquility and warmth.</p>\r\n",
+          "metaTitle": "Warm Blue Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover warm blue paint colors from Sherwin-Williams — cozy, inviting shades that combine blue’s calm with soft undertones for bedrooms, living spaces, and exteriors. Explore expert tips on lighting, accents, and color pairings."
+        }
+      ],
+      "activeTabName": "",
+      "dropDownTabUrls": {
+        "Light Blues": "https://www.sherwin-williams.com/en-us/color/color-family/blue-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/light-blues",
+        "Cool Blues": "https://www.sherwin-williams.com/en-us/color/color-family/blue-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/cool-blues",
+        "All Blues": "https://www.sherwin-williams.com/en-us/color/color-family/blue-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/all-blues",
+        "Popular Blues": "https://www.sherwin-williams.com/en-us/color/color-family/blue-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/popular-blues",
+        "Warm Blues": "https://www.sherwin-williams.com/en-us/color/color-family/blue-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/warm-blues",
+        "Expert Picks": "https://www.sherwin-williams.com/en-us/color/color-family/blue-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/expert-picks",
+        "Dark Blues": "https://www.sherwin-williams.com/en-us/color/color-family/blue-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/dark-blues"
+      },
+      "dropdownTypeListJson": "[\n  {\n    \"dynamicDropDown\": \"Expert Picks\",\n    \"heroTitle\": \"Blue Paint Colors\",\n    \"heroDescription\": \"From the ocean\\u0027s vast depths to the endless expanse of the sky, blue is a calming, versatile hue that offers a spectrum of moods. Whether you\\u0027re creating a tranquil retreat, a vibrant, energetic hub or want to make a dramatic statement, the perfect blue color paint awaits. \",\n    \"metaTitle\": \"Blue Paint Colors | Expert Picks | Sherwin-Williams\",\n    \"metaDescription\": \"Discover the blue paint colors that designers adore, from energizing to calming shades. Find the perfect blue hue for your space.\"\n  },\n  {\n    \"dynamicDropDown\": \"Popular Blues\",\n    \"heroTitle\": \"Popular Blue Paint Colors\",\n    \"heroDescription\": \"Blue typically evokes calm, peace and serenity, much like the sky and ocean. With so many options, it\\u0027s no wonder blue paint is popular among DIYers and professionals alike. If you want to incorporate blue into your space, check out these popular blues that have been long-time crowd favorites.\",\n    \"metaTitle\": \"Our Most Popular Blue Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover our most popular blue paint colors from Sherwin-Williams — a curated collection of timeless, designer-approved hues ranging from soft mid-tones to rich navy. Explore tips on undertones, room lighting, and perfect pairings to find your ideal blue.\"\n  },\n  {\n    \"dynamicDropDown\": \"Light Blues\",\n    \"heroTitle\": \"Light Blue Paint Colors\",\n    \"heroDescription\": \"The subtle elegance of light blues soothe the senses, making them an impeccable choice for creating serene retreats. Whether you envision a calming bedroom, a refreshing bathroom or other spa-like sanctuary, the delicate charm of light blue offers an inviting embrace.\",\n    \"metaTitle\": \"Light Blue Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover a soothing selection of light blue paint colors from Sherwin-Williams — soft pastels and airy sky tones ideal for guest baths, laundry rooms, nurseries, or any space craving calm. Explore undertones, lighting tips, and design-friendly pairings.\"\n  },\n  {\n    \"dynamicDropDown\": \"Dark Blues\",\n    \"heroTitle\": \"Dark Blue Paint Colors\",\n    \"heroDescription\": \"Blue is a foundational hue in nature and design, celebrated for its ability to inspire serenity, confidence and creative thought. Among blue\\u0027s vast spectrum, the darker shades are particularly alluring. Dark blue paint colors are more than a trend; they\\u0027re a statement that offers richness and drama that transforms your space into something unique and truly extraordinary.\",\n    \"metaTitle\": \"Dark Blue Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Explore deep and sophisticated blue paint ideas on Sherwin-Williams. Our dark blue paint colors bring bold elegance to cabinets, living rooms, exterior walls, and more — with expert tips on lighting, undertones, and styling for the perfect finish.\"\n  },\n  {\n    \"dynamicDropDown\": \"Cool Blues\",\n    \"heroTitle\": \"Cool Blue Paint Colors\",\n    \"heroDescription\": \"Cool blues are a versatile palette that can evoke everything from crisp energy to profound serenity. These cool-toned hues truly excel at creating spaces for quiet contemplation. Infuse your space with an expansive, fresh, calming hue, perfect for a bedroom retreat or a welcoming living room.\",\n    \"metaTitle\": \"Cool Blue Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover a curated palette of cool blue paint colors from Sherwin-Williams — from soft pastels to deep navy hues. Find the perfect blue for your living room, bathroom, or exterior and explore expert tips on undertones, lighting, and trending home decor styles.\"\n  },\n  {\n    \"dynamicDropDown\": \"Warm Blues\",\n    \"heroTitle\": \"Warm Blue Paint Colors\",\n    \"heroDescription\": \"Imagine blue, but with the comforting glow of a sunset. While typically evoking cool serenity, a unique spectrum of warm blue paint colors is ready to redefine your space. These aren\\u0027t just blues; they\\u0027re an invitation to experience a \\\"hug-like\\\" feeling, wrapping your home in tranquility and warmth.\",\n    \"metaTitle\": \"Warm Blue Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover warm blue paint colors from Sherwin-Williams — cozy, inviting shades that combine blue’s calm with soft undertones for bedrooms, living spaces, and exteriors. Explore expert tips on lighting, accents, and color pairings.\"\n  }\n]",
+      "empty": false
+    }
+  },
+  "green": {
+    "modelUrl": "https://www.sherwin-williams.com/en-us/color/color-family/green-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json",
+    "data": {
+      "variation": "family",
+      "category": "204469ce-11b4-445c-8a07-dad43c3e0d6a",
+      "groupId": "204469ce-11b4-445c-8a07-dad43c3e0d6a",
+      "orderButton": {
+        "icon": "false",
+        "url": "https://samples.sherwin-williams.com/view/green",
+        "text": "Order Color Samples",
+        "accessibilityLabel": "Order Color Samples",
+        "backgroundColor": "Primary Dark",
+        "border": "Outlined",
+        "styleAsLink": false,
+        "openNewTab": true,
+        "urlMegamenu": "https://samples.sherwin-williams.com/view/green",
+        "empty": false
+      },
+      "expertPicksList": [
+        {
+          "title": "Expert Picks",
+          "description": "Bring calm, nourishing energy to any space with these greens handpicked by our Color Experts.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-6421,sw-9630,sw-9647,sw-9648,sw-6431,sw-9654,sw-2851,sw-9650",
+            "text": "Visualize Top Greens",
+            "accessibilityLabel": "Visualize Top Greens",
+            "backgroundColor": "Primary Dark",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-6421,sw-9630,sw-9647,sw-9648,sw-6431,sw-9654,sw-2851,sw-9650",
+            "empty": false
+          },
+          "buttonCta2": {
+            "icon": "true",
+            "url": "https://samples.sherwin-williams.com/?colors=SW9630-S,SW9647-S,SW9648-S,SW9654-S,SW9650-S,SW9680-S,SW6181-S,SW2851-S,SW6431-S,SW6421-S",
+            "text": "Get Free Color Chips",
+            "accessibilityLabel": "Get Free Color Chips",
+            "backgroundColor": "Primary Dark",
+            "border": "Borderless",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "https://samples.sherwin-williams.com/?colors=SW9630-S,SW9647-S,SW9648-S,SW9654-S,SW9650-S,SW9680-S,SW6181-S,SW2851-S,SW6431-S,SW6421-S",
+            "empty": false
+          },
+          "microchip1": {
+            "chipName": "Taiga",
+            "chipNumber": "SW 9654",
+            "chipColor": "#768078",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/neutral-paint-colors/sw9654-taiga",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/neutral-paint-colors/sw9654-taiga",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/optimized-images/sw-9654-taiga-dining-room-672x478-optimized.jpg",
+            "altText": "A dining room with farm house table, bench seating, and cool green walls",
+            "empty": false
+          },
+          "filterUUID": "7d28b6fb-807a-4673-aaaa-2a496b2d24d5",
+          "filterDisplayName": "Expert Picks",
+          "filterDisplayOrder": "1"
+        }
+      ],
+      "popularList": [
+        {
+          "title": "Popular Greens",
+          "description": "Muted, earthy or deep — these trending green paint colors bring fresh, natural vibes to every home.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "",
+            "backgroundColor": "Primary Light",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": false,
+            "empty": true
+          },
+          "microchip1": {
+            "chipName": "Sensible Hue",
+            "chipNumber": "SW 6198",
+            "chipColor": "#B6B5AB",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/green-paint-colors/sw6198-sensible-hue",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/green-paint-colors/sw6198-sensible-hue",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "microchip2": {
+            "chipName": "Rainwashed",
+            "chipNumber": "SW 6211",
+            "chipColor": "#C2CDC5",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/green-paint-colors/sw6211-rainwashed",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/green-paint-colors/sw6211-rainwashed",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/green/sw-6198-sensible-hue-dining-room.png",
+            "altText": "A coastal dining room with wicker chairs, fireplace, and green walls",
+            "empty": false
+          },
+          "image2": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/green/sw-6211​-rainwashed-wall..png",
+            "altText": "A bluegreen wall with side table, and flowers in a vase",
+            "empty": false
+          },
+          "filterUUID": "61787bc6-3095-4620-9272-0b9ccd9549af",
+          "filterDisplayName": "Popular Greens",
+          "filterDisplayOrder": "2"
+        }
+      ],
+      "allLayout": {
+        "title": "All Greens",
+        "imageDetailsList": [
+          {
+            "secondaryTitle": "Bright Greens",
+            "description": "A brighter shade of green can intensify green’s natural vitality in your space.",
+            "filterUUID": "c472bb6f-1d39-435b-ac84-bd134b2a99da",
+            "filterDisplayName": "Bright Greens",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/green/Cojo_ColorFamily_All_Green_Bright_144x144_dektop_x2.png",
+            "caption": "Bright",
+            "altText": "Bright greens",
+            "buttonColor": "#DAE2CD",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Mid-Tone Greens",
+            "description": "Our mid-tone greens can hit the sweet spot between lively color and refreshing calm.",
+            "filterUUID": "d3e20dfc-59fc-4238-8530-66d32420b8e7",
+            "filterDisplayName": "Mid-Tone Greens",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/green/Cojo_ColorFamily_All_Green_MidTone_144x144_dektop_x2.png",
+            "caption": "Mid-Tone",
+            "altText": "Mid-Tone Greens",
+            "buttonColor": "#B3CBAA",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Muted Greens",
+            "description": "When a traditional neutral is too subdued, a muted green can provide that perfect little splash of color.",
+            "filterUUID": "2ea29372-e457-4c1c-9b4b-1567756aa067",
+            "filterDisplayName": "Muted Greens",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/green/Cojo_ColorFamily_All_Green_Muted_144x144_dektop_x2.png",
+            "caption": "Muted",
+            "altText": "Muted Greens",
+            "buttonColor": "#8EA486",
+            "buttonFontColor": "dark",
+            "empty": false
+          }
+        ]
+      },
+      "dropdownTypeList": [
+        {
+          "dynamicDropDown": "Popular Greens",
+          "heroTitle": "Popular Green Paint Colors",
+          "heroDescription": "<p>Green brings the tranquility and vitality of nature indoors, from the soothing whisper of a forest canopy to the vibrant burst of a spring meadow. It's a color that resonates with comfort, growth and renewal, making it a perennial favorite for transforming spaces. The spectrum of green is vast and beautiful, but these popular hues truly shine. </p>\r\n",
+          "metaTitle": "Green Paint Colors | Popular Greens | Sherwin-Williams",
+          "metaDescription": "Explore Sherwin-Williams’ most popular green paint colors for interiors and exteriors, from calming sages to dramatic deep greens."
+        },
+        {
+          "dynamicDropDown": "Expert Picks",
+          "heroTitle": "Green Paint Colors",
+          "heroDescription": "<p>Green is a color that breathes life into every corner, whispering tranquility and grounding your home in nature's embrace. Tapping into insights from our own Color Experts, we've curated a collection of trendy yet timeless green colors, meticulously selected to infuse your home with unparalleled calm and sophisticated energy.</p>\r\n",
+          "metaTitle": "Green Paint Colors | Expert Picks | Sherwin-Williams",
+          "metaDescription": "Discover the green paint colors that designers adore, from energizing to calming shades. Find the perfect, verdant green for your space."
+        },
+        {
+          "dynamicDropDown": "Warm Greens",
+          "heroTitle": "Warm Green Paint Colors",
+          "heroDescription": "<p>Warm green paint colors for those looking to create spaces that feel inherently cozy, nurturing and inviting. These captivating hues, characterized by their gentle yellow or earthy infusions, provide depth and anchor a room, making them perfect for cultivating character in and around your home.</p>\r\n",
+          "metaTitle": "Green Paint Colors | Warm Greens | Sherwin-Williams",
+          "metaDescription": "Explore warm green paint colors with yellow undertones—perfect for creating timeless, earthy, and inviting interiors or exteriors."
+        },
+        {
+          "dynamicDropDown": "Cool Greens",
+          "heroTitle": "Cool Green Paint Colors",
+          "heroDescription": "<p>Turn to cool green paint colors when you want to cultivate an elegant, refreshing environment. These captivating shades, characterized by their subtle blue or gray undertones, will make any space feel expansive and invite a sense of calm while remaining connected to nature for an incredibly stylish look.</p>\r\n",
+          "metaTitle": "Green Paint Colors | Cool Greens | Sherwin-Williams",
+          "metaDescription": "Discover cool green paint colors with calming blue or gray undertones—perfect for creating airy, peaceful, and contemporary spaces."
+        },
+        {
+          "dynamicDropDown": "Dark Greens",
+          "heroTitle": "Dark Green Paint Colors",
+          "heroDescription": "<p>Delve into green's spectrum of richer, more saturated hues to unlock a world of unparalleled depth and elegance. These profound shades offer more than just color; they create an atmosphere, a mood and a statement that elevates a design, inviting a sense of luxury into any space.</p>\r\n",
+          "metaTitle": "Green Paint Colors | Dark Greens | Sherwin-Williams",
+          "metaDescription": "Create bold statements and cultivate sophisticated environments with Sherwin-Williams' collection of dark green paints."
+        },
+        {
+          "dynamicDropDown": "Light Greens",
+          "heroTitle": "Light Green Paint Colors",
+          "heroDescription": "<p>Light green paint colors emerge as true champions of tranquility and understated elegance, designed to make a space feel expansive while infusing it with serenity. From the soft, muted tones that evoke a quiet meadow to the delicate vibrancy of new growth, light greens create a versatile foundation for any room, inviting a sense of peace into your home.</p>\r\n",
+          "metaTitle": "Green Paint Colors | Light Greens | Sherwin-Williams",
+          "metaDescription": "Discover Sherwin-Williams light green paint colors, from a soothing olive to a vibrant lime, perfect for refreshing interiors and exteriors."
+        }
+      ],
+      "activeTabName": "",
+      "dropDownTabUrls": {
+        "Warm Greens": "https://www.sherwin-williams.com/en-us/color/color-family/green-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/warm-greens",
+        "Cool Greens": "https://www.sherwin-williams.com/en-us/color/color-family/green-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/cool-greens",
+        "Dark Greens": "https://www.sherwin-williams.com/en-us/color/color-family/green-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/dark-greens",
+        "Popular Greens": "https://www.sherwin-williams.com/en-us/color/color-family/green-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/popular-greens",
+        "All Greens": "https://www.sherwin-williams.com/en-us/color/color-family/green-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/all-greens",
+        "Light Greens": "https://www.sherwin-williams.com/en-us/color/color-family/green-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/light-greens",
+        "Expert Picks": "https://www.sherwin-williams.com/en-us/color/color-family/green-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/expert-picks"
+      },
+      "dropdownTypeListJson": "[\n  {\n    \"dynamicDropDown\": \"Popular Greens\",\n    \"heroTitle\": \"Popular Green Paint Colors\",\n    \"heroDescription\": \"Green brings the tranquility and vitality of nature indoors, from the soothing whisper of a forest canopy to the vibrant burst of a spring meadow. It\\u0027s a color that resonates with comfort, growth and renewal, making it a perennial favorite for transforming spaces. The spectrum of green is vast and beautiful, but these popular hues truly shine. \",\n    \"metaTitle\": \"Green Paint Colors | Popular Greens | Sherwin-Williams\",\n    \"metaDescription\": \"Explore Sherwin-Williams’ most popular green paint colors for interiors and exteriors, from calming sages to dramatic deep greens.\"\n  },\n  {\n    \"dynamicDropDown\": \"Expert Picks\",\n    \"heroTitle\": \"Green Paint Colors\",\n    \"heroDescription\": \"Green is a color that breathes life into every corner, whispering tranquility and grounding your home in nature\\u0027s embrace. Tapping into insights from our own Color Experts, we\\u0027ve curated a collection of trendy yet timeless green colors, meticulously selected to infuse your home with unparalleled calm and sophisticated energy.\",\n    \"metaTitle\": \"Green Paint Colors | Expert Picks | Sherwin-Williams\",\n    \"metaDescription\": \"Discover the green paint colors that designers adore, from energizing to calming shades. Find the perfect, verdant green for your space.\"\n  },\n  {\n    \"dynamicDropDown\": \"Warm Greens\",\n    \"heroTitle\": \"Warm Green Paint Colors\",\n    \"heroDescription\": \"Warm green paint colors for those looking to create spaces that feel inherently cozy, nurturing and inviting. These captivating hues, characterized by their gentle yellow or earthy infusions, provide depth and anchor a room, making them perfect for cultivating character in and around your home.\",\n    \"metaTitle\": \"Green Paint Colors | Warm Greens | Sherwin-Williams\",\n    \"metaDescription\": \"Explore warm green paint colors with yellow undertones—perfect for creating timeless, earthy, and inviting interiors or exteriors.\"\n  },\n  {\n    \"dynamicDropDown\": \"Cool Greens\",\n    \"heroTitle\": \"Cool Green Paint Colors\",\n    \"heroDescription\": \"Turn to cool green paint colors when you want to cultivate an elegant, refreshing environment. These captivating shades, characterized by their subtle blue or gray undertones, will make any space feel expansive and invite a sense of calm while remaining connected to nature for an incredibly stylish look.\",\n    \"metaTitle\": \"Green Paint Colors | Cool Greens | Sherwin-Williams\",\n    \"metaDescription\": \"Discover cool green paint colors with calming blue or gray undertones—perfect for creating airy, peaceful, and contemporary spaces.\"\n  },\n  {\n    \"dynamicDropDown\": \"Dark Greens\",\n    \"heroTitle\": \"Dark Green Paint Colors\",\n    \"heroDescription\": \"Delve into green\\u0027s spectrum of richer, more saturated hues to unlock a world of unparalleled depth and elegance. These profound shades offer more than just color; they create an atmosphere, a mood and a statement that elevates a design, inviting a sense of luxury into any space.\",\n    \"metaTitle\": \"Green Paint Colors | Dark Greens | Sherwin-Williams\",\n    \"metaDescription\": \"Create bold statements and cultivate sophisticated environments with Sherwin-Williams\\u0027 collection of dark green paints.\"\n  },\n  {\n    \"dynamicDropDown\": \"Light Greens\",\n    \"heroTitle\": \"Light Green Paint Colors\",\n    \"heroDescription\": \"Light green paint colors emerge as true champions of tranquility and understated elegance, designed to make a space feel expansive while infusing it with serenity. From the soft, muted tones that evoke a quiet meadow to the delicate vibrancy of new growth, light greens create a versatile foundation for any room, inviting a sense of peace into your home.\",\n    \"metaTitle\": \"Green Paint Colors | Light Greens | Sherwin-Williams\",\n    \"metaDescription\": \"Discover Sherwin-Williams light green paint colors, from a soothing olive to a vibrant lime, perfect for refreshing interiors and exteriors.\"\n  }\n]",
+      "empty": false
+    }
+  },
+  "neutral": {
+    "modelUrl": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json",
+    "data": {
+      "variation": "family",
+      "category": "54be9770-b8fa-4692-8eb3-9c519106d7af",
+      "groupId": "54be9770-b8fa-4692-8eb3-9c519106d7af",
+      "orderButton": {
+        "icon": "false",
+        "url": "https://samples.sherwin-williams.com/view/neutral",
+        "text": "Order Color Samples",
+        "accessibilityLabel": "Order Color Samples",
+        "backgroundColor": "Primary Dark",
+        "border": "Outlined",
+        "styleAsLink": false,
+        "openNewTab": true,
+        "urlMegamenu": "https://samples.sherwin-williams.com/view/neutral",
+        "empty": false
+      },
+      "expertPicksList": [
+        {
+          "title": "Expert Picks - Cool Neutrals",
+          "description": "Discover the cool side of calm with these hand-picked cool neutrals that pair effortlessly with various hues.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "https://www.sherwin-williams.com/visualizer#/active?lpcolors=sw-9166,sw-9561,sw-9548,sw-9547,sw-6106,sw-9611,sw-1015,sw-9111",
+            "text": "Visualize Top Neutrals",
+            "accessibilityLabel": "Visualize Top Neutrals",
+            "backgroundColor": "Primary Dark",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "https://www.sherwin-williams.com/visualizer#/active?lpcolors=sw-9166,sw-9561,sw-9548,sw-9547,sw-6106,sw-9611,sw-1015,sw-9111",
+            "empty": false
+          },
+          "buttonCta2": {
+            "icon": "true",
+            "url": "https://samples.sherwin-williams.com/?colors=SW9166-S,SW9548-S,SW7652-S,SW7622-S,SW9560-S,SW9563-S,SW9561-S,SW7640-S,SW7643-S,SW9547-S",
+            "text": "Order These Free Color Chips",
+            "accessibilityLabel": "Order These Free Color Chips",
+            "backgroundColor": "Primary Dark",
+            "border": "Borderless",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "https://samples.sherwin-williams.com/?colors=SW9166-S,SW9548-S,SW7652-S,SW7622-S,SW9560-S,SW9563-S,SW9561-S,SW7640-S,SW7643-S,SW9547-S",
+            "empty": false
+          },
+          "microchip1": {
+            "chipName": "Night Out",
+            "chipNumber": "SW 9560",
+            "chipColor": "#656A6E",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/neutral-paint-colors/sw9560-night-out",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/neutral-paint-colors/sw9560-night-out",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/neutral/sw-9560-night-out-wall-2x.jpeg",
+            "altText": "Night Out SW 9560",
+            "empty": false
+          },
+          "filterUUID": "078859d7-312c-4507-9e08-1de1faf51145",
+          "filterDisplayName": "Expert Picks - Cool Neutrals",
+          "filterDisplayOrder": "1"
+        },
+        {
+          "title": "Expert Picks - Warm Neutrals",
+          "description": "Elevate your space with these expertly chosen warm neutral paint colors, designed to bring warmth and livable luxury to any room.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "https://www.sherwin-williams.com/visualizer#/active?lpcolors=sw-9166,sw-9561,sw-9548,sw-9547,sw-6106,sw-9611,sw-1015,sw-9111",
+            "text": "Visualize Top Neutrals",
+            "accessibilityLabel": "Visualize Top Neutrals",
+            "backgroundColor": "Primary Dark",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "https://www.sherwin-williams.com/visualizer#/active?lpcolors=sw-9166,sw-9561,sw-9548,sw-9547,sw-6106,sw-9611,sw-1015,sw-9111",
+            "empty": false
+          },
+          "buttonCta2": {
+            "icon": "true",
+            "url": "https://samples.sherwin-williams.com/?colors=SW6106-S,SW9111-S,SW9117-S,SW9611-S,SW9612-S,SW9089-S,SW1015-S,SW9597-S,SW9613-S,SW9565-S",
+            "text": "Order These Free Color Chips",
+            "accessibilityLabel": "Order These Free Color Chips",
+            "backgroundColor": "Primary Dark",
+            "border": "Borderless",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "https://samples.sherwin-williams.com/?colors=SW6106-S,SW9111-S,SW9117-S,SW9611-S,SW9612-S,SW9089-S,SW1015-S,SW9597-S,SW9613-S,SW9565-S",
+            "empty": false
+          },
+          "microchip1": {
+            "chipName": "Skyline Steel",
+            "chipNumber": "SW 1015",
+            "chipColor": "#C6BFB3",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/neutral-paint-colors/sw1015-skyline-steel",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/neutral-paint-colors/sw1015-skyline-steel",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/optimized-images/sw-1015-skyline-steel-dining-room-672x478-optimized.jpg",
+            "altText": "Skyline Steel SW 1015",
+            "empty": false
+          },
+          "filterUUID": "74ce1483-0e92-46d6-94c1-15f192459116",
+          "filterDisplayName": "Expert Picks - Warm Neutrals",
+          "filterDisplayOrder": "1"
+        }
+      ],
+      "popularList": [
+        {
+          "title": "Popular Cool Neutrals",
+          "description": "Popular for their modern appeal and versatility, these cool neutrals are always in style.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "",
+            "backgroundColor": "Primary Light",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": false,
+            "empty": true
+          },
+          "microchip1": {
+            "chipName": "Light French Gray",
+            "chipNumber": "SW 0055",
+            "chipColor": "#C2C0BB",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/neutral-paint-colors/sw0055-light-french-gray",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/neutral-paint-colors/sw0055-light-french-gray",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "microchip2": {
+            "chipName": "Morning Fog",
+            "chipNumber": "SW 6255",
+            "chipColor": "#A8AEB1",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/neutral-paint-colors/sw6255-morning-fog",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/neutral-paint-colors/sw6255-morning-fog",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/neutral/sw-0055-light-french-gray-bedroom-2x.png",
+            "altText": "A spa-like bedroom with wicker bench, neutral duvet, and gray walls.",
+            "empty": false
+          },
+          "image2": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/neutral/sw-6255-morning-fog-office.png",
+            "altText": "An office wall painted a light gray Morning Fog SW 6255.",
+            "empty": false
+          },
+          "filterUUID": "db5bfdea-b9cb-48ab-b3c2-f04483855b48",
+          "filterDisplayName": "Popular Cool Neutrals",
+          "filterDisplayOrder": "2"
+        },
+        {
+          "title": "Popular Warm Neutrals",
+          "description": "Loved for their timeless appeal and comforting versatility, these popular warm neutrals are timeless crowd favorites.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "",
+            "backgroundColor": "Primary Light",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": false,
+            "empty": true
+          },
+          "microchip1": {
+            "chipName": "Dorian Gray",
+            "chipNumber": "SW 7017",
+            "chipColor": "#ACA79E",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/neutral-paint-colors/sw7017-dorian-gray",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/neutral-paint-colors/sw7017-dorian-gray",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "microchip2": {
+            "chipName": "Dovetail",
+            "chipNumber": "SW 7018",
+            "chipColor": "#908A83",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/neutral-paint-colors/sw7018-dovetail",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/neutral-paint-colors/sw7018-dovetail",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/neutral/sw-7017​-dorian-gray-living-room.png",
+            "altText": "Dorian Gray SW 7017",
+            "empty": false
+          },
+          "image2": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/neutral/sw-7018​-dovetail-office.png",
+            "altText": "Dovetail SW 7018",
+            "empty": false
+          },
+          "filterUUID": "474e65d9-97cb-4005-974f-f0253709f502",
+          "filterDisplayName": "Popular Warm Neutrals",
+          "filterDisplayOrder": "2"
+        }
+      ],
+      "allLayout": {
+        "title": "All Neutrals",
+        "imageDetailsList": [
+          {
+            "secondaryTitle": "Bright Neutrals",
+            "description": "Our bright neutrals provide the warmth of color while pairing easily with other hues.",
+            "filterUUID": "66a0c096-57ff-4a03-894f-30bbec61cfa2",
+            "filterDisplayName": "Bright Neutrals",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/neutral/Cojo_ColorFamily_All_Neutral_Bright_144x144_dektop_x2.png",
+            "caption": "Bright",
+            "altText": "Bright Neutrals",
+            "buttonColor": "#DBDBD1",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Mid-Tone Neutrals",
+            "description": "Create the sense of a clean, cozy space with one of our mid-tone neutrals.",
+            "filterUUID": "9d9f343f-5daf-40ab-9d6c-9868f1a8f2f7",
+            "filterDisplayName": "Mid-Tone Neutrals",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/neutral/Cojo_ColorFamily_All_Neutral_MidTone_144x144_dektop_x2.png",
+            "caption": "Mid-Tone",
+            "altText": "Mid-Tone Neutrals",
+            "buttonColor": "#BDB6AB",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Muted Neutrals",
+            "description": "Our muted neutrals play well with natural light and virtually any other color.",
+            "filterUUID": "1a92488e-be90-422b-bedb-3049d9231bb8",
+            "filterDisplayName": "Muted Neutrals",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/neutral/Cojo_ColorFamily_All_Neutral_Muted_144x144_dektop_x2.png",
+            "caption": "Muted",
+            "altText": "Muted Neutrals",
+            "buttonColor": "#9B9181",
+            "buttonFontColor": "dark",
+            "empty": false
+          }
+        ]
+      },
+      "dropdownTypeList": [
+        {
+          "dynamicDropDown": "Popular Warm Neutrals",
+          "heroTitle": "Popular Warm Neutral Paint Colors",
+          "heroDescription": "<p>Warm neutrals are the ideal foundation for homes. They effortlessly introduce personality and texture, and are awaiting your personal touch. These tried-and-true shades provide the perfect backdrop for infusing your space with unique character, boundless imagination and calm sophistication.</p>\r\n",
+          "metaTitle": "Popular Warm Neutral Paint Colors | Sherwin-Williams",
+          "metaDescription": "Transform your home with warm neutral paint colors. Explore cozy beiges, taupes and greens for your home's interior and exterior."
+        },
+        {
+          "dynamicDropDown": "Expert Picks - Warm Neutrals",
+          "heroTitle": "Warm Neutral Paint Colors Picked by our Experts",
+          "heroDescription": "<p>Infusing a gentle glow, subtle richness and quiet elegance, our warm neutrals curated by our Color Experts will bathe your home in comfort and timeless style.</p>\r\n",
+          "metaTitle": "Warm Neutral Paint Colors | Expert Picks | Sherwin-Williams",
+          "metaDescription": "Transform your home with warm neutral paint colors curated by the experts. Infuse comfort, elegance and livable luxury into every space."
+        },
+        {
+          "dynamicDropDown": "Expert Picks - Cool Neutrals",
+          "heroTitle": "Neutral Paint Colors",
+          "heroDescription": "<p>Cool neutrals bring a serene, undeniably modern sensibility to a space, acting as a breath of fresh air that elevates your home's aesthetic. Our color experts have meticulously hand-picked a collection of cool neutral paints to deliver the perfect blend of sophisticated, calm and versatile style.</p>\r\n",
+          "metaTitle": "Neutral Paint Colors | Expert Picks | Sherwin-Williams",
+          "metaDescription": "Discover expert-picked Sherwin-Williams cool neutral paint colors. Create a serene, modern, and sophisticated home with these versatile, calming shades."
+        },
+        {
+          "dynamicDropDown": "Cool Neutrals",
+          "heroTitle": "Cool Neutral Paint Colors",
+          "heroDescription": "<p>Cool neutral paint colors offer a fresh and inviting environment where your walls whisper tranquility. Defined by their subtle blue, gray and green undertones, these hues transform a space into a calm, crisp and clean atmosphere. From the softest misty gray to the embrace of a serene green, cool neutral colors provide a versatile foundation for any design style.</p>\r\n",
+          "metaTitle": "Neutral Paint Colors | Cool Neutrals | Sherwin-Williams",
+          "metaDescription": "Transform your home with cool neutral paint colors. Discover tranquil hues with blue, gray & green undertones for a calm, crisp, and inviting atmosphere."
+        },
+        {
+          "dynamicDropDown": "Popular Cool Neutrals",
+          "heroTitle": "Popular Cool Neutral Paint Colors",
+          "heroDescription": "<p>For those seeking a crisp, expansive feel, these popular cool neutral paint colors offer an unparalleled ability to transform a space. Whether you're aiming for a minimalist, modern urban or coastal feel, understanding the nuanced power of cool neutrals will help you craft a cohesive and captivating environment.</p>\r\n",
+          "metaTitle": "Popular Cool Neutral Paint Colors | Sherwin-Williams",
+          "metaDescription": "Refresh your home with cool neutral paint colors. Explore hues with blue, gray and green undertones that offer a serene backdrop for your home."
+        },
+        {
+          "dynamicDropDown": "Dark Neutrals",
+          "heroTitle": "Dark Neutral Paint Colors",
+          "heroDescription": "<p>Dark neutral paint colors are the architects of atmosphere and sophisticated design. These deep hues offer grounded elegance, from the inky depths of charcoal and rich chocolate browns to serene navy and earthy forest greens. These hues offer a dark and moody backdrop while still providing a versatile foundation for other colors and textures to sing.</p>\r\n",
+          "metaTitle": "Neutral Paint Colors | Dark Neutrals | Sherwin-Williams",
+          "metaDescription": "Discover dark neutral paint colors that create cozy, intimate interiors and bold, elegant exteriors, from deep grays to moody charcoals."
+        },
+        {
+          "dynamicDropDown": "Warm Neutrals",
+          "heroTitle": "Warm Neutral Paint Colors",
+          "heroDescription": "<p>Warm neutral paint colors are an inviting palette of hues that offer a cozy alternative to cooler tones. Whether you prefer classic beige, sophisticated taupe or soft sage greens, their toasty and inviting feel is a timeless backdrop regardless of your home's decor or style.&nbsp;</p>\r\n",
+          "metaTitle": "Neutral Paint Colors | Warm Neutrals | Sherwin-Williams",
+          "metaDescription": "Explore warm neutral paint colors with inviting undertones that create timeless, cozy spaces for every room and style."
+        },
+        {
+          "dynamicDropDown": "Light Neutrals",
+          "heroTitle": "Light Neutral Paint Colors",
+          "heroDescription": "<p>Neutral colors offer an adaptable foundation that allows your personal style to flourish. However, if you want to make your space feel more expansive, light neutrals are your answer. What these hues lack in color saturation, they make up for in luminous surfaces that provide a fresh canvas that's sophisticated and endlessly versatile.</p>\r\n",
+          "metaTitle": "Light Neutral Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover light neutral paint colors that brighten rooms and make spaces feel expansive. Learn how to choose the perfect shade for your home."
+        }
+      ],
+      "activeTabName": "",
+      "dropdownTypeListJson": "[\n  {\n    \"dynamicDropDown\": \"Popular Warm Neutrals\",\n    \"heroTitle\": \"Popular Warm Neutral Paint Colors\",\n    \"heroDescription\": \"Warm neutrals are the ideal foundation for homes. They effortlessly introduce personality and texture, and are awaiting your personal touch. These tried-and-true shades provide the perfect backdrop for infusing your space with unique character, boundless imagination and calm sophistication.\",\n    \"metaTitle\": \"Popular Warm Neutral Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Transform your home with warm neutral paint colors. Explore cozy beiges, taupes and greens for your home\\u0027s interior and exterior.\"\n  },\n  {\n    \"dynamicDropDown\": \"Expert Picks - Warm Neutrals\",\n    \"heroTitle\": \"Warm Neutral Paint Colors Picked by our Experts\",\n    \"heroDescription\": \"Infusing a gentle glow, subtle richness and quiet elegance, our warm neutrals curated by our Color Experts will bathe your home in comfort and timeless style.\",\n    \"metaTitle\": \"Warm Neutral Paint Colors | Expert Picks | Sherwin-Williams\",\n    \"metaDescription\": \"Transform your home with warm neutral paint colors curated by the experts. Infuse comfort, elegance and livable luxury into every space.\"\n  },\n  {\n    \"dynamicDropDown\": \"Expert Picks - Cool Neutrals\",\n    \"heroTitle\": \"Neutral Paint Colors\",\n    \"heroDescription\": \"Cool neutrals bring a serene, undeniably modern sensibility to a space, acting as a breath of fresh air that elevates your home\\u0027s aesthetic. Our color experts have meticulously hand-picked a collection of cool neutral paints to deliver the perfect blend of sophisticated, calm and versatile style.\",\n    \"metaTitle\": \"Neutral Paint Colors | Expert Picks | Sherwin-Williams\",\n    \"metaDescription\": \"Discover expert-picked Sherwin-Williams cool neutral paint colors. Create a serene, modern, and sophisticated home with these versatile, calming shades.\"\n  },\n  {\n    \"dynamicDropDown\": \"Cool Neutrals\",\n    \"heroTitle\": \"Cool Neutral Paint Colors\",\n    \"heroDescription\": \"Cool neutral paint colors offer a fresh and inviting environment where your walls whisper tranquility. Defined by their subtle blue, gray and green undertones, these hues transform a space into a calm, crisp and clean atmosphere. From the softest misty gray to the embrace of a serene green, cool neutral colors provide a versatile foundation for any design style.\",\n    \"metaTitle\": \"Neutral Paint Colors | Cool Neutrals | Sherwin-Williams\",\n    \"metaDescription\": \"Transform your home with cool neutral paint colors. Discover tranquil hues with blue, gray \\u0026 green undertones for a calm, crisp, and inviting atmosphere.\"\n  },\n  {\n    \"dynamicDropDown\": \"Popular Cool Neutrals\",\n    \"heroTitle\": \"Popular Cool Neutral Paint Colors\",\n    \"heroDescription\": \"For those seeking a crisp, expansive feel, these popular cool neutral paint colors offer an unparalleled ability to transform a space. Whether you\\u0027re aiming for a minimalist, modern urban or coastal feel, understanding the nuanced power of cool neutrals will help you craft a cohesive and captivating environment.\",\n    \"metaTitle\": \"Popular Cool Neutral Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Refresh your home with cool neutral paint colors. Explore hues with blue, gray and green undertones that offer a serene backdrop for your home.\"\n  },\n  {\n    \"dynamicDropDown\": \"Dark Neutrals\",\n    \"heroTitle\": \"Dark Neutral Paint Colors\",\n    \"heroDescription\": \"Dark neutral paint colors are the architects of atmosphere and sophisticated design. These deep hues offer grounded elegance, from the inky depths of charcoal and rich chocolate browns to serene navy and earthy forest greens. These hues offer a dark and moody backdrop while still providing a versatile foundation for other colors and textures to sing.\",\n    \"metaTitle\": \"Neutral Paint Colors | Dark Neutrals | Sherwin-Williams\",\n    \"metaDescription\": \"Discover dark neutral paint colors that create cozy, intimate interiors and bold, elegant exteriors, from deep grays to moody charcoals.\"\n  },\n  {\n    \"dynamicDropDown\": \"Warm Neutrals\",\n    \"heroTitle\": \"Warm Neutral Paint Colors\",\n    \"heroDescription\": \"Warm neutral paint colors are an inviting palette of hues that offer a cozy alternative to cooler tones. Whether you prefer classic beige, sophisticated taupe or soft sage greens, their toasty and inviting feel is a timeless backdrop regardless of your home\\u0027s decor or style. \",\n    \"metaTitle\": \"Neutral Paint Colors | Warm Neutrals | Sherwin-Williams\",\n    \"metaDescription\": \"Explore warm neutral paint colors with inviting undertones that create timeless, cozy spaces for every room and style.\"\n  },\n  {\n    \"dynamicDropDown\": \"Light Neutrals\",\n    \"heroTitle\": \"Light Neutral Paint Colors\",\n    \"heroDescription\": \"Neutral colors offer an adaptable foundation that allows your personal style to flourish. However, if you want to make your space feel more expansive, light neutrals are your answer. What these hues lack in color saturation, they make up for in luminous surfaces that provide a fresh canvas that\\u0027s sophisticated and endlessly versatile.\",\n    \"metaTitle\": \"Light Neutral Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover light neutral paint colors that brighten rooms and make spaces feel expansive. Learn how to choose the perfect shade for your home.\"\n  }\n]",
+      "dropDownTabUrls": {
+        "Dark Neutrals": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/dark-neutrals",
+        "All Neutrals": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/all-neutrals",
+        "Expert Picks Warm Neutrals": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/expert-picks-warm-neutrals",
+        "Warm Neutrals": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/warm-neutrals",
+        "Expert Picks Cool Neutrals": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/expert-picks-cool-neutrals",
+        "Cool Neutrals": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/cool-neutrals",
+        "Light Neutrals": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/light-neutrals",
+        "Popular Cool Neutrals": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/popular-cool-neutrals",
+        "Popular Warm Neutrals": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/popular-warm-neutrals"
+      },
+      "empty": false
+    }
+  },
+  "orange": {
+    "modelUrl": "https://www.sherwin-williams.com/en-us/color/color-family/orange-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json",
+    "data": {
+      "variation": "family",
+      "category": "9f494e55-f877-4fec-a05a-f3e3aa217472",
+      "groupId": "9f494e55-f877-4fec-a05a-f3e3aa217472",
+      "orderButton": {
+        "icon": "false",
+        "url": "https://samples.sherwin-williams.com/view/orange",
+        "text": "Order Color Samples",
+        "accessibilityLabel": "Order Color Samples",
+        "backgroundColor": "Primary Dark",
+        "border": "Outlined",
+        "styleAsLink": false,
+        "openNewTab": true,
+        "urlMegamenu": "https://samples.sherwin-williams.com/view/orange",
+        "empty": false
+      },
+      "expertPicksList": [
+        {
+          "title": "Expert Picks",
+          "description": "Dive into the world of Sherwin-Williams' expert-curated collection of orange hues and infuse your space with personality and sophisticated style.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9698,sw-6057,sw-9699,sw-0069,sw-6620,sw-9700,sw-6340,sw-0045",
+            "text": "Visualize Top Oranges",
+            "accessibilityLabel": "Visualize Top Oranges",
+            "backgroundColor": "Primary Dark",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9698,sw-6057,sw-9699,sw-0069,sw-6620,sw-9700,sw-6340,sw-0045",
+            "empty": false
+          },
+          "buttonCta2": {
+            "icon": "true",
+            "url": "https://samples.sherwin-williams.com/?colors=SW9698-S,SW9699-S,SW9700-S,SW2839-S,SW2803-S,SW6340-S,SW6620-S,SW0045-S,SW0069-S,SW6057-S",
+            "text": "Order These Free Color Chips",
+            "accessibilityLabel": "Order These Free Color Chips",
+            "backgroundColor": "Primary Dark",
+            "border": "Borderless",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "https://samples.sherwin-williams.com/?colors=SW9698-S,SW9699-S,SW9700-S,SW2839-S,SW2803-S,SW6340-S,SW6620-S,SW0045-S,SW0069-S,SW6057-S",
+            "empty": false
+          },
+          "microchip1": {
+            "chipName": "Rejuvenate",
+            "chipNumber": "SW 6620",
+            "chipColor": "#DD7861",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/orange-paint-colors/sw6620-rejuvenate",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/orange-paint-colors/sw6620-rejuvenate",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/optimized-images/sw-6620-rejuvenate-door-672x478-optimized.jpg",
+            "altText": "An orange closet french door",
+            "empty": false
+          },
+          "filterUUID": "dfe50849-fe30-4331-975e-113f97d22236",
+          "filterDisplayName": "Expert Picks",
+          "filterDisplayOrder": "1"
+        }
+      ],
+      "popularList": [
+        {
+          "title": "Popular Oranges",
+          "description": "Delve into our most popular orange paint colors and discover how these beloved hues can transform your home.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "",
+            "backgroundColor": "Primary Light",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": false,
+            "empty": true
+          },
+          "microchip1": {
+            "chipName": "Jovial",
+            "chipNumber": "SW 6611",
+            "chipColor": "#F2B8A7",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/orange-paint-colors/sw6611-jovial",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/orange-paint-colors/sw6611-jovial",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "microchip2": {
+            "chipName": "Brandywine",
+            "chipNumber": "SW 7710",
+            "chipColor": "#A56C4A",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/orange-paint-colors/sw7710-brandywine",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/orange-paint-colors/sw7710-brandywine",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/orange/sw-6611​-jovial-vestibule.png",
+            "altText": "A vestibule with orange and white walls, plants and bench",
+            "empty": false
+          },
+          "image2": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/orange/sw7710​-brandywine-living-room.png",
+            "altText": "A traditional living room with orange wainscoting, area rug and blue accent chairs",
+            "empty": false
+          },
+          "filterUUID": "c27c69d1-ee42-4e1c-b9e8-aba388e031e5",
+          "filterDisplayName": "Popular Oranges",
+          "filterDisplayOrder": "2"
+        }
+      ],
+      "allLayout": {
+        "title": "All Oranges",
+        "imageDetailsList": [
+          {
+            "secondaryTitle": "Bright Oranges",
+            "description": "Brighter shades of orange can bring a fun, bold mood to any room.",
+            "filterUUID": "89c15b58-a27c-4c16-9aec-19c53e2d7b2d",
+            "filterDisplayName": "Bright Oranges",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/orange/Cojo_ColorFamily_All_Orange_Bright_144x144_dektop_x2.png",
+            "caption": "Bright",
+            "altText": "Bright oranges",
+            "buttonColor": "#EBC3AE",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Mid-Tone Oranges",
+            "description": "For a whimsical energy that doesn’t overwhelm, consider our mid-tone oranges.",
+            "filterUUID": "8a97a103-dddd-47d9-8005-9106c9f609a1",
+            "filterDisplayName": "Mid-Tone Oranges",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/orange/Cojo_ColorFamily_All_Orange_MidTone_144x144_dektop_x2.png",
+            "caption": "Mid-Tone",
+            "altText": "Mid-Tone Oranges",
+            "buttonColor": "#D3A585",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Muted Oranges",
+            "description": "For a softer, earthier vibe, our muted oranges are just the thing.",
+            "filterUUID": "bf2ba4e9-1af1-4ba7-ae15-ae75a84d9fb6",
+            "filterDisplayName": "Muted Oranges",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/orange/Cojo_ColorFamily_All_Orange_Muted_144x144_dektop_x2.png",
+            "caption": "Muted",
+            "altText": "Muted Oranges",
+            "buttonColor": "#BAA490",
+            "buttonFontColor": "dark",
+            "empty": false
+          }
+        ]
+      },
+      "dropdownTypeList": [
+        {
+          "dynamicDropDown": "Expert Picks",
+          "heroTitle": "Orange Paint Colors",
+          "heroDescription": "<p>Orange is a color with a vibrant spectrum of emotion, capable of transforming any space into a reflection of warmth, creativity and joy. From the subtle blush of a sunrise to the deep, grounding tones of rich earth, orange paint colors offer a range of moods and expressions that can enhance your home.</p>\r\n",
+          "metaTitle": "Orange Paint Colors | Sherwin-Williams",
+          "metaDescription": "Ignite your space with confidence! Explore Sherwin-Williams' expert-curated orange paint colors, hand-picked to deliver vibrant energy and sophisticated warmth."
+        },
+        {
+          "dynamicDropDown": "Popular Oranges",
+          "heroTitle": "Popular Orange Paint Colors",
+          "heroDescription": "<p>Orange paint colors are making an impact in home design, captivating homeowners and designers alike with their undeniable appeal. Far from just a seasonal accent, orange paint colors are versatile and can evoke a variety of moods in a space.</p>\r\n",
+          "metaTitle": "Popular Orange Paint Colors | Sherwin-Williams",
+          "metaDescription": "Explore Sherwin-Williams' most popular orange paint colors, known for their uplifting energy and transformative warmth in any space."
+        },
+        {
+          "dynamicDropDown": "Dark Oranges",
+          "heroTitle": "Dark Orange Paint Colors",
+          "heroDescription": "<p>Dark orange's depth and undeniable warmth offer a sophisticated alternative to its lighter counterparts. Unlike light orange paint colors, which brighten and expand, dark oranges create intimacy, coziness and grounded elegance.</p>\r\n",
+          "metaTitle": "Dark Orange Paint Colors | Sherwin-Williams",
+          "metaDescription": "Ground your space in earthy warmth with Sherwin-Williams' deep orange paint colors—a rich palette of rust, terracotta and amber for cozy, refined interiors."
+        },
+        {
+          "dynamicDropDown": "Cool Oranges",
+          "heroTitle": "Cool Orange Paint Colors",
+          "heroDescription": "<p>While orange is inherently a warm color, the concept of cool orange paint colors introduces a sophisticated and nuanced dimension to this vibrant family. Cool oranges incorporate undertones that temper their intensity, leaning instead towards subtle pinks, browns or grays, evoking a sense of calm and understated elegance. </p>\r\n",
+          "metaTitle": "Cool Orange Paint Colors | Sherwin-Williams",
+          "metaDescription": "Experience orange with a modern edge. Sherwin-Williams' cool orange paints offer balanced warmth and unexpected sophistication for a refined, contemporary look."
+        },
+        {
+          "dynamicDropDown": "Light Oranges",
+          "heroTitle": "Light Orange Paint Colors",
+          "heroDescription": "<p>Light orange paint colors offer a fresh and inviting perspective on a beloved hue, presenting a spectrum that beautifully distinguishes itself from its bolder counterparts. While orange is typically known to command immediate attention, light oranges possess a softer, more ethereal quality.</p>\r\n",
+          "metaTitle": "Light Orange Paint Colors | Sherwin-Williams",
+          "metaDescription": "Sherwin-Williams' light orange paint colors offer a delicate, uplifting energy that creates a chic and contemporary feel. Find your perfectly sun-washed hue."
+        },
+        {
+          "dynamicDropDown": "Warm Oranges",
+          "heroTitle": "Warm Orange Paint Colors",
+          "heroDescription": "<p>Warm orange paint colors embody the heart of the orange family, offering a spectrum that radiates comfort, energy and an inviting glow. Ranging from rich, earthy tones like burnt orange and terracotta to soft, approachable shades reminiscent of peach and tangerine sherbet, these hues masterfully create welcoming and vibrant spaces.</p>\r\n",
+          "metaTitle": "Warm Orange Paint Colors | Sherwin-Williams",
+          "metaDescription": "Capture the beauty of the golden hour. Explore Sherwin-Williams' warm orange paint colors, from rich terracotta to desert sunset hues, for an earthy glow."
+        }
+      ],
+      "activeTabName": "",
+      "dropdownTypeListJson": "[\n  {\n    \"dynamicDropDown\": \"Expert Picks\",\n    \"heroTitle\": \"Orange Paint Colors\",\n    \"heroDescription\": \"Orange is a color with a vibrant spectrum of emotion, capable of transforming any space into a reflection of warmth, creativity and joy. From the subtle blush of a sunrise to the deep, grounding tones of rich earth, orange paint colors offer a range of moods and expressions that can enhance your home.\",\n    \"metaTitle\": \"Orange Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Ignite your space with confidence! Explore Sherwin-Williams\\u0027 expert-curated orange paint colors, hand-picked to deliver vibrant energy and sophisticated warmth.\"\n  },\n  {\n    \"dynamicDropDown\": \"Popular Oranges\",\n    \"heroTitle\": \"Popular Orange Paint Colors\",\n    \"heroDescription\": \"Orange paint colors are making an impact in home design, captivating homeowners and designers alike with their undeniable appeal. Far from just a seasonal accent, orange paint colors are versatile and can evoke a variety of moods in a space.\",\n    \"metaTitle\": \"Popular Orange Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Explore Sherwin-Williams\\u0027 most popular orange paint colors, known for their uplifting energy and transformative warmth in any space.\"\n  },\n  {\n    \"dynamicDropDown\": \"Dark Oranges\",\n    \"heroTitle\": \"Dark Orange Paint Colors\",\n    \"heroDescription\": \"Dark orange\\u0027s depth and undeniable warmth offer a sophisticated alternative to its lighter counterparts. Unlike light orange paint colors, which brighten and expand, dark oranges create intimacy, coziness and grounded elegance.\",\n    \"metaTitle\": \"Dark Orange Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Ground your space in earthy warmth with Sherwin-Williams\\u0027 deep orange paint colors—a rich palette of rust, terracotta and amber for cozy, refined interiors.\"\n  },\n  {\n    \"dynamicDropDown\": \"Cool Oranges\",\n    \"heroTitle\": \"Cool Orange Paint Colors\",\n    \"heroDescription\": \"While orange is inherently a warm color, the concept of cool orange paint colors introduces a sophisticated and nuanced dimension to this vibrant family. Cool oranges incorporate undertones that temper their intensity, leaning instead towards subtle pinks, browns or grays, evoking a sense of calm and understated elegance. \",\n    \"metaTitle\": \"Cool Orange Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Experience orange with a modern edge. Sherwin-Williams\\u0027 cool orange paints offer balanced warmth and unexpected sophistication for a refined, contemporary look.\"\n  },\n  {\n    \"dynamicDropDown\": \"Light Oranges\",\n    \"heroTitle\": \"Light Orange Paint Colors\",\n    \"heroDescription\": \"Light orange paint colors offer a fresh and inviting perspective on a beloved hue, presenting a spectrum that beautifully distinguishes itself from its bolder counterparts. While orange is typically known to command immediate attention, light oranges possess a softer, more ethereal quality.\",\n    \"metaTitle\": \"Light Orange Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Sherwin-Williams\\u0027 light orange paint colors offer a delicate, uplifting energy that creates a chic and contemporary feel. Find your perfectly sun-washed hue.\"\n  },\n  {\n    \"dynamicDropDown\": \"Warm Oranges\",\n    \"heroTitle\": \"Warm Orange Paint Colors\",\n    \"heroDescription\": \"Warm orange paint colors embody the heart of the orange family, offering a spectrum that radiates comfort, energy and an inviting glow. Ranging from rich, earthy tones like burnt orange and terracotta to soft, approachable shades reminiscent of peach and tangerine sherbet, these hues masterfully create welcoming and vibrant spaces.\",\n    \"metaTitle\": \"Warm Orange Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Capture the beauty of the golden hour. Explore Sherwin-Williams\\u0027 warm orange paint colors, from rich terracotta to desert sunset hues, for an earthy glow.\"\n  }\n]",
+      "dropDownTabUrls": {
+        "Dark Oranges": "https://www.sherwin-williams.com/en-us/color/color-family/orange-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/dark-oranges",
+        "Popular Oranges": "https://www.sherwin-williams.com/en-us/color/color-family/orange-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/popular-oranges",
+        "All Oranges": "https://www.sherwin-williams.com/en-us/color/color-family/orange-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/all-oranges",
+        "Light Oranges": "https://www.sherwin-williams.com/en-us/color/color-family/orange-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/light-oranges",
+        "Warm Oranges": "https://www.sherwin-williams.com/en-us/color/color-family/orange-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/warm-oranges",
+        "Cool Oranges": "https://www.sherwin-williams.com/en-us/color/color-family/orange-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/cool-oranges",
+        "Expert Picks": "https://www.sherwin-williams.com/en-us/color/color-family/orange-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/expert-picks"
+      },
+      "empty": false
+    }
+  },
+  "purple": {
+    "modelUrl": "https://www.sherwin-williams.com/en-us/color/color-family/purple-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json",
+    "data": {
+      "variation": "family",
+      "category": "99e844fe-404c-41fe-843b-faf93fb4ba91",
+      "groupId": "99e844fe-404c-41fe-843b-faf93fb4ba91",
+      "orderButton": {
+        "icon": "false",
+        "url": "https://samples.sherwin-williams.com/view/purple",
+        "text": "Order Color Samples",
+        "accessibilityLabel": "Order Color Samples",
+        "backgroundColor": "Primary Dark",
+        "border": "Outlined",
+        "styleAsLink": false,
+        "openNewTab": true,
+        "urlMegamenu": "https://samples.sherwin-williams.com/view/purple",
+        "empty": false
+      },
+      "expertPicksList": [
+        {
+          "title": "Expert Picks",
+          "description": "Discover our captivating range of expert-picked purples, offering everything from serene pastels to dramatic, rich hues.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9686,sw-6813,sw-6547,sw-0062,sw-9688,sw-6276,sw-7081,sw-7082",
+            "text": "Visualize Top Purples",
+            "accessibilityLabel": "Visualize Top Purples",
+            "backgroundColor": "Primary Dark",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9686,sw-6813,sw-6547,sw-0062,sw-9688,sw-6276,sw-7081,sw-7082",
+            "empty": false
+          },
+          "buttonCta2": {
+            "icon": "true",
+            "url": "https://samples.sherwin-williams.com/?colors=SW9686-S,SW6813-S,SW9688-S,SW9689-S,SW9690-S,SW7082-S,SW7081-S,SW6276-S,SW0062-S,SW6547-S",
+            "text": "Order These Free Color Chips",
+            "accessibilityLabel": "Order These Free Color Chips",
+            "backgroundColor": "Primary Dark",
+            "border": "Borderless",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "https://samples.sherwin-williams.com/?colors=SW9686-S,SW6813-S,SW9688-S,SW9689-S,SW9690-S,SW7082-S,SW7081-S,SW6276-S,SW0062-S,SW6547-S",
+            "empty": false
+          },
+          "microchip1": {
+            "chipName": "Wishful Blue",
+            "chipNumber": "SW 6813",
+            "chipColor": "#D8DDE6",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/purple-paint-colors/sw6813-wishful-blue",
+              "openNewTab": true,
+              "urlMegamenu": "/en-us/color/color-family/purple-paint-colors/sw6813-wishful-blue",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/optimized-images/sw-6813-wishful-blue-living-room-672x478-optimized.jpg",
+            "altText": "A modern living room with white leather chairs, chandelier, and purple wall",
+            "empty": false
+          },
+          "filterUUID": "5bcccd85-a8cd-409e-8258-ea41588579c7",
+          "filterDisplayName": "Expert Picks",
+          "filterDisplayOrder": "1"
+        }
+      ],
+      "popularList": [
+        {
+          "title": "Popular Purples",
+          "description": "Meet the hues everyone's talking about — our most sought-after purples, chosen for their undeniable charm and transformative power.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "",
+            "backgroundColor": "Primary Light",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": false,
+            "empty": true
+          },
+          "microchip1": {
+            "chipName": "Lite Lavender",
+            "chipNumber": "SW 6554",
+            "chipColor": "#E0DADF",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/purple-paint-colors/sw6554-lite-lavender",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/purple-paint-colors/sw6554-lite-lavender",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "microchip2": {
+            "chipName": "Daydream",
+            "chipNumber": "SW 6541",
+            "chipColor": "#BDC3CD",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/purple-paint-colors/sw6541-daydream",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/purple-paint-colors/sw6541-daydream",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/purple/sw 6554​-lite-lavender-office.png",
+            "altText": "A minimalist office space with wooden table and lavender walls",
+            "empty": false
+          },
+          "image2": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/purple/sw-6541-daydream-kitchen.png",
+            "altText": "An open kitchen with white walls and pale purple island",
+            "empty": false
+          },
+          "filterUUID": "5ba07f61-edff-41f3-ae3d-0c8b5cdb6fa0",
+          "filterDisplayName": "Popular Purples",
+          "filterDisplayOrder": "2"
+        }
+      ],
+      "allLayout": {
+        "title": "All Purples",
+        "imageDetailsList": [
+          {
+            "secondaryTitle": "Bright Purples",
+            "description": "Make a bold statement and energize your creativity with one of our bright purples.",
+            "filterUUID": "2ca8a1c9-3792-4c09-91ca-49ada440764e",
+            "filterDisplayName": "Bright Purples",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/purple/Cojo_ColorFamily_All_Purple_Bright_144x144_dektop_x2.png",
+            "caption": "Bright",
+            "altText": "Bright Purples",
+            "buttonColor": "#E3DBE4",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Mid-Tone Purples",
+            "description": "Our mid-tone purples hit the sweet spot between fun-loving and chill.",
+            "filterUUID": "a9d582b1-cf9b-4cec-b3c6-8c1f2de65724",
+            "filterDisplayName": "Mid-Tone Purples",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/purple/Cojo_ColorFamily_All_Purple_MidTone_144x144_dektop_x2.png",
+            "caption": "Mid-Tone",
+            "altText": "Mid-Tone Purples",
+            "buttonColor": "#AEA3B5",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Muted Purples",
+            "description": "Evoke calm and a touch of personality with our muted purples.",
+            "filterUUID": "2ec49447-6448-4f9f-92e7-0be929f65f04",
+            "filterDisplayName": "Muted Purples",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/purple/Cojo_ColorFamily_All_Purple_Muted_144x144_dektop_x2.png",
+            "caption": "Muted",
+            "altText": "Muted Purples",
+            "buttonColor": "#8E8A90",
+            "buttonFontColor": "dark",
+            "empty": false
+          }
+        ]
+      },
+      "dropdownTypeList": [
+        {
+          "dynamicDropDown": "Expert Picks",
+          "heroTitle": "Purple Paint Colors",
+          "heroDescription": "<p>Purple is often associated with royalty, creativity and a touch of the mystical. From soothing lavenders to rich, deep plums, purple paint colors offer a spectrum of moods and expressions for any space. At Sherwin-Williams, our color experts understand the power of this versatile shade.</p>\r\n",
+          "metaTitle": "Purple Paint Colors | Sherwin-Williams",
+          "metaDescription": "Find your perfect, defining purple in Sherwin-Williams' collection of expert-picked purple paint colors, from bold to subtle, and everything in between."
+        },
+        {
+          "dynamicDropDown": "Popular Purples",
+          "heroTitle": "Popular Purple Paint Colors",
+          "heroDescription": "<p>Purple paint colors have seen a surge in demand in recent years, becoming one of the most popular paint colors on the market. Far from being just a statement color, today's purples offer a sophisticated spectrum, inviting warmth, creativity and unique personality into any space.</p>\r\n",
+          "metaTitle": "Popular Purple Paint Colors | Sherwin-Williams",
+          "metaDescription": "Infuse sophistication into your space. Explore Sherwin-Williams' most popular purple paint shades, trending hues that captivate and inspire. Find your favorite!"
+        },
+        {
+          "dynamicDropDown": "Warm Purples",
+          "heroTitle": "Warm Purple Paint Colors",
+          "heroDescription": "<p>Warm tones in home decor are often confined to browns, beiges and muted yellows. But a beautiful shift is happening with warm purple paint colors captivating homeowners and designers alike. These aren't your cool blue-leaning violets; warm purples are defined by their inviting red undertones, offering a cozy sophistication that's rapidly gaining popularity.</p>\r\n",
+          "metaTitle": "Warm Purple Paint Colors | Sherwin-Williams",
+          "metaDescription": "Explore purple's welcoming embrace with Sherwin-Williams' collection of warm purple paint colors, offering rich undertones for a cozy, stylish ambiance."
+        },
+        {
+          "dynamicDropDown": "Light Purples",
+          "heroTitle": "Light Purple Paint Colors",
+          "heroDescription": "<p>Light purple paint colors offer a unique blend of serenity and sophistication, transforming any space into a tranquil haven. These lighter tints evoke a sense of calm, creativity and gentle optimism. These versatile shades are most effective in spaces that benefit from soft, diffused lighting or in areas where a touch of color is desired without overwhelming the senses.</p>\r\n",
+          "metaTitle": "Light Purple Paint Colors | Sherwin-Williams",
+          "metaDescription": "Bring delicate charm to your walls. Explore Sherwin-Williams' serene collection of light purple paint colors, perfect for airy, inviting spaces."
+        },
+        {
+          "dynamicDropDown": "Dark Purples",
+          "heroTitle": "Dark Purple Paint Colors",
+          "heroDescription": "<p>Dark purple paint colors are rich, dramatic hues that can transform any space into a deeply luxurious and intimate retreat, exuding unparalleled sophistication. If you’re looking to create a cozy space for relaxation or to be bold with your design style, there are plenty of rich, dark purple shades to strike the right mood.</p>\r\n",
+          "metaTitle": "Dark Purple Paint Colors | Sherwin-Williams",
+          "metaDescription": "Evoke drama, luxury & sophistication with dark purple paint colors from Sherwin-Williams. Get tips to transform your home with these deep hues."
+        },
+        {
+          "dynamicDropDown": "Cool Purples",
+          "heroTitle": "Cool Purple Paint Colors",
+          "heroDescription": "<p>While purple is a blend of red and blue, cool purple paint colors lean heavily into the blue side of the spectrum, giving them a crisp, clean and often ethereal quality. These unique hues hold a special place in interior design, providing a refreshing alternative to traditional neutrals and a tranquil backdrop for modern living.</p>\r\n",
+          "metaTitle": "Cool Purple Paint Colors | Sherwin-Williams",
+          "metaDescription": "Explore cool purple paint colors by Sherwin-Williams. Defined by prominent blue undertones, these hues bring calm, sophistication & modern elegance to any room."
+        }
+      ],
+      "activeTabName": "",
+      "dropDownTabUrls": {
+        "Popular Purples": "https://www.sherwin-williams.com/en-us/color/color-family/purple-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/popular-purples",
+        "Light Purples": "https://www.sherwin-williams.com/en-us/color/color-family/purple-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/light-purples",
+        "Warm Purples": "https://www.sherwin-williams.com/en-us/color/color-family/purple-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/warm-purples",
+        "Cool Purples": "https://www.sherwin-williams.com/en-us/color/color-family/purple-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/cool-purples",
+        "Dark Purples": "https://www.sherwin-williams.com/en-us/color/color-family/purple-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/dark-purples",
+        "All Purples": "https://www.sherwin-williams.com/en-us/color/color-family/purple-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/all-purples",
+        "Expert Picks": "https://www.sherwin-williams.com/en-us/color/color-family/purple-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/expert-picks"
+      },
+      "dropdownTypeListJson": "[\n  {\n    \"dynamicDropDown\": \"Expert Picks\",\n    \"heroTitle\": \"Purple Paint Colors\",\n    \"heroDescription\": \"Purple is often associated with royalty, creativity and a touch of the mystical. From soothing lavenders to rich, deep plums, purple paint colors offer a spectrum of moods and expressions for any space. At Sherwin-Williams, our color experts understand the power of this versatile shade.\",\n    \"metaTitle\": \"Purple Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Find your perfect, defining purple in Sherwin-Williams\\u0027 collection of expert-picked purple paint colors, from bold to subtle, and everything in between.\"\n  },\n  {\n    \"dynamicDropDown\": \"Popular Purples\",\n    \"heroTitle\": \"Popular Purple Paint Colors\",\n    \"heroDescription\": \"Purple paint colors have seen a surge in demand in recent years, becoming one of the most popular paint colors on the market. Far from being just a statement color, today\\u0027s purples offer a sophisticated spectrum, inviting warmth, creativity and unique personality into any space.\",\n    \"metaTitle\": \"Popular Purple Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Infuse sophistication into your space. Explore Sherwin-Williams\\u0027 most popular purple paint shades, trending hues that captivate and inspire. Find your favorite!\"\n  },\n  {\n    \"dynamicDropDown\": \"Warm Purples\",\n    \"heroTitle\": \"Warm Purple Paint Colors\",\n    \"heroDescription\": \"Warm tones in home decor are often confined to browns, beiges and muted yellows. But a beautiful shift is happening with warm purple paint colors captivating homeowners and designers alike. These aren\\u0027t your cool blue-leaning violets; warm purples are defined by their inviting red undertones, offering a cozy sophistication that\\u0027s rapidly gaining popularity.\",\n    \"metaTitle\": \"Warm Purple Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Explore purple\\u0027s welcoming embrace with Sherwin-Williams\\u0027 collection of warm purple paint colors, offering rich undertones for a cozy, stylish ambiance.\"\n  },\n  {\n    \"dynamicDropDown\": \"Light Purples\",\n    \"heroTitle\": \"Light Purple Paint Colors\",\n    \"heroDescription\": \"Light purple paint colors offer a unique blend of serenity and sophistication, transforming any space into a tranquil haven. These lighter tints evoke a sense of calm, creativity and gentle optimism. These versatile shades are most effective in spaces that benefit from soft, diffused lighting or in areas where a touch of color is desired without overwhelming the senses.\",\n    \"metaTitle\": \"Light Purple Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Bring delicate charm to your walls. Explore Sherwin-Williams\\u0027 serene collection of light purple paint colors, perfect for airy, inviting spaces.\"\n  },\n  {\n    \"dynamicDropDown\": \"Dark Purples\",\n    \"heroTitle\": \"Dark Purple Paint Colors\",\n    \"heroDescription\": \"Dark purple paint colors are rich, dramatic hues that can transform any space into a deeply luxurious and intimate retreat, exuding unparalleled sophistication. If you’re looking to create a cozy space for relaxation or to be bold with your design style, there are plenty of rich, dark purple shades to strike the right mood.\",\n    \"metaTitle\": \"Dark Purple Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Evoke drama, luxury \\u0026 sophistication with dark purple paint colors from Sherwin-Williams. Get tips to transform your home with these deep hues.\"\n  },\n  {\n    \"dynamicDropDown\": \"Cool Purples\",\n    \"heroTitle\": \"Cool Purple Paint Colors\",\n    \"heroDescription\": \"While purple is a blend of red and blue, cool purple paint colors lean heavily into the blue side of the spectrum, giving them a crisp, clean and often ethereal quality. These unique hues hold a special place in interior design, providing a refreshing alternative to traditional neutrals and a tranquil backdrop for modern living.\",\n    \"metaTitle\": \"Cool Purple Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Explore cool purple paint colors by Sherwin-Williams. Defined by prominent blue undertones, these hues bring calm, sophistication \\u0026 modern elegance to any room.\"\n  }\n]",
+      "empty": false
+    }
+  },
+  "red": {
+    "modelUrl": "https://www.sherwin-williams.com/en-us/color/color-family/red-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json",
+    "data": {
+      "variation": "family",
+      "category": "9ca405c6-7a45-43a6-93a8-2879ba7be7e2",
+      "groupId": "9ca405c6-7a45-43a6-93a8-2879ba7be7e2",
+      "orderButton": {
+        "icon": "false",
+        "url": "https://samples.sherwin-williams.com/view/red",
+        "text": "Order Color Samples",
+        "accessibilityLabel": "Order Color Samples",
+        "backgroundColor": "Primary Dark",
+        "border": "Outlined",
+        "styleAsLink": false,
+        "openNewTab": true,
+        "urlMegamenu": "https://samples.sherwin-williams.com/view/red",
+        "empty": false
+      },
+      "expertPicksList": [
+        {
+          "title": "Expert Picks",
+          "description": "Bring your vision to life with these recommended red shades, tints and tones — specially selected by our team of Color Experts.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9696,sw-9693,sw-0070,sw-6599,sw-9006,sw-9694,sw-9695,sw-7585",
+            "text": "Visualize Top Reds",
+            "accessibilityLabel": "Visualize Top Reds",
+            "backgroundColor": "Primary Dark",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9696,sw-9693,sw-0070,sw-6599,sw-9006,sw-9694,sw-9695,sw-7585",
+            "empty": false
+          },
+          "buttonCta2": {
+            "icon": "true",
+            "url": "https://samples.sherwin-williams.com/?colors=SW9696-S,SW9693-S,SW6599-S,SW9695-S,SW2838-S,SW7585-S,SW9694-S,SW9006-S,SW0070-S,SW6028-S",
+            "text": "Order These Free Color Chips",
+            "accessibilityLabel": "Order These Free Color Chips",
+            "backgroundColor": "Primary Dark",
+            "border": "Borderless",
+            "styleAsLink": true,
+            "openNewTab": true,
+            "urlMegamenu": "https://samples.sherwin-williams.com/?colors=SW9696-S,SW9693-S,SW6599-S,SW9695-S,SW2838-S,SW7585-S,SW9694-S,SW9006-S,SW0070-S,SW6028-S",
+            "empty": false
+          },
+          "microchip1": {
+            "chipName": "Cultured Pearl",
+            "chipNumber": "SW 6028",
+            "chipColor": "#E5DCD6",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/purple-paint-colors/sw6028-cultured-pearl",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/purple-paint-colors/sw6028-cultured-pearl",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/optimized-images/sw-6028-cultured-pearl-living-room-672x478-optimized.jpg",
+            "altText": "A traditional living room with tan furniture and pink walls",
+            "empty": false
+          },
+          "filterUUID": "03ab2d1f-a15a-44df-b002-f9c86ab4bfa8",
+          "filterDisplayName": "Expert Picks",
+          "filterDisplayOrder": "1"
+        }
+      ],
+      "popularList": [
+        {
+          "title": "Popular Reds",
+          "description": "Red paint transforms any room into a captivating experience, from dramatic declarations to subtle warmth. Discover the shade that makes your space truly unforgettable.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "",
+            "backgroundColor": "Primary Light",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": false,
+            "empty": true
+          },
+          "microchip1": {
+            "chipName": "Romance",
+            "chipNumber": "SW 6323",
+            "chipColor": "#EBCFC3",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/red-paint-colors/sw6323-romance",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/red-paint-colors/sw6323-romance",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "microchip2": {
+            "chipName": "Heartthrob",
+            "chipNumber": "SW 6866",
+            "chipColor": "#A82E33",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/red-paint-colors/sw6866-heartthrob",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/red-paint-colors/sw6866-heartthrob",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/red/sw-6323-romance-dining-room.png",
+            "altText": "A dining room with red walls with table and chairs",
+            "empty": false
+          },
+          "image2": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/red/sw-6866-heartthrob-wall.png",
+            "altText": "A pinkish red wall with side table and lamp",
+            "empty": false
+          },
+          "filterUUID": "833d8eec-f421-45a0-81c3-fe257e70d6ac",
+          "filterDisplayName": "Popular Reds",
+          "filterDisplayOrder": "2"
+        }
+      ],
+      "allLayout": {
+        "title": "All Reds",
+        "imageDetailsList": [
+          {
+            "secondaryTitle": "Bright Reds",
+            "description": "Our brighter shades of red bring the energy along with exciting contrasts.",
+            "filterUUID": "a0481f32-b2fa-4e9c-93b4-41df21b082df",
+            "filterDisplayName": "Bright Reds",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/red/Cojo_ColorFamily_All_Red_Bright_144x144_dektop_x2.png",
+            "caption": "Bright",
+            "altText": "Bright reds",
+            "buttonColor": "#ECCDC6",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Mid-Tone Reds",
+            "description": "Pick one of our mid-tone reds for a warm but sophisticated look.",
+            "filterUUID": "764152ae-6138-4815-bbc8-822242e70bf7",
+            "filterDisplayName": "Mid-Tone Reds",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/red/Cojo_ColorFamily_All_Red_MidTone_144x144_dektop_x2.png",
+            "caption": "Mid-Tone",
+            "altText": "Mid-Tone Reds",
+            "buttonColor": "#C89692",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Muted Reds",
+            "description": "When you need a soft, warm energy, try one of our muted reds.",
+            "filterUUID": "4928aeaa-7466-433d-a941-8526a9d44cce",
+            "filterDisplayName": "Muted Reds",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/red/Cojo_ColorFamily_All_Red_Muted_144x144_dektop_x2.png",
+            "caption": "Muted",
+            "altText": "Muted Reds",
+            "buttonColor": "#958988",
+            "buttonFontColor": "dark",
+            "empty": false
+          }
+        ]
+      },
+      "dropdownTypeList": [
+        {
+          "dynamicDropDown": "Expert Picks",
+          "heroTitle": "Red Paint Colors",
+          "heroDescription": "<p>Red paint colors can truly shape the feeling of a space — from bold and sophisticated to fun and playful or even warm and cozy. Use our expert-curated collection of reds to make a statement in your home.</p>\r\n",
+          "metaTitle": "Red Paint Colors | Expert Picks | Sherwin-Williams",
+          "metaDescription": "Explore our expert-curated collection of reds to make a statement in your home."
+        },
+        {
+          "dynamicDropDown": "Popular Reds",
+          "heroTitle": "Popular Red Paint Colors",
+          "heroDescription": "<p>From cozy country kitchens to sophisticated urban living rooms, the right shade of red can transform any space into a vibrant, inviting and luxurious haven. If you're searching for the best red paint to make your home stand out, Sherwin-Williams' collection of popular red paints will help you find a timeless red for your space.&nbsp;</p>\r\n",
+          "metaTitle": "Our Most Popular Red Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover the most popular red paint colors from Sherwin-Williams — vibrant, energetic tones that range from bold cherry to warm rust, perfect for accent walls, exterior features, or entire rooms. Explore expert tips on lighting, pairing, and the best ways to apply reds confidently."
+        },
+        {
+          "dynamicDropDown": "Light Reds",
+          "heroTitle": "Light Red Paint Colors",
+          "heroDescription": "<p>Light red paint colors are the more nuanced side of the red color spectrum. While red is typically known for its intensity, light red shades invite a different kind of engagement. These softer, often more approachable hues are more versatile than their bolder cousins while offering warmth and character that soothes, uplifts, and adds unexpected charm to any space.</p>\r\n",
+          "metaTitle": "Light Red Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover a fresh selection of light red paint colors from Sherwin-Williams — soft, rosy reds and blush-infused tones ideal for bedrooms, nurseries, or accent walls. Explore undertones, lighting considerations, and simple pairing ideas."
+        },
+        {
+          "dynamicDropDown": "Dark Reds",
+          "heroTitle": "Dark Red Paint Colors",
+          "heroDescription": "<p>While bright, fiery reds ignite energy and excitement, the deeper, more muted end of the spectrum offers sophistication and charm. Using dark red hues infuses spaces with depth, warmth and a touch of historical grandeur, enveloping a space with character.</p>\r\n",
+          "metaTitle": "Dark Red Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover rich, dramatic dark red paint colors from Sherwin-Williams — deep burgundy, wine, and crimson hues that bring sophistication and depth to dining rooms, accent walls, or exteriors."
+        },
+        {
+          "dynamicDropDown": "Cool Reds",
+          "heroTitle": "Cool Red Paint Colors",
+          "heroDescription": "<p>Red commands attention with overt warmth, but red’s subset of sophisticated cool-toned hues offers unexpected depth and tranquility. At Sherwin-Williams, we celebrate these distinctive cool red paint colors for their ability to infuse modern design with a fresh, elegant perspective on a timeless classic.</p>\r\n",
+          "metaTitle": "Cool Red Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover a refined collection of cool-toned red paint colors from Sherwin-Williams — subtle cherry, berry and wine hues with blue or neutral undertones that create calm elegance in bedrooms, dining rooms and accent walls."
+        },
+        {
+          "dynamicDropDown": "Warm Reds",
+          "heroTitle": "Warm Red Paint Colors",
+          "heroDescription": "<p>While every shade of red has its own allure, the captivating spectrum of warm red paint colors invites, comforts, and energizes, wrapping your space in a welcoming embrace. In addition to color, these hues infuse your home with a vibrant, lived-in warmth that feels classic and contemporary.</p>\r\n",
+          "metaTitle": "Warm Red Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover warm red paint colors from Sherwin-Williams — rich, inviting hues with orange or brown undertones that bring cozy sophistication to living rooms, dining spaces, and exteriors."
+        }
+      ],
+      "activeTabName": "",
+      "dropdownTypeListJson": "[\n  {\n    \"dynamicDropDown\": \"Expert Picks\",\n    \"heroTitle\": \"Red Paint Colors\",\n    \"heroDescription\": \"Red paint colors can truly shape the feeling of a space — from bold and sophisticated to fun and playful or even warm and cozy. Use our expert-curated collection of reds to make a statement in your home.\",\n    \"metaTitle\": \"Red Paint Colors | Expert Picks | Sherwin-Williams\",\n    \"metaDescription\": \"Explore our expert-curated collection of reds to make a statement in your home.\"\n  },\n  {\n    \"dynamicDropDown\": \"Popular Reds\",\n    \"heroTitle\": \"Popular Red Paint Colors\",\n    \"heroDescription\": \"From cozy country kitchens to sophisticated urban living rooms, the right shade of red can transform any space into a vibrant, inviting and luxurious haven. If you\\u0027re searching for the best red paint to make your home stand out, Sherwin-Williams\\u0027 collection of popular red paints will help you find a timeless red for your space. \",\n    \"metaTitle\": \"Our Most Popular Red Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover the most popular red paint colors from Sherwin-Williams — vibrant, energetic tones that range from bold cherry to warm rust, perfect for accent walls, exterior features, or entire rooms. Explore expert tips on lighting, pairing, and the best ways to apply reds confidently.\"\n  },\n  {\n    \"dynamicDropDown\": \"Light Reds\",\n    \"heroTitle\": \"Light Red Paint Colors\",\n    \"heroDescription\": \"Light red paint colors are the more nuanced side of the red color spectrum. While red is typically known for its intensity, light red shades invite a different kind of engagement. These softer, often more approachable hues are more versatile than their bolder cousins while offering warmth and character that soothes, uplifts, and adds unexpected charm to any space.\",\n    \"metaTitle\": \"Light Red Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover a fresh selection of light red paint colors from Sherwin-Williams — soft, rosy reds and blush-infused tones ideal for bedrooms, nurseries, or accent walls. Explore undertones, lighting considerations, and simple pairing ideas.\"\n  },\n  {\n    \"dynamicDropDown\": \"Dark Reds\",\n    \"heroTitle\": \"Dark Red Paint Colors\",\n    \"heroDescription\": \"While bright, fiery reds ignite energy and excitement, the deeper, more muted end of the spectrum offers sophistication and charm. Using dark red hues infuses spaces with depth, warmth and a touch of historical grandeur, enveloping a space with character.\",\n    \"metaTitle\": \"Dark Red Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover rich, dramatic dark red paint colors from Sherwin-Williams — deep burgundy, wine, and crimson hues that bring sophistication and depth to dining rooms, accent walls, or exteriors.\"\n  },\n  {\n    \"dynamicDropDown\": \"Cool Reds\",\n    \"heroTitle\": \"Cool Red Paint Colors\",\n    \"heroDescription\": \"Red commands attention with overt warmth, but red’s subset of sophisticated cool-toned hues offers unexpected depth and tranquility. At Sherwin-Williams, we celebrate these distinctive cool red paint colors for their ability to infuse modern design with a fresh, elegant perspective on a timeless classic.\",\n    \"metaTitle\": \"Cool Red Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover a refined collection of cool-toned red paint colors from Sherwin-Williams — subtle cherry, berry and wine hues with blue or neutral undertones that create calm elegance in bedrooms, dining rooms and accent walls.\"\n  },\n  {\n    \"dynamicDropDown\": \"Warm Reds\",\n    \"heroTitle\": \"Warm Red Paint Colors\",\n    \"heroDescription\": \"While every shade of red has its own allure, the captivating spectrum of warm red paint colors invites, comforts, and energizes, wrapping your space in a welcoming embrace. In addition to color, these hues infuse your home with a vibrant, lived-in warmth that feels classic and contemporary.\",\n    \"metaTitle\": \"Warm Red Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover warm red paint colors from Sherwin-Williams — rich, inviting hues with orange or brown undertones that bring cozy sophistication to living rooms, dining spaces, and exteriors.\"\n  }\n]",
+      "dropDownTabUrls": {
+        "Light Reds": "https://www.sherwin-williams.com/en-us/color/color-family/red-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/light-reds",
+        "All Reds": "https://www.sherwin-williams.com/en-us/color/color-family/red-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/all-reds",
+        "Warm Reds": "https://www.sherwin-williams.com/en-us/color/color-family/red-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/warm-reds",
+        "Dark Reds": "https://www.sherwin-williams.com/en-us/color/color-family/red-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/dark-reds",
+        "Popular Reds": "https://www.sherwin-williams.com/en-us/color/color-family/red-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/popular-reds",
+        "Cool Reds": "https://www.sherwin-williams.com/en-us/color/color-family/red-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/cool-reds",
+        "Expert Picks": "https://www.sherwin-williams.com/en-us/color/color-family/red-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/expert-picks"
+      },
+      "empty": false
+    }
+  },
+  "white": {
+    "modelUrl": "https://www.sherwin-williams.com/en-us/color/color-family/white-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json",
+    "data": {
+      "variation": "family",
+      "category": "c1ba734f-e565-4f41-9525-95f401c7c736",
+      "groupId": "c1ba734f-e565-4f41-9525-95f401c7c736",
+      "orderButton": {
+        "icon": "false",
+        "url": "https://samples.sherwin-williams.com/view/white-pastel",
+        "text": "Order Color Samples",
+        "accessibilityLabel": "Order Color Samples",
+        "backgroundColor": "Primary Dark",
+        "border": "Outlined",
+        "styleAsLink": false,
+        "openNewTab": true,
+        "urlMegamenu": "https://samples.sherwin-williams.com/view/white-pastel",
+        "empty": false
+      },
+      "expertPicksList": [
+        {
+          "title": "Expert Picks",
+          "description": "Trusted by our color experts for consistently delivering stunning results, find the perfect white paint for ultimate design freedom.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9541,sw-9582,sw-9542,sw-9543,sw-9583,sw-9585,sw-9584,sw-9586",
+            "text": "Visualize Top Whites",
+            "accessibilityLabel": "Visualize Top Whites",
+            "backgroundColor": "Primary Dark",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9541,sw-9582,sw-9542,sw-9543,sw-9583,sw-9585,sw-9584,sw-9586",
+            "empty": false
+          },
+          "buttonCta2": {
+            "icon": "true",
+            "url": "https://samples.sherwin-williams.com/?colors=SW9589-S,SW9587-S,SW9586-S,SW9585-S,SW9584-S,SW9583-S,SW9582-S,SW9543-S,SW9542-S,SW9541-S",
+            "text": "Order These Free Color Chips",
+            "accessibilityLabel": "Order These Free Color Chips",
+            "backgroundColor": "Primary Dark",
+            "border": "Borderless",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "https://samples.sherwin-williams.com/?colors=SW9589-S,SW9587-S,SW9586-S,SW9585-S,SW9584-S,SW9583-S,SW9582-S,SW9543-S,SW9542-S,SW9541-S",
+            "empty": false
+          },
+          "microchip1": {
+            "chipName": "Gypsum",
+            "chipNumber": "SW 9543",
+            "chipColor": "#EAEBE7",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/white-paint-colors/sw9543-gypsum",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/white-paint-colors/sw9543-gypsum",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/optimized-images/sw-9543-gypsum-living-room-672x478-optimized.jpg",
+            "altText": "A modern living room with textured executive chair, large art piece and white wall",
+            "empty": false
+          },
+          "filterUUID": "e6f45870-4f98-4393-aa2c-6526eda45608",
+          "filterDisplayName": "Expert Picks",
+          "filterDisplayOrder": "1"
+        }
+      ],
+      "popularList": [
+        {
+          "title": "Popular Whites",
+          "description": "Discover the white paint colors that have captured the hearts of professionals and DIY-ers alike.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "",
+            "backgroundColor": "Primary Light",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": false,
+            "empty": true
+          },
+          "microchip1": {
+            "chipName": "Alabaster",
+            "chipNumber": "SW 7008",
+            "chipColor": "#EDEAE0",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/white-paint-colors/sw7008-alabaster",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/white-paint-colors/sw7008-alabaster",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "microchip2": {
+            "chipName": "Pure White",
+            "chipNumber": "SW 7005",
+            "chipColor": "#EDECE6",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/white-paint-colors/sw7005-pure-white",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/white-paint-colors/sw7005-pure-white",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/white/sw-7008-alabaster-stairs.png",
+            "altText": "A white entryway with contrasting stairs and wooden side table",
+            "empty": false
+          },
+          "image2": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/white/sw-7005-pure-white​-living-room.png",
+            "altText": "A contemporary living room with white walls and furniture",
+            "empty": false
+          },
+          "filterUUID": "6e69aa40-a380-4d95-8ebc-0c67ac5b55d9",
+          "filterDisplayName": "Popular Whites",
+          "filterDisplayOrder": "2"
+        }
+      ],
+      "allLayout": {
+        "title": "All Whites",
+        "imageDetailsList": [
+          {
+            "secondaryTitle": "Warm Whites",
+            "description": "For a more relaxed, cozier mood, choose a warm white.",
+            "filterUUID": "eed9728b-eb97-462f-94e2-3a187fbcc112",
+            "filterDisplayName": "Warm",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/white/Cojo_ColorFamily_All_White_Warm_144x144_dektop_x2.png",
+            "caption": "Warm",
+            "altText": "Warm Whites",
+            "buttonColor": "#F3EFE6",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Cool Whites",
+            "description": "Nothing opens up a space more than a shade of cool white.",
+            "filterUUID": "bc4b8420-3791-4cd2-a16e-bc2e591e3b2d",
+            "filterDisplayName": "Cool",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/white/Cojo_ColorFamily_All_White_Cool_144x144_dektop_x2.png",
+            "caption": "Cool",
+            "altText": "Cool Whites",
+            "buttonColor": "#E9EBE7",
+            "buttonFontColor": "dark",
+            "empty": false
+          }
+        ]
+      },
+      "dropdownTypeList": [
+        {
+          "dynamicDropDown": "Warm Whites",
+          "heroTitle": "Warm White Paint Colors",
+          "heroDescription": "<p>The spectrum of whites ranges from crisp and cool to soft and inviting, but warm white paint colors truly excel at inviting you into a space and evoking comfort. These nuanced shades, infused with subtle undertones, offer a gentle glow that transforms a room into a sanctuary, proving that warm white paint is anything but one-dimensional.</p>\r\n",
+          "metaTitle": "White Paint Colors | Warm Whites | Sherwin-Williams",
+          "metaDescription": "Discover warm white paint colors with inviting undertones that create cozy, welcoming spaces and complement natural materials for timeless style."
+        },
+        {
+          "dynamicDropDown": "Popular Whites",
+          "heroTitle": "Popular White Paint Colors",
+          "heroDescription": "<p>White paint holds a unique and enduring position in interior design thanks to their ability to offer a fresh canvas that adapts to any style. Not all white paints are the same, nor will they look the same in different spaces, but some shades have earned their place as perennial favorites. Find out how these popular white paints can elevate your home.</p>\r\n",
+          "metaTitle": "White Paint Colors | Popular Whites | Sherwin-Williams",
+          "metaDescription": "Discover the most popular white paint colors from Sherwin-Williams, with tips on choosing a shade of white to create your ideal look for any space."
+        },
+        {
+          "dynamicDropDown": "Expert Picks",
+          "heroTitle": "White Paint Colors",
+          "heroDescription": "<p>Beyond a mere absence of color, white paint is the ultimate chameleon, capable of transforming any room into a haven of clean lines, expansive light and sophisticated calm. Explore the curated collection from our experts, designed to elevate your space.</p>\r\n",
+          "metaTitle": "White Paint Colors | Expert Picks | Sherwin-Williams",
+          "metaDescription": "Elevate your space with the curated collection of white paint colors selected by Sherwin-Williams color marketing experts."
+        },
+        {
+          "dynamicDropDown": "Cool Whites",
+          "heroTitle": "Cool White Paint Colors",
+          "heroDescription": "<p>The spectrum of white paints offers a range of moods, but cool white paint colors stand apart, defining spaces with a bright, modern edge. Infused with subtle undertones of blue, gray, violet or green, these nuanced cool tones transform rooms into airy, expansive havens with their contemporary appeal.</p>\r\n",
+          "metaTitle": "White Paint Colors | Cool Whites | Sherwin-Williams",
+          "metaDescription": "Explore cool white paint colors with crisp undertones that create fresh, modern spaces and pair beautifully with contemporary design styles."
+        }
+      ],
+      "activeTabName": "",
+      "dropDownTabUrls": {
+        "All Whites": "https://www.sherwin-williams.com/en-us/color/color-family/white-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/all-whites",
+        "Cool Whites": "https://www.sherwin-williams.com/en-us/color/color-family/white-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/cool-whites",
+        "Popular Whites": "https://www.sherwin-williams.com/en-us/color/color-family/white-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/popular-whites",
+        "Warm Whites": "https://www.sherwin-williams.com/en-us/color/color-family/white-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/warm-whites",
+        "Expert Picks": "https://www.sherwin-williams.com/en-us/color/color-family/white-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/expert-picks"
+      },
+      "dropdownTypeListJson": "[\n  {\n    \"dynamicDropDown\": \"Warm Whites\",\n    \"heroTitle\": \"Warm White Paint Colors\",\n    \"heroDescription\": \"The spectrum of whites ranges from crisp and cool to soft and inviting, but warm white paint colors truly excel at inviting you into a space and evoking comfort. These nuanced shades, infused with subtle undertones, offer a gentle glow that transforms a room into a sanctuary, proving that warm white paint is anything but one-dimensional.\",\n    \"metaTitle\": \"White Paint Colors | Warm Whites | Sherwin-Williams\",\n    \"metaDescription\": \"Discover warm white paint colors with inviting undertones that create cozy, welcoming spaces and complement natural materials for timeless style.\"\n  },\n  {\n    \"dynamicDropDown\": \"Popular Whites\",\n    \"heroTitle\": \"Popular White Paint Colors\",\n    \"heroDescription\": \"White paint holds a unique and enduring position in interior design thanks to their ability to offer a fresh canvas that adapts to any style. Not all white paints are the same, nor will they look the same in different spaces, but some shades have earned their place as perennial favorites. Find out how these popular white paints can elevate your home.\",\n    \"metaTitle\": \"White Paint Colors | Popular Whites | Sherwin-Williams\",\n    \"metaDescription\": \"Discover the most popular white paint colors from Sherwin-Williams, with tips on choosing a shade of white to create your ideal look for any space.\"\n  },\n  {\n    \"dynamicDropDown\": \"Expert Picks\",\n    \"heroTitle\": \"White Paint Colors\",\n    \"heroDescription\": \"Beyond a mere absence of color, white paint is the ultimate chameleon, capable of transforming any room into a haven of clean lines, expansive light and sophisticated calm. Explore the curated collection from our experts, designed to elevate your space.\",\n    \"metaTitle\": \"White Paint Colors | Expert Picks | Sherwin-Williams\",\n    \"metaDescription\": \"Elevate your space with the curated collection of white paint colors selected by Sherwin-Williams color marketing experts.\"\n  },\n  {\n    \"dynamicDropDown\": \"Cool Whites\",\n    \"heroTitle\": \"Cool White Paint Colors\",\n    \"heroDescription\": \"The spectrum of white paints offers a range of moods, but cool white paint colors stand apart, defining spaces with a bright, modern edge. Infused with subtle undertones of blue, gray, violet or green, these nuanced cool tones transform rooms into airy, expansive havens with their contemporary appeal.\",\n    \"metaTitle\": \"White Paint Colors | Cool Whites | Sherwin-Williams\",\n    \"metaDescription\": \"Explore cool white paint colors with crisp undertones that create fresh, modern spaces and pair beautifully with contemporary design styles.\"\n  }\n]",
+      "empty": false
+    }
+  },
+  "yellow": {
+    "modelUrl": "https://www.sherwin-williams.com/en-us/color/color-family/yellow-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json",
+    "data": {
+      "variation": "family",
+      "category": "9876b8e7-9b82-4cdf-a572-05c4ba830308",
+      "groupId": "9876b8e7-9b82-4cdf-a572-05c4ba830308",
+      "orderButton": {
+        "icon": "false",
+        "url": "https://samples.sherwin-williams.com/view/yellow",
+        "text": "Order Color Samples",
+        "accessibilityLabel": "Order Color Samples",
+        "backgroundColor": "Primary Dark",
+        "border": "Outlined",
+        "styleAsLink": false,
+        "openNewTab": true,
+        "urlMegamenu": "https://samples.sherwin-williams.com/view/yellow",
+        "empty": false
+      },
+      "expertPicksList": [
+        {
+          "title": "Expert Picks",
+          "description": "Our expertly chosen yellows will illuminate your space with timeless appeal and contemporary flair.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9661,sw-9663,sw-9664,sw-2857,sw-6135,sw-6684,sw-2853,sw-7697",
+            "text": "Visualize Top Yellows",
+            "accessibilityLabel": "Visualize Top Yellows",
+            "backgroundColor": "Primary Dark",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "/en-us/color/color-tools/color-visualizer?lpcolors=sw-9661,sw-9663,sw-9664,sw-2857,sw-6135,sw-6684,sw-2853,sw-7697",
+            "empty": false
+          },
+          "buttonCta2": {
+            "icon": "true",
+            "url": "https://samples.sherwin-williams.com/?colors=SW9663-S,SW9664-S,SW6684-S,SW6377-S,SW2853-S,SW2857-S,SW9024-S,SW7697-S,SW6135-S,SW9661-S",
+            "text": "Order These Free Color Chips",
+            "accessibilityLabel": "Order These Free Color Chips",
+            "backgroundColor": "Primary Dark",
+            "border": "Borderless",
+            "styleAsLink": false,
+            "openNewTab": true,
+            "urlMegamenu": "https://samples.sherwin-williams.com/?colors=SW9663-S,SW9664-S,SW6684-S,SW6377-S,SW2853-S,SW2857-S,SW9024-S,SW7697-S,SW6135-S,SW9661-S",
+            "empty": false
+          },
+          "microchip1": {
+            "chipNumber": "SW 9661",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/yellow-paint-colors/SW9661-radiant-dawn",
+              "openNewTab": true,
+              "urlMegamenu": "/en-us/color/color-family/yellow-paint-colors/SW9661-radiant-dawn",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": true
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/optimized-images/sw-9661-radiant-dawn-wall-672x478-optimized.jpg",
+            "altText": "A bright yellow wall with rustic side table and wall art",
+            "empty": false
+          },
+          "filterUUID": "b36e7eff-638a-4d84-b6db-db66c303f771",
+          "filterDisplayName": "Expert Picks",
+          "filterDisplayOrder": "1"
+        }
+      ],
+      "popularList": [
+        {
+          "title": "Popular Yellows",
+          "description": "Hand-picked for their undeniable charm and versatility, find out why these hues are our most sought-after yellows.",
+          "buttonCta": {
+            "icon": "false",
+            "url": "",
+            "backgroundColor": "Primary Light",
+            "border": "Outlined",
+            "styleAsLink": false,
+            "openNewTab": false,
+            "empty": true
+          },
+          "microchip1": {
+            "chipName": "Dakota Wheat",
+            "chipNumber": "SW 9023",
+            "chipColor": "#E1BD8E",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/yellow-paint-colors/sw9023-dakota-wheat",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/yellow-paint-colors/sw9023-dakota-wheat",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "microchip2": {
+            "chipName": "Golden Fleece",
+            "chipNumber": "SW 6388",
+            "chipColor": "#D6AD78",
+            "chipSize": "micro",
+            "link": {
+              "icon": "",
+              "url": "/en-us/color/color-family/yellow-paint-colors/sw6388-golden-fleece",
+              "openNewTab": false,
+              "urlMegamenu": "/en-us/color/color-family/yellow-paint-colors/sw6388-golden-fleece",
+              "empty": false
+            },
+            "url": "",
+            "fixedWidth": false,
+            "newWindow": false,
+            "empty": false
+          },
+          "image1": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/yellow/sw-9023-dakota-wheat​-dining-room.png",
+            "altText": "An open dining room with bench seating and a yellow wall",
+            "empty": false
+          },
+          "image2": {
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/yellow/sw-6388-golden-fleece-home-gym.png",
+            "altText": "A modern home gym with yoga mat, row machine, and vibrant yellow wall",
+            "empty": false
+          },
+          "filterUUID": "cac6c12d-25b2-4234-93fb-5dea293fd765",
+          "filterDisplayName": "Popular Yellows",
+          "filterDisplayOrder": "2"
+        }
+      ],
+      "allLayout": {
+        "title": "All Yellows",
+        "imageDetailsList": [
+          {
+            "secondaryTitle": "Bright Yellows",
+            "description": "To brighten a dark space, nothing provides more vibrancy or optimism than a bright yellow.",
+            "filterUUID": "9509a51c-b26a-4e55-8c92-5a45fec8d4bf",
+            "filterDisplayName": "Bright Yellows",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/yellow/Cojo_ColorFamily_All_Yellow_Bright_144x144_dektop_x2.png",
+            "caption": "Bright",
+            "altText": "Bright Yellows",
+            "buttonColor": "#F1E9C7",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Mid-Tone Yellows",
+            "description": "Strike the perfect balance between breezy and bright with one of our mid-tone yellows.",
+            "filterUUID": "b2476a24-df85-4e0d-9678-56f84c185501",
+            "filterDisplayName": "Mid-Tone Yellows",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/yellow/Cojo_ColorFamily_All_Yellow_MidTone_144x144_dektop_x2.png",
+            "caption": "Mid-Tone",
+            "altText": "Mid-Tone Yellows",
+            "buttonColor": "#DCC294",
+            "buttonFontColor": "dark",
+            "empty": false
+          },
+          {
+            "secondaryTitle": "Muted Yellows",
+            "description": "Paint your way to positive, peaceful vibes with our muted yellows.",
+            "filterUUID": "d7013b5f-7f55-4ac7-bfe4-3db94e527586",
+            "filterDisplayName": "Muted Yellows",
+            "fileReference": "/content/dam/sherwin/tag/us/en_us/color-journey/color-family/yellow/Cojo_ColorFamily_All_Yellow_Muted_144x144_dektop_x2.png",
+            "caption": "Muted",
+            "altText": "Muted Yellows",
+            "buttonColor": "#A99E86",
+            "buttonFontColor": "dark",
+            "empty": false
+          }
+        ]
+      },
+      "dropdownTypeList": [
+        {
+          "dynamicDropDown": "Popular Yellows",
+          "heroTitle": "Popular Yellow Paint Colors",
+          "heroDescription": "<p>Yellow paint colors are a perennial favorite in interior design, celebrated for their ability to infuse spaces with warmth and light. Whether you prefer sun-kissed creams or energetic yellows, these sought-after shades are a testament to the enduring appeal of yellow.</p>\r\n",
+          "metaTitle": "Popular Yellow Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover Sherwin-Williams' most popular yellow paint colors, from cheerful pastels to sunny shades, guaranteed to uplift any room."
+        },
+        {
+          "dynamicDropDown": "Expert Picks",
+          "heroTitle": "Yellow Paint Colors",
+          "heroDescription": "<p>Yellow is the color of sunshine, optimism and boundless energy. From the softest whisper of dawn to the boldest midday glow, yellow paint colors infuse any space with a welcoming ambiance. With such a diverse spectrum, allow us to guide you through the vibrant world of yellow, helping you confidently choose the perfect shade.&nbsp;</p>\r\n",
+          "metaTitle": "Yellow Paint Colors | Sherwin-Williams",
+          "metaDescription": "Find trending yellow shades among Sherwin-Williams’ expert curated collection. Learn how to choose the best yellow for your space and explore perfect pairings."
+        },
+        {
+          "dynamicDropDown": "Cool Yellows",
+          "heroTitle": "Cool Yellow Paint Colors",
+          "heroDescription": "<p>Cool yellow paint colors offer a refreshing departure from traditional yellow's sunny disposition, instead evoking a crisp, fresh and modern feel. While yellow is typically considered a warm color, cool yellows possess a subtle greenish bias, resulting in a less saturated, more serene hue.</p>\r\n",
+          "metaTitle": "Cool Yellow Paint Colors | Sherwin-Williams",
+          "metaDescription": "Discover the subtle elegance of Sherwin-Williams' cool yellow paint colors, offering shades with green & grey undertones, for a refined, refreshing look."
+        },
+        {
+          "dynamicDropDown": "Dark Yellows",
+          "heroTitle": "Dark Yellow Paint Colors",
+          "heroDescription": "<p>Dark yellow paint colors delve into the richer, more saturated end of the yellow spectrum, offering a sophisticated depth that traditional yellows often don't. Unlike bright yellows that energize, dark yellows create a moody, enveloping atmosphere, whether for spaces with historical charm or understated luxury.</p>\r\n",
+          "metaTitle": "Dark Yellow Paint Colors | Sherwin-Williams",
+          "metaDescription": "Delve into Sherwin-Williams' curated collection of rich, dark yellow paint colors to add distinctive character and warmth to your home."
+        },
+        {
+          "dynamicDropDown": "Light Yellows",
+          "heroTitle": "Light Yellow Paint Colors",
+          "heroDescription": "<p>Illuminate spaces with light yellow's gentle radiance, offering a refreshing contrast to their darker counterparts. Invite a delicate touch of sunshine, perfect for creating serene and uplifting environments that don't overwhelm the senses.</p>\r\n",
+          "metaTitle": "Light Yellow Paint Colors | Sherwin-Williams",
+          "metaDescription": "Expand your space with delicate brilliance. Find your ideal light yellow paint color from Sherwin-Williams, offering a touch of sophisticated cheer for any room."
+        },
+        {
+          "dynamicDropDown": "Warm Yellows",
+          "heroTitle": "Warm Yellow Paint Colors",
+          "heroDescription": "<p>Warm yellow paint colors are an invitation to comfort, a whisper of sunshine and a timeless embrace for any space. Unlike their cooler counterparts, warm yellows carry undertones of red, orange or brown, creating a palette that feels inherently inviting, cozy and deeply rooted in nature.</p>\r\n",
+          "metaTitle": "Warm Yellow Paint Colors | Sherwin-Williams",
+          "metaDescription": "Embrace the comfort of warm yellow paint colors. Find inviting shades, expert tips for choosing the right color & how to design your space."
+        }
+      ],
+      "activeTabName": "",
+      "dropdownTypeListJson": "[\n  {\n    \"dynamicDropDown\": \"Popular Yellows\",\n    \"heroTitle\": \"Popular Yellow Paint Colors\",\n    \"heroDescription\": \"Yellow paint colors are a perennial favorite in interior design, celebrated for their ability to infuse spaces with warmth and light. Whether you prefer sun-kissed creams or energetic yellows, these sought-after shades are a testament to the enduring appeal of yellow.\",\n    \"metaTitle\": \"Popular Yellow Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover Sherwin-Williams\\u0027 most popular yellow paint colors, from cheerful pastels to sunny shades, guaranteed to uplift any room.\"\n  },\n  {\n    \"dynamicDropDown\": \"Expert Picks\",\n    \"heroTitle\": \"Yellow Paint Colors\",\n    \"heroDescription\": \"Yellow is the color of sunshine, optimism and boundless energy. From the softest whisper of dawn to the boldest midday glow, yellow paint colors infuse any space with a welcoming ambiance. With such a diverse spectrum, allow us to guide you through the vibrant world of yellow, helping you confidently choose the perfect shade. \",\n    \"metaTitle\": \"Yellow Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Find trending yellow shades among Sherwin-Williams’ expert curated collection. Learn how to choose the best yellow for your space and explore perfect pairings.\"\n  },\n  {\n    \"dynamicDropDown\": \"Cool Yellows\",\n    \"heroTitle\": \"Cool Yellow Paint Colors\",\n    \"heroDescription\": \"Cool yellow paint colors offer a refreshing departure from traditional yellow\\u0027s sunny disposition, instead evoking a crisp, fresh and modern feel. While yellow is typically considered a warm color, cool yellows possess a subtle greenish bias, resulting in a less saturated, more serene hue.\",\n    \"metaTitle\": \"Cool Yellow Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Discover the subtle elegance of Sherwin-Williams\\u0027 cool yellow paint colors, offering shades with green \\u0026 grey undertones, for a refined, refreshing look.\"\n  },\n  {\n    \"dynamicDropDown\": \"Dark Yellows\",\n    \"heroTitle\": \"Dark Yellow Paint Colors\",\n    \"heroDescription\": \"Dark yellow paint colors delve into the richer, more saturated end of the yellow spectrum, offering a sophisticated depth that traditional yellows often don\\u0027t. Unlike bright yellows that energize, dark yellows create a moody, enveloping atmosphere, whether for spaces with historical charm or understated luxury.\",\n    \"metaTitle\": \"Dark Yellow Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Delve into Sherwin-Williams\\u0027 curated collection of rich, dark yellow paint colors to add distinctive character and warmth to your home.\"\n  },\n  {\n    \"dynamicDropDown\": \"Light Yellows\",\n    \"heroTitle\": \"Light Yellow Paint Colors\",\n    \"heroDescription\": \"Illuminate spaces with light yellow\\u0027s gentle radiance, offering a refreshing contrast to their darker counterparts. Invite a delicate touch of sunshine, perfect for creating serene and uplifting environments that don\\u0027t overwhelm the senses.\",\n    \"metaTitle\": \"Light Yellow Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Expand your space with delicate brilliance. Find your ideal light yellow paint color from Sherwin-Williams, offering a touch of sophisticated cheer for any room.\"\n  },\n  {\n    \"dynamicDropDown\": \"Warm Yellows\",\n    \"heroTitle\": \"Warm Yellow Paint Colors\",\n    \"heroDescription\": \"Warm yellow paint colors are an invitation to comfort, a whisper of sunshine and a timeless embrace for any space. Unlike their cooler counterparts, warm yellows carry undertones of red, orange or brown, creating a palette that feels inherently inviting, cozy and deeply rooted in nature.\",\n    \"metaTitle\": \"Warm Yellow Paint Colors | Sherwin-Williams\",\n    \"metaDescription\": \"Embrace the comfort of warm yellow paint colors. Find inviting shades, expert tips for choosing the right color \\u0026 how to design your space.\"\n  }\n]",
+      "dropDownTabUrls": {
+        "Dark Yellows": "https://www.sherwin-williams.com/en-us/color/color-family/yellow-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/dark-yellows",
+        "Cool Yellows": "https://www.sherwin-williams.com/en-us/color/color-family/yellow-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/cool-yellows",
+        "Light Yellows": "https://www.sherwin-williams.com/en-us/color/color-family/yellow-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/light-yellows",
+        "Warm Yellows": "https://www.sherwin-williams.com/en-us/color/color-family/yellow-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/warm-yellows",
+        "All Yellows": "https://www.sherwin-williams.com/en-us/color/color-family/yellow-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/all-yellows",
+        "Popular Yellows": "https://www.sherwin-williams.com/en-us/color/color-family/yellow-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/popular-yellows",
+        "Expert Picks": "https://www.sherwin-williams.com/en-us/color/color-family/yellow-paint-colors/_jcr_content/root/container/color_by_group_grid.model.json/tab/expert-picks"
+      },
+      "empty": false
+    }
+  }
+}
