@@ -1,0 +1,3 @@
+Paint Palette Tool ASE generator placeholder
+Loaded 2 records from seed-palette.example.json.
+Next step: implement real ASE binary serialization.
