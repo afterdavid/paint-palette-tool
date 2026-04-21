@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Paint Palette Tool Color Record",
+  "type": "object",
+  "required": [
+    "id",
+    "displayName",
+    "brand",
+    "brandCode",
+    "rgbHex",
+    "lab",
+    "source"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "displayName": { "type": "string" },
+    "brand": { "type": "string" },
+    "brandCode": { "type": "string" },
+    "rgbHex": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+    },
+    "lab": {
+      "type": "object",
+      "required": ["l", "a", "b"],
+      "properties": {
+        "l": { "type": "number" },
+        "a": { "type": "number" },
+        "b": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["official", "manual", "reference", "derived"]
+        },
+        "url": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "stockMatchable": { "type": "boolean" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}
