@@ -11,27 +11,9 @@ OUT = ROOT / 'output' / 'catalog-browser.html'
 DOCS = ROOT / 'docs' / 'index.html'
 
 COLOR_ORDER = [
-    'white', 'neutral', 'gray', 'black',
-    'blue', 'teal', 'green', 'yellow', 'orange', 'red', 'pink', 'purple',
-    'brown', 'beige', 'tan', 'unknown'
-]
-
-KEYWORDS = [
-    ('white', ['white', 'snow', 'ivory', 'cream', 'cotton', 'frost', 'pearl']),
-    ('neutral', ['neutral', 'linen', 'taupe', 'greige', 'stone', 'mushroom', 'putty', 'oat', 'oyster']),
-    ('gray', ['gray', 'grey', 'silver', 'slate', 'charcoal', 'graphite', 'ash', 'smoke']),
-    ('black', ['black', 'noir', 'onyx', 'caviar', 'ink', 'night', 'midnight']),
-    ('blue', ['blue', 'navy', 'sky', 'ocean', 'cerulean', 'indigo', 'cobalt', 'azure']),
-    ('teal', ['teal', 'turquoise', 'aqua', 'cyan']),
-    ('green', ['green', 'sage', 'olive', 'moss', 'forest', 'mint', 'lime', 'eucalyptus']),
-    ('yellow', ['yellow', 'gold', 'amber', 'butter', 'lemon', 'sun']),
-    ('orange', ['orange', 'apricot', 'peach', 'coral', 'terracotta']),
-    ('red', ['red', 'crimson', 'scarlet', 'brick', 'rust', 'burgundy', 'maroon']),
-    ('pink', ['pink', 'rose', 'blush']),
-    ('purple', ['purple', 'violet', 'plum', 'lavender', 'lilac']),
-    ('brown', ['brown', 'umber', 'mocha', 'espresso', 'coffee', 'chocolate', 'walnut', 'cedar']),
-    ('beige', ['beige', 'sand', 'biscuit', 'almond']),
-    ('tan', ['tan', 'khaki', 'camel', 'buff', 'suede']),
+    'white', 'neutral', 'black',
+    'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'pink',
+    'brown', 'unknown'
 ]
 
 
@@ -40,50 +22,104 @@ def hex_to_rgb(h: str):
     return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
 
 
-def rgb_to_hsl(h: str):
-    r, g, b = [x / 255.0 for x in hex_to_rgb(h)]
-    mx, mn = max(r, g, b), min(r, g, b)
-    l = (mx + mn) / 2
-    if mx == mn:
-        hue = sat = 0.0
-    else:
-        d = mx - mn
-        sat = d / (2.0 - mx - mn) if l > 0.5 else d / (mx + mn)
-        if mx == r:
-            hue = (g - b) / d + (6 if g < b else 0)
-        elif mx == g:
-            hue = (b - r) / d + 2
-        else:
-            hue = (r - g) / d + 4
-        hue /= 6
-    return hue, sat, l
+def srgb_channel_to_linear(c: float) -> float:
+    c = c / 255.0
+    if c <= 0.04045:
+        return c / 12.92
+    return ((c + 0.055) / 1.055) ** 2.4
 
 
-def family_for(rec):
-    text = ' '.join([
-        str(rec.get('displayName', '')),
-        str(rec.get('brand', '')),
-        str(rec.get('brandCode', '')),
-        ' '.join(rec.get('tags', []) if isinstance(rec.get('tags'), list) else [])
-    ]).lower()
-    for family, words in KEYWORDS:
-        if any(w in text for w in words):
-            return family
-    h = rec.get('rgbHex') or '#808080'
-    r, g, b = hex_to_rgb(h)
-    if max(r, g, b) < 35:
-        return 'black'
-    if min(r, g, b) > 235:
+def rgb_to_xyz(rgb_hex: str):
+    r8, g8, b8 = hex_to_rgb(rgb_hex)
+    r = srgb_channel_to_linear(r8)
+    g = srgb_channel_to_linear(g8)
+    b = srgb_channel_to_linear(b8)
+    x = r * 0.4124564 + g * 0.3575761 + b * 0.1804375
+    y = r * 0.2126729 + g * 0.7151522 + b * 0.0721750
+    z = r * 0.0193339 + g * 0.1191920 + b * 0.9503041
+    return x, y, z
+
+
+def xyz_to_lab(x: float, y: float, z: float):
+    # D65 reference white
+    xr = x / 0.95047
+    yr = y / 1.00000
+    zr = z / 1.08883
+
+    def f(t: float) -> float:
+        d = 6 / 29
+        if t > d ** 3:
+            return t ** (1 / 3)
+        return t / (3 * d * d) + 4 / 29
+
+    fx = f(xr)
+    fy = f(yr)
+    fz = f(zr)
+    L = 116 * fy - 16
+    a = 500 * (fx - fy)
+    b = 200 * (fy - fz)
+    return L, a, b
+
+
+def rgb_to_lab(rgb_hex: str):
+    return xyz_to_lab(*rgb_to_xyz(rgb_hex))
+
+
+def lab_to_lch(L: float, a: float, b: float):
+    C = math.sqrt(a * a + b * b)
+    h = math.degrees(math.atan2(b, a))
+    if h < 0:
+        h += 360
+    return L, C, h
+
+
+def family_for_lch(L: float, C: float, h: float):
+    # Achromatic buckets first
+    if L >= 94 and C <= 8:
         return 'white'
+    if L <= 22 and C <= 10:
+        return 'black'
+    if C <= 12:
+        return 'neutral'
+
+    # Chromatic buckets by hue angle
+    if h < 20 or h >= 345:
+        return 'red'
+    if h < 45:
+        return 'orange'
+    if h < 75:
+        return 'yellow'
+    if h < 160:
+        return 'green'
+    if h < 190:
+        return 'teal'
+    if h < 270:
+        return 'blue'
+    if h < 320:
+        return 'purple'
+    if h < 345:
+        return 'pink'
     return 'unknown'
 
 
-def perceptual_sort_key(rgb_hex: str, family: str):
-    hue, sat, light = rgb_to_hsl(rgb_hex)
-    # Main goal: light to dark. Secondary: family-appropriate hue/saturation ordering.
-    if family in {'white', 'neutral', 'gray', 'black', 'beige', 'tan', 'brown'}:
-        return (-light, sat, hue)
-    return (-light, hue, -sat)
+def sort_key_for_lch(family: str, L: float, C: float, h: float):
+    # Light to dark first everywhere.
+    if family == 'neutral':
+        # Keep neutrals lined up mostly by lightness, then warm/cool, then chroma.
+        warm_cool = a_warm_cool_from_hue(h)
+        return (-L, warm_cool, C)
+    if family in {'white', 'black'}:
+        return (-L, C, h)
+    if family == 'brown':
+        return (-L, C, h)
+    return (-L, h, -C)
+
+
+def a_warm_cool_from_hue(h: float):
+    # lower = cooler, higher = warmer; rough helper for neutral ordering
+    if 200 <= h <= 340:
+        return 0
+    return 1
 
 
 def load_catalogs():
@@ -103,10 +139,18 @@ def load_catalogs():
             rgb = rec.get('rgbHex') or rec.get('rgb') or rec.get('hex')
             if not isinstance(rgb, str) or not rgb.startswith('#') or len(rgb) != 7:
                 continue
+            L, a, b = rgb_to_lab(rgb)
+            _, C, h = lab_to_lch(L, a, b)
+            family = family_for_lch(L, C, h)
+            # Push dark, low-chroma warm colors into brown instead of red/orange when appropriate.
+            if family in {'red', 'orange', 'yellow'} and L < 55 and C < 35:
+                family = 'brown'
             rec = dict(rec)
             rec['_source_file'] = p.name
-            rec['_family'] = family_for(rec)
-            rec['_sort'] = perceptual_sort_key(rgb, rec['_family'])
+            rec['_family'] = family
+            rec['_lab'] = (L, a, b)
+            rec['_lch'] = (L, C, h)
+            rec['_sort'] = sort_key_for_lch(family, L, C, h)
             items.append(rec)
     dlp = CATALOG_DIR / 'downloadable-palettes'
     if dlp.exists():
@@ -123,10 +167,17 @@ def load_catalogs():
                 rgb = rec.get('rgbHex') or rec.get('rgb') or rec.get('hex')
                 if not isinstance(rgb, str) or not rgb.startswith('#') or len(rgb) != 7:
                     continue
+                L, a, b = rgb_to_lab(rgb)
+                _, C, h = lab_to_lch(L, a, b)
+                family = family_for_lch(L, C, h)
+                if family in {'red', 'orange', 'yellow'} and L < 55 and C < 35:
+                    family = 'brown'
                 rec = dict(rec)
                 rec['_source_file'] = f'downloadable-palettes/{p.name}'
-                rec['_family'] = family_for(rec)
-                rec['_sort'] = perceptual_sort_key(rgb, rec['_family'])
+                rec['_family'] = family
+                rec['_lab'] = (L, a, b)
+                rec['_lch'] = (L, C, h)
+                rec['_sort'] = sort_key_for_lch(family, L, C, h)
                 items.append(rec)
     return items
 
@@ -165,11 +216,14 @@ def main():
             brand = esc(r.get('brand') or r.get('manufacturer') or 'Unknown')
             code = esc(r.get('brandCode') or '')
             source = esc(r.get('_source_file', ''))
-            tooltip = esc(f"{title}\n{brand} {code}\n{rgb}\n{source}")
+            L, C, h = r['_lch']
+            tooltip = esc(f"{title}\n{brand} {code}\n{rgb}\nLCH: {L:.1f}, {C:.1f}, {h:.1f}\n{source}")
             tiles.append(
                 f'<button class="tile" style="background:{rgb}" '
                 f'data-name="{title}" data-brand="{brand}" data-code="{code}" '
-                f'data-hex="{rgb}" data-source="{source}" title="{tooltip}"></button>'
+                f'data-hex="{rgb}" data-source="{source}" '
+                f'data-lch="L {L:.1f} · C {C:.1f} · H {h:.1f}" '
+                f'title="{tooltip}"></button>'
             )
         sections.append(
             f'<section id="{fam}"><h2>{fam.title()} <span>{len(recs)} colors</span></h2>'
@@ -186,7 +240,7 @@ def main():
 :root {{ --bg:#0f1114; --panel:#15191e; --panel2:#1b2027; --text:#eef2f7; --muted:#9aa6b2; --line:#2a3139; }}
 * {{ box-sizing:border-box; }}
 body {{ margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--text); }}
-.layout {{ display:grid; grid-template-columns: 250px 1fr 280px; min-height:100vh; }}
+.layout {{ display:grid; grid-template-columns: 250px 1fr 300px; min-height:100vh; }}
 nav {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; background:var(--panel); border-right:1px solid var(--line); }}
 nav h1 {{ font-size:16px; margin:0 0 10px; }}
 nav p {{ color:var(--muted); font-size:13px; line-height:1.45; }}
@@ -218,13 +272,13 @@ aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; back
 <div class="layout">
 <nav>
 <h1>Catalog Browser</h1>
-<p>Unmerged swatches from the imported catalogs. Each family is shown as a dense visual field, sorted to read more like paint chips than database cards.</p>
+<p>Unmerged swatches from the imported catalogs. Families and ordering are now based on LAB/LCH-style color math instead of name heuristics.</p>
 {nav}
 </nav>
 <main>
 <header>
 <h1>Every Color We Have So Far</h1>
-<p>Grouped by color family, then arranged perceptually: mostly light to dark, with hue and saturation used to keep nearby colors visually coherent. Hover or click a swatch for details.</p>
+<p>Grouped by perceptual color family using LCH-style thresholds. Within each family, swatches are arranged primarily light-to-dark, then by hue/chroma logic so the page behaves more like a real color field.</p>
 </header>
 {''.join(sections)}
 </main>
@@ -235,8 +289,9 @@ aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; back
 <div class="detail-row"><strong>Brand:</strong> <span id="detail-brand">—</span></div>
 <div class="detail-row"><strong>Code:</strong> <span id="detail-code">—</span></div>
 <div class="detail-row"><strong>Hex:</strong> <span id="detail-hex" class="mono">—</span></div>
+<div class="detail-row"><strong>LCH:</strong> <span id="detail-lch" class="mono">—</span></div>
 <div class="detail-row"><strong>Source:</strong> <span id="detail-source">—</span></div>
-<p class="helper">This page is intentionally unmerged. It is for visually inspecting range and density before we decide how aggressively to collapse near-duplicates into a working palette.</p>
+<p class="helper">This page is still unmerged. It is now arranged by perceptual math so we can see which colors are genuinely stragglers versus just badly sorted.</p>
 </aside>
 </div>
 <script>
@@ -246,6 +301,7 @@ const els = {{
   brand: document.getElementById('detail-brand'),
   code: document.getElementById('detail-code'),
   hex: document.getElementById('detail-hex'),
+  lch: document.getElementById('detail-lch'),
   source: document.getElementById('detail-source'),
 }};
 function setDetail(tile) {{
@@ -254,6 +310,7 @@ function setDetail(tile) {{
   els.brand.textContent = tile.dataset.brand || 'Unknown';
   els.code.textContent = tile.dataset.code || '—';
   els.hex.textContent = tile.dataset.hex || '—';
+  els.lch.textContent = tile.dataset.lch || '—';
   els.source.textContent = tile.dataset.source || '—';
 }}
 document.querySelectorAll('.tile').forEach(tile => {{
