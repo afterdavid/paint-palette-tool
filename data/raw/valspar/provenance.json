@@ -1,0 +1,9 @@
+{
+  "capturedAt": "2026-04-21T20:05:58Z",
+  "sourceUrl": "https://www.valspar.com/en/colors/browse-colors",
+  "recordCount": 2858,
+  "notes": [
+    "All records were parsed from official Valspar browse-colors HTML attributes.",
+    "Retailer/channel values were preserved in tags when present."
+  ]
+}
