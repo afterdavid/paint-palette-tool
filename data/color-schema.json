@@ -51,6 +51,7 @@
       "additionalProperties": false
     },
     "stockMatchable": { "type": "boolean" },
+    "lrv": { "type": ["number", "null"] },
     "availabilityNotes": { "type": ["string", "null"] },
     "aliases": {
       "type": "array",

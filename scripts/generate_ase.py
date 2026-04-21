@@ -1,28 +1,72 @@
 #!/usr/bin/env python3
-"""Generate an Adobe Swatch Exchange file from palette JSON.
-
-Current status:
-- scaffold only
-- validates input path assumptions
-- writes a placeholder output note until ASE serialization is implemented
-
-This script exists to lock in the build path:
-seed palette JSON -> ASE generator -> Illustrator swatch library
-"""
+"""Generate an Adobe Swatch Exchange file from catalog JSON."""
 
 from __future__ import annotations
 
+import argparse
 import json
+import struct
 import sys
 from pathlib import Path
 
 
+def rgb_hex_to_float_triplet(rgb_hex: str) -> tuple[float, float, float]:
+    rgb_hex = rgb_hex.strip().lstrip("#")
+    if len(rgb_hex) != 6:
+        raise ValueError(f"Invalid RGB hex: {rgb_hex}")
+    return (
+        int(rgb_hex[0:2], 16) / 255.0,
+        int(rgb_hex[2:4], 16) / 255.0,
+        int(rgb_hex[4:6], 16) / 255.0,
+    )
+
+
+def utf16be_name(value: str) -> bytes:
+    # ASE stores the string length as UTF-16 code units including the null.
+    return (value + "\0").encode("utf-16-be")
+
+
+def color_block(name: str, rgb_hex: str) -> bytes:
+    encoded_name = utf16be_name(name)
+    payload = (
+        struct.pack(">H", len(encoded_name) // 2)
+        + encoded_name
+        + b"RGB "
+        + struct.pack(">fff", *rgb_hex_to_float_triplet(rgb_hex))
+        + struct.pack(">H", 0)
+    )
+    return struct.pack(">HI", 0x0001, len(payload)) + payload
+
+
+def write_ase(records: list[dict], out_path: Path, name_format: str) -> None:
+    blocks: list[bytes] = []
+    for record in records:
+        rgb_hex = record.get("rgbHex")
+        if not rgb_hex:
+            continue
+        name = name_format.format(
+            displayName=record.get("displayName", ""),
+            brandCode=record.get("brandCode", ""),
+            manufacturer=record.get("manufacturer", ""),
+            brand=record.get("brand", ""),
+        ).strip()
+        blocks.append(color_block(name, rgb_hex))
+
+    header = b"ASEF" + struct.pack(">HHI", 1, 0, len(blocks))
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_bytes(header + b"".join(blocks))
+
+
 def main() -> int:
     repo_root = Path(__file__).resolve().parent.parent
-    data_path = repo_root / "data" / "seed-palette.example.json"
-    out_dir = repo_root / "ase"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / "seed-palette-v1.placeholder.txt"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", nargs="?", default=str(repo_root / "data" / "seed-palette.example.json"))
+    parser.add_argument("output", nargs="?", default=str(repo_root / "ase" / "seed-palette-v1.ase"))
+    parser.add_argument("--name-format", default="{brandCode} {displayName}")
+    args = parser.parse_args()
+
+    data_path = Path(args.input)
+    out_path = Path(args.output)
 
     if not data_path.exists():
         print(f"Missing palette input: {data_path}", file=sys.stderr)
@@ -31,14 +75,9 @@ def main() -> int:
     with data_path.open("r", encoding="utf-8") as f:
         records = json.load(f)
 
-    out_path.write_text(
-        "Paint Palette Tool ASE generator placeholder\n"
-        f"Loaded {len(records)} records from {data_path.name}.\n"
-        "Next step: implement real ASE binary serialization.\n",
-        encoding="utf-8",
-    )
+    write_ase(records, out_path, args.name_format)
 
-    print(f"Wrote placeholder output to {out_path}")
+    print(f"Wrote {len(records)} colors to {out_path}")
     return 0
 
 

@@ -225,6 +225,7 @@ def import_benjamin_moore(limit: int | None = None, workers: int = 12) -> Import
                 else:
                     stats.skipped += 1
 
+    normalized = list({rec["id"]: rec for rec in normalized}.values())
     normalized.sort(key=lambda r: (r["brandCode"], r["displayName"]))
     (CATALOG_DIR / "benjamin-moore.json").write_text(json.dumps(normalized, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     stats.written = len(normalized)

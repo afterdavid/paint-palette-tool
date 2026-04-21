@@ -189,11 +189,12 @@ def import_behr() -> ImportSummary:
             record["source"]["notes"] += f" Description: {entry['colorDescription']}"
         catalog.append(record)
 
-    write_json(CATALOG_DIR / "behr.json", catalog)
+    deduped_catalog = list({record["id"]: record for record in catalog}.values())
+    write_json(CATALOG_DIR / "behr.json", deduped_catalog)
     return ImportSummary(
         manufacturer="Behr",
         raw_files=[str(raw_js_path.relative_to(ROOT)), str(raw_records_path.relative_to(ROOT))],
-        record_count=len(catalog),
+        record_count=len(deduped_catalog),
         notes=["Source is official first-party Behr ColorSmart JS payload."],
     )
 

@@ -12,7 +12,7 @@ In practice, the tool has two halves:
 
 ## Current status
 
-This repo is the project scaffold.
+This repo now has normalized catalog data and generated Adobe swatch outputs.
 
 The source idea/spec came from:
 - `specs/source-spec.md`
@@ -24,6 +24,12 @@ Initial build direction:
 4. build Illustrator V1 commands:
    - Refresh Used Colors
    - Export Paint Spec
+
+Catalogs currently include Behr, Glidden, PPG, Dunn-Edwards, Valspar, and partial/native or official downloadable Sherwin-Williams and Benjamin Moore sources.
+
+Primary combined outputs:
+- `data/catalogs/paint-store-accessible.json`
+- `ase/paint-store-accessible.ase`
 
 ## Planned repo layout
 

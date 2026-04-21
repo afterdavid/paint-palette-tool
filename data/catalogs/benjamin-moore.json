@@ -5088,39 +5088,6 @@
     },
     "source": {
       "kind": "official",
-      "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/2074-30/twilight-magenta",
-      "notes": "Imported from Benjamin Moore official colors sitemap and public color detail page."
-    },
-    "stockMatchable": true,
-    "availabilityNotes": null,
-    "aliases": [],
-    "catalogOrder": null,
-    "active": true,
-    "sourceConfidence": "high",
-    "lastVerifiedAt": "2026-04-21",
-    "regions": [
-      "US"
-    ],
-    "tags": [
-      "Color Preview&reg;",
-      "Red"
-    ]
-  },
-  {
-    "id": "benjamin-moore-2074-30-twilight-magenta",
-    "displayName": "Twilight Magenta",
-    "manufacturer": "Benjamin Moore",
-    "brand": "Benjamin Moore",
-    "brandCode": "2074-30",
-    "libraryType": "native",
-    "rgbHex": "#9B4A80",
-    "lab": {
-      "l": 43.3985,
-      "a": 40.6865,
-      "b": -14.8828
-    },
-    "source": {
-      "kind": "official",
       "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/2074-30",
       "notes": "Imported from Benjamin Moore official colors sitemap and public color detail page."
     },
@@ -7205,40 +7172,6 @@
     },
     "source": {
       "kind": "official",
-      "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/2083-10/raisin-torte",
-      "notes": "Imported from Benjamin Moore official colors sitemap and public color detail page."
-    },
-    "stockMatchable": true,
-    "availabilityNotes": null,
-    "aliases": [],
-    "catalogOrder": null,
-    "active": true,
-    "sourceConfidence": "high",
-    "lastVerifiedAt": "2026-04-21",
-    "regions": [
-      "US"
-    ],
-    "tags": [
-      "Benjamin Moore Seattle Paint Colors 2026",
-      "Color Preview&reg;",
-      "Red"
-    ]
-  },
-  {
-    "id": "benjamin-moore-2083-10-raisin-torte",
-    "displayName": "Raisin Torte",
-    "manufacturer": "Benjamin Moore",
-    "brand": "Benjamin Moore",
-    "brandCode": "2083-10",
-    "libraryType": "native",
-    "rgbHex": "#73383F",
-    "lab": {
-      "l": 31.4237,
-      "a": 26.6655,
-      "b": 7.7149
-    },
-    "source": {
-      "kind": "official",
       "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/2083-10",
       "notes": "Imported from Benjamin Moore official colors sitemap and public color detail page."
     },
@@ -7273,41 +7206,6 @@
     },
     "source": {
       "kind": "official",
-      "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/2083-20/cranberry-cocktail",
-      "notes": "Imported from Benjamin Moore official colors sitemap and public color detail page."
-    },
-    "stockMatchable": true,
-    "availabilityNotes": null,
-    "aliases": [],
-    "catalogOrder": null,
-    "active": true,
-    "sourceConfidence": "high",
-    "lastVerifiedAt": "2026-04-21",
-    "regions": [
-      "US"
-    ],
-    "tags": [
-      "Color Preview&reg;",
-      "Color Trends 2018",
-      "Pink",
-      "Red"
-    ]
-  },
-  {
-    "id": "benjamin-moore-2083-20-cranberry-cocktail",
-    "displayName": "Cranberry Cocktail",
-    "manufacturer": "Benjamin Moore",
-    "brand": "Benjamin Moore",
-    "brandCode": "2083-20",
-    "libraryType": "native",
-    "rgbHex": "#833F4D",
-    "lab": {
-      "l": 35.8247,
-      "a": 30.7365,
-      "b": 5.2943
-    },
-    "source": {
-      "kind": "official",
       "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/2083-20",
       "notes": "Imported from Benjamin Moore official colors sitemap and public color detail page."
     },
@@ -7324,41 +7222,6 @@
     "tags": [
       "Color Preview&reg;",
       "Color Trends 2018",
-      "Pink",
-      "Red"
-    ]
-  },
-  {
-    "id": "benjamin-moore-2083-30-old-claret",
-    "displayName": "Old Claret",
-    "manufacturer": "Benjamin Moore",
-    "brand": "Benjamin Moore",
-    "brandCode": "2083-30",
-    "libraryType": "native",
-    "rgbHex": "#974C64",
-    "lab": {
-      "l": 42.2616,
-      "a": 34.1202,
-      "b": 0.5495
-    },
-    "source": {
-      "kind": "official",
-      "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/2083-30",
-      "notes": "Imported from Benjamin Moore official colors sitemap and public color detail page."
-    },
-    "stockMatchable": true,
-    "availabilityNotes": null,
-    "aliases": [],
-    "catalogOrder": null,
-    "active": true,
-    "sourceConfidence": "high",
-    "lastVerifiedAt": "2026-04-21",
-    "regions": [
-      "US"
-    ],
-    "tags": [
-      "Color Preview&reg;",
-      "Color Trends 2015",
       "Pink",
       "Red"
     ]

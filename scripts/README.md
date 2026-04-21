@@ -2,16 +2,23 @@
 
 ## `generate_ase.py`
 
-Planned path:
-- read seed palette JSON
-- validate records
+Path:
+- read catalog or seed palette JSON
 - generate Adobe Swatch Exchange output in `ase/`
 
 Current state:
-- scaffold only
-- writes a placeholder file so the pipeline shape is concrete
+- writes real ASE binary files with RGB swatches
 
-Next implementation steps:
-1. point it at the real seed palette file
-2. validate against `data/color-schema.json`
-3. implement ASE serialization or a conversion bridge
+Example:
+
+```bash
+python3 scripts/generate_ase.py data/catalogs/ppg.json ase/ppg-full.ase
+```
+
+## `build_accessible_catalog.py`
+
+Builds the current best combined catalog from the strongest available source per brand:
+
+```bash
+python3 scripts/build_accessible_catalog.py
+```
