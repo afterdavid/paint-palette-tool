@@ -1,0 +1,1245 @@
+[
+  {
+    "id": "valspar-professional:interior-neutrals-7006-24",
+    "displayName": "Ultra White",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7006-24",
+    "libraryType": "derived",
+    "rgbHex": "#F8F8F3",
+    "lab": {
+      "l": 97.455,
+      "a": -0.871,
+      "b": 2.396
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "notes": "Derived from the official Valspar professional page 'interior-neutrals' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'interior-neutrals'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 1,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Popular",
+      "White",
+      "interior-neutrals",
+      "palette:interior-neutrals",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:interior-neutrals-7002-16",
+    "displayName": "Swiss Coffee",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7002-16",
+    "libraryType": "derived",
+    "rgbHex": "#F1EFE7",
+    "lab": {
+      "l": 94.399,
+      "a": -0.718,
+      "b": 4.098
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "notes": "Derived from the official Valspar professional page 'interior-neutrals' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'interior-neutrals'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 2,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Popular",
+      "White",
+      "interior-neutrals",
+      "palette:interior-neutrals",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:interior-neutrals-3003-10c",
+    "displayName": "Cream in My Coffee",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "3003-10C",
+    "libraryType": "derived",
+    "rgbHex": "#E6DCCC",
+    "lab": {
+      "l": 88.146,
+      "a": 0.736,
+      "b": 9.077
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "notes": "Derived from the official Valspar professional page 'interior-neutrals' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'interior-neutrals'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 3,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Neutral",
+      "The Classic Collection,Popular",
+      "interior-neutrals",
+      "palette:interior-neutrals",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:interior-neutrals-7002-20",
+    "displayName": "Antique White",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7002-20",
+    "libraryType": "derived",
+    "rgbHex": "#F0E6D8",
+    "lab": {
+      "l": 91.72,
+      "a": 1.043,
+      "b": 8.023
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "notes": "Derived from the official Valspar professional page 'interior-neutrals' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'interior-neutrals'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 4,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Popular",
+      "White",
+      "interior-neutrals",
+      "palette:interior-neutrals",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:interior-neutrals-4003-1a",
+    "displayName": "Seashell Gray",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "4003-1A",
+    "libraryType": "derived",
+    "rgbHex": "#DAD9D4",
+    "lab": {
+      "l": 86.645,
+      "a": -0.549,
+      "b": 2.577
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "notes": "Derived from the official Valspar professional page 'interior-neutrals' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'interior-neutrals'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 5,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Gray",
+      "Popular",
+      "interior-neutrals",
+      "palette:interior-neutrals",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:interior-neutrals-4005-1b",
+    "displayName": "Gravity",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "4005-1B",
+    "libraryType": "derived",
+    "rgbHex": "#C3C6C7",
+    "lab": {
+      "l": 79.678,
+      "a": -0.846,
+      "b": -0.861
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "notes": "Derived from the official Valspar professional page 'interior-neutrals' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'interior-neutrals'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 6,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Gray",
+      "The Classic Collection,Popular",
+      "interior-neutrals",
+      "palette:interior-neutrals",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-7007-11",
+    "displayName": "Antique Buff",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7007-11",
+    "libraryType": "derived",
+    "rgbHex": "#E8DAC6",
+    "lab": {
+      "l": 87.668,
+      "a": 1.533,
+      "b": 11.569
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 1,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Yellow",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-4006-2a",
+    "displayName": "Elephant Gray",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "4006-2A",
+    "libraryType": "derived",
+    "rgbHex": "#727A80",
+    "lab": {
+      "l": 50.751,
+      "a": -1.686,
+      "b": -4.296
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 2,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Gray",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-7007-4",
+    "displayName": "Crisp Cotton",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7007-4",
+    "libraryType": "derived",
+    "rgbHex": "#F4EFE7",
+    "lab": {
+      "l": 94.626,
+      "a": 0.302,
+      "b": 4.455
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 3,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "White",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-3004-8a",
+    "displayName": "Palomino Pony",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "3004-8A",
+    "libraryType": "derived",
+    "rgbHex": "#E1C097",
+    "lab": {
+      "l": 79.582,
+      "a": 5.895,
+      "b": 25.045
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 4,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Yellow",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-3002-7b",
+    "displayName": "Gleaming Tan",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "3002-7B",
+    "libraryType": "derived",
+    "rgbHex": "#B38159",
+    "lab": {
+      "l": 58.044,
+      "a": 14.505,
+      "b": 29.227
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 5,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Orange",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-7003-16",
+    "displayName": "Polar White",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7003-16",
+    "libraryType": "derived",
+    "rgbHex": "#F0ECDF",
+    "lab": {
+      "l": 93.383,
+      "a": -0.876,
+      "b": 6.772
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 6,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "White",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-5002-2a",
+    "displayName": "Beguile",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "5002-2A",
+    "libraryType": "derived",
+    "rgbHex": "#7F8984",
+    "lab": {
+      "l": 56.157,
+      "a": -4.669,
+      "b": 1.421
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 7,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Gray",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-1007-9b",
+    "displayName": "Apache Clay",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "1007-9B",
+    "libraryType": "derived",
+    "rgbHex": "#9B7063",
+    "lab": {
+      "l": 51.22,
+      "a": 15.215,
+      "b": 13.947
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 8,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Red",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-7003-1",
+    "displayName": "Parlour Taupe",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7003-1",
+    "libraryType": "derived",
+    "rgbHex": "#DBCEBC",
+    "lab": {
+      "l": 83.355,
+      "a": 1.522,
+      "b": 10.571
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 9,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "White",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-6004-2a",
+    "displayName": "Aspen Gray",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "6004-2A",
+    "libraryType": "derived",
+    "rgbHex": "#9E978C",
+    "lab": {
+      "l": 62.757,
+      "a": 0.586,
+      "b": 6.708
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 10,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Neutral",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-4007-4c",
+    "displayName": "Night View",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "4007-4C",
+    "libraryType": "derived",
+    "rgbHex": "#3D4B54",
+    "lab": {
+      "l": 31.03,
+      "a": -3.183,
+      "b": -7.163
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 11,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Black",
+      "Popular",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-6002-1a",
+    "displayName": "Gilded Linen",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "6002-1A",
+    "libraryType": "derived",
+    "rgbHex": "#E2DFD5",
+    "lab": {
+      "l": 88.804,
+      "a": -0.722,
+      "b": 5.253
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 12,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "2022 Color Of The Year",
+      "Neutral",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-3003-10c",
+    "displayName": "Cream in My Coffee",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "3003-10C",
+    "libraryType": "derived",
+    "rgbHex": "#E6DCCC",
+    "lab": {
+      "l": 88.146,
+      "a": 0.736,
+      "b": 9.077
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 13,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Neutral",
+      "The Classic Collection,Popular",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-2006-10b",
+    "displayName": "Gallery Grey",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "2006-10B",
+    "libraryType": "derived",
+    "rgbHex": "#C2B5A7",
+    "lab": {
+      "l": 74.386,
+      "a": 2.245,
+      "b": 8.794
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 14,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Neutral",
+      "Popular,2021 Color Of The Year",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-7002-16",
+    "displayName": "Swiss Coffee",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7002-16",
+    "libraryType": "derived",
+    "rgbHex": "#F1EFE7",
+    "lab": {
+      "l": 94.399,
+      "a": -0.718,
+      "b": 4.098
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 15,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Popular",
+      "White",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-7002-6",
+    "displayName": "Du Jour",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7002-6",
+    "libraryType": "derived",
+    "rgbHex": "#F1EFE9",
+    "lab": {
+      "l": 94.448,
+      "a": -0.376,
+      "b": 3.131
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 16,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Popular",
+      "White",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-4003-2b",
+    "displayName": "Rugged Suede",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "4003-2B",
+    "libraryType": "derived",
+    "rgbHex": "#736E6A",
+    "lab": {
+      "l": 46.761,
+      "a": 1.159,
+      "b": 2.918
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 17,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Gray",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-4004-2b",
+    "displayName": "Ocean Storm",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "4004-2B",
+    "libraryType": "derived",
+    "rgbHex": "#656764",
+    "lab": {
+      "l": 43.341,
+      "a": -1.396,
+      "b": 1.418
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 18,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Gray",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-3003-10b",
+    "displayName": "Hopsack",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "3003-10B",
+    "libraryType": "derived",
+    "rgbHex": "#D1BEAA",
+    "lab": {
+      "l": 78.043,
+      "a": 3.484,
+      "b": 12.542
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 19,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Neutral",
+      "Popular",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-3003-9b",
+    "displayName": "Universal Umber",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "3003-9B",
+    "libraryType": "derived",
+    "rgbHex": "#9A7E65",
+    "lab": {
+      "l": 54.796,
+      "a": 7.041,
+      "b": 17.681
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 20,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Brown",
+      "Popular",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-7003-6",
+    "displayName": "Ivory Lace",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7003-6",
+    "libraryType": "derived",
+    "rgbHex": "#F2E6D1",
+    "lab": {
+      "l": 91.719,
+      "a": 0.636,
+      "b": 11.69
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 21,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "White",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-4005-1b",
+    "displayName": "Gravity",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "4005-1B",
+    "libraryType": "derived",
+    "rgbHex": "#C3C6C7",
+    "lab": {
+      "l": 79.678,
+      "a": -0.846,
+      "b": -0.861
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 22,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Gray",
+      "The Classic Collection,Popular",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-4006-2b",
+    "displayName": "Crucible",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "4006-2B",
+    "libraryType": "derived",
+    "rgbHex": "#5F676D",
+    "lab": {
+      "l": 43.119,
+      "a": -1.716,
+      "b": -4.42
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 23,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Gray",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-7006-24",
+    "displayName": "Ultra White",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7006-24",
+    "libraryType": "derived",
+    "rgbHex": "#F8F8F3",
+    "lab": {
+      "l": 97.455,
+      "a": -0.871,
+      "b": 2.396
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 24,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Popular",
+      "White",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-2006-10a",
+    "displayName": "Free Wheeling",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "2006-10A",
+    "libraryType": "derived",
+    "rgbHex": "#AE9685",
+    "lab": {
+      "l": 63.759,
+      "a": 6.193,
+      "b": 12.265
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 25,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Neutral",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-4009-2",
+    "displayName": "Noir",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "4009-2",
+    "libraryType": "derived",
+    "rgbHex": "#2E2E30",
+    "lab": {
+      "l": 19.006,
+      "a": 0.48,
+      "b": -1.283
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 26,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Black",
+      "Popular",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-4008-4b",
+    "displayName": "Cornflower Blue",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "4008-4B",
+    "libraryType": "derived",
+    "rgbHex": "#6B808C",
+    "lab": {
+      "l": 52.35,
+      "a": -4.768,
+      "b": -9.003
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 27,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Blue",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-1008-7a",
+    "displayName": "Red Henna",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "1008-7A",
+    "libraryType": "derived",
+    "rgbHex": "#7B433D",
+    "lab": {
+      "l": 35.129,
+      "a": 23.414,
+      "b": 14.283
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 28,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Red",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  },
+  {
+    "id": "valspar-professional:exterior-color-combinations-7006-4",
+    "displayName": "Bistro White",
+    "manufacturer": "Valspar",
+    "brand": "Valspar",
+    "brandCode": "7006-4",
+    "libraryType": "derived",
+    "rgbHex": "#F0EDE7",
+    "lab": {
+      "l": 93.824,
+      "a": -0.037,
+      "b": 3.255
+    },
+    "source": {
+      "kind": "derived",
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "notes": "Derived from the official Valspar professional page 'exterior-color-combinations' by matching linked official browse-colors entries to the canonical Valspar catalog."
+    },
+    "stockMatchable": true,
+    "availabilityNotes": "Featured on the official Valspar professional curated page 'exterior-color-combinations'. Base color data comes from the official browse-colors catalog.",
+    "aliases": [],
+    "catalogOrder": 29,
+    "active": true,
+    "sourceConfidence": "high",
+    "lastVerifiedAt": "2026-04-21T21:10:17Z",
+    "regions": [
+      "US"
+    ],
+    "tags": [
+      "Popular",
+      "White",
+      "exterior-color-combinations",
+      "palette:exterior-color-combinations",
+      "professional-curated"
+    ]
+  }
+]

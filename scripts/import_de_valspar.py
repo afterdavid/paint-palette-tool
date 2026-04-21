@@ -32,6 +32,11 @@ DUNN_ADOBE_ZIP = "https://www.dunnedwards.com/wp-content/uploads/2025/06/Perfect
 DUNN_JPG_ZIP = "https://www.dunnedwards.com/wp-content/uploads/2025/06/Dunn-Edwards-JPG-Color-Library.zip"
 DUNN_PRODUCTS_JSON = "https://shop.dunnedwards.com/collections/all-colors/products.json"
 VALSPAR_URL = "https://www.valspar.com/en/colors/browse-colors"
+VALSPAR_PRO_PAGES = {
+    "color-toolkit": "https://www.valspar.com/en/professionals/color-toolkit",
+    "interior-neutrals": "https://www.valspar.com/en/professionals/interior-neutrals",
+    "exterior-color-combinations": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+}
 
 
 def now_iso() -> str:
@@ -276,6 +281,12 @@ def import_valspar() -> Dict[str, int]:
     html = fetch_text(VALSPAR_URL)
     save_text(raw_dir / "browse-colors.html", html)
 
+    pro_pages = {}
+    for slug, url in VALSPAR_PRO_PAGES.items():
+        page_html = fetch_text(url)
+        save_text(raw_dir / f"{slug}.html", page_html)
+        pro_pages[slug] = {"url": url, "html": page_html}
+
     pattern = re.compile(r'<div class="grid--wall__item grid--wall__item-product grid--wall__item-color[^"]*"(?P<attrs>[^>]*)>', re.I)
 
     def attr(attrs: str, name: str) -> Optional[str]:
@@ -327,17 +338,106 @@ def import_valspar() -> Dict[str, int]:
         validate_record(record)
         records.append(record)
 
+    records_by_url = {record["source"]["url"]: record for record in records if record["source"].get("url")}
+    records_by_code = {record["brandCode"]: record for record in records}
+    palette_memberships = []
+    palette_records = []
+
+    for palette_order, (slug, payload) in enumerate(pro_pages.items(), start=1):
+        page_html = payload["html"]
+        page_url = payload["url"]
+        title_match = re.search(r"<title>(.*?)</title>", page_html, re.I | re.S)
+        page_title = unescape(title_match.group(1)).strip() if title_match else slug.replace("-", " ").title()
+        hrefs = re.findall(r'href="(/en/colors/browse-colors/[^"]+)"', page_html, re.I)
+        unique_hrefs = []
+        seen_hrefs = set()
+        for href in hrefs:
+            absolute = urllib.parse.urljoin(page_url, unescape(href))
+            if absolute in seen_hrefs:
+                continue
+            seen_hrefs.add(absolute)
+            unique_hrefs.append(absolute)
+
+        matched = 0
+        unmatched = []
+        for item_order, absolute in enumerate(unique_hrefs, start=1):
+            base = records_by_url.get(absolute)
+            code_match = re.search(r'([A-Z]\d{3}-\d+[A-Z]?|\d{4}-\d+[A-Z]?)$', absolute, re.I)
+            code = code_match.group(1).upper() if code_match else None
+            if not base and code:
+                base = records_by_code.get(code)
+            if not base:
+                unmatched.append({"url": absolute, "brandCodeGuess": code})
+                continue
+
+            matched += 1
+            palette_memberships.append({
+                "paletteSlug": slug,
+                "paletteTitle": page_title,
+                "paletteUrl": page_url,
+                "paletteOrder": palette_order,
+                "order": item_order,
+                "brandCode": base["brandCode"],
+                "displayName": base["displayName"],
+                "colorUrl": base["source"]["url"],
+            })
+            derived = {
+                "id": f"valspar-professional:{slugify(slug + '-' + base['brandCode'])}",
+                "displayName": base["displayName"],
+                "manufacturer": base["manufacturer"],
+                "brand": base["brand"],
+                "brandCode": base["brandCode"],
+                "libraryType": "derived",
+                "rgbHex": base["rgbHex"],
+                "lab": base["lab"],
+                "source": {
+                    "kind": "derived",
+                    "url": page_url,
+                    "notes": f"Derived from the official Valspar professional page '{slug}' by matching linked official browse-colors entries to the canonical Valspar catalog.",
+                },
+                "stockMatchable": bool(base.get("stockMatchable")),
+                "availabilityNotes": f"Featured on the official Valspar professional curated page '{slug}'. Base color data comes from the official browse-colors catalog.",
+                "aliases": [],
+                "catalogOrder": item_order,
+                "active": True,
+                "sourceConfidence": "high",
+                "lastVerifiedAt": now_iso(),
+                "regions": base.get("regions", ["US"]),
+                "tags": sorted(set(list(base.get("tags", [])) + ["professional-curated", slug, f"palette:{slug}"])),
+            }
+            validate_record(derived)
+            palette_records.append(derived)
+
+        pro_pages[slug] = {
+            "url": page_url,
+            "pageTitle": page_title,
+            "linkedColorCount": len(unique_hrefs),
+            "matchedColorCount": matched,
+            "unmatched": unmatched,
+            "paletteOrder": palette_order,
+        }
+
     save_json(CATALOG_DIR / "valspar.json", records)
+    save_json(CATALOG_DIR / "valspar-professional-curated.json", palette_records)
+    save_json(raw_dir / "professional-palettes.parsed.json", {
+        "capturedAt": now_iso(),
+        "pages": pro_pages,
+        "memberships": palette_memberships,
+    })
     save_json(raw_dir / "provenance.json", {
         "capturedAt": now_iso(),
         "sourceUrl": VALSPAR_URL,
         "recordCount": len(records),
+        "professionalPageCount": len(VALSPAR_PRO_PAGES),
+        "professionalCuratedRecordCount": len(palette_records),
         "notes": [
             "All records were parsed from official Valspar browse-colors HTML attributes.",
             "Retailer/channel values were preserved in tags when present.",
+            "No downloadable ASE/ACO/ZIP/PDF color library file was discovered on the official Valspar site in this pass.",
+            "Official professional pages exposed curated color selections via links to browse-colors detail pages; those were captured separately as derived records and palette memberships.",
         ],
     })
-    return {"records": len(records)}
+    return {"records": len(records), "professional_curated_records": len(palette_records), "professional_pages": len(VALSPAR_PRO_PAGES)}
 
 
 def main() -> int:

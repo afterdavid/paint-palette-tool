@@ -1,9 +1,13 @@
 {
-  "capturedAt": "2026-04-21T20:05:58Z",
+  "capturedAt": "2026-04-21T21:10:17Z",
   "sourceUrl": "https://www.valspar.com/en/colors/browse-colors",
   "recordCount": 2858,
+  "professionalPageCount": 3,
+  "professionalCuratedRecordCount": 35,
   "notes": [
     "All records were parsed from official Valspar browse-colors HTML attributes.",
-    "Retailer/channel values were preserved in tags when present."
+    "Retailer/channel values were preserved in tags when present.",
+    "No downloadable ASE/ACO/ZIP/PDF color library file was discovered on the official Valspar site in this pass.",
+    "Official professional pages exposed curated color selections via links to browse-colors detail pages; those were captured separately as derived records and palette memberships."
   ]
 }

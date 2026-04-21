@@ -1,0 +1,381 @@
+{
+  "capturedAt": "2026-04-21T21:10:17Z",
+  "pages": {
+    "color-toolkit": {
+      "url": "https://www.valspar.com/en/professionals/color-toolkit",
+      "pageTitle": "Paint Color Help For Your Clients | Valspar®",
+      "linkedColorCount": 0,
+      "matchedColorCount": 0,
+      "unmatched": [],
+      "paletteOrder": 1
+    },
+    "interior-neutrals": {
+      "url": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "pageTitle": "Interior Paint Color Combinations for Pros | Valspar®",
+      "linkedColorCount": 6,
+      "matchedColorCount": 6,
+      "unmatched": [],
+      "paletteOrder": 2
+    },
+    "exterior-color-combinations": {
+      "url": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "pageTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "linkedColorCount": 29,
+      "matchedColorCount": 29,
+      "unmatched": [],
+      "paletteOrder": 3
+    }
+  },
+  "memberships": [
+    {
+      "paletteSlug": "interior-neutrals",
+      "paletteTitle": "Interior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "paletteOrder": 2,
+      "order": 1,
+      "brandCode": "7006-24",
+      "displayName": "Ultra White",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/ultra-white-7006-24"
+    },
+    {
+      "paletteSlug": "interior-neutrals",
+      "paletteTitle": "Interior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "paletteOrder": 2,
+      "order": 2,
+      "brandCode": "7002-16",
+      "displayName": "Swiss Coffee",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/swiss-coffee-7002-16"
+    },
+    {
+      "paletteSlug": "interior-neutrals",
+      "paletteTitle": "Interior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "paletteOrder": 2,
+      "order": 3,
+      "brandCode": "3003-10C",
+      "displayName": "Cream in My Coffee",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/neutral/cream-in-my-coffee-3003-10c"
+    },
+    {
+      "paletteSlug": "interior-neutrals",
+      "paletteTitle": "Interior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "paletteOrder": 2,
+      "order": 4,
+      "brandCode": "7002-20",
+      "displayName": "Antique White",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/antique-white-7002-20"
+    },
+    {
+      "paletteSlug": "interior-neutrals",
+      "paletteTitle": "Interior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "paletteOrder": 2,
+      "order": 5,
+      "brandCode": "4003-1A",
+      "displayName": "Seashell Gray",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/gray/seashell-gray-4003-1a"
+    },
+    {
+      "paletteSlug": "interior-neutrals",
+      "paletteTitle": "Interior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/interior-neutrals",
+      "paletteOrder": 2,
+      "order": 6,
+      "brandCode": "4005-1B",
+      "displayName": "Gravity",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/gray/gravity-4005-1b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 1,
+      "brandCode": "7007-11",
+      "displayName": "Antique Buff",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/yellow/antique-buff-7007-11"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 2,
+      "brandCode": "4006-2A",
+      "displayName": "Elephant Gray",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/gray/elephant-gray-4006-2a"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 3,
+      "brandCode": "7007-4",
+      "displayName": "Crisp Cotton",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/crisp-cotton-7007-4"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 4,
+      "brandCode": "3004-8A",
+      "displayName": "Palomino Pony",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/yellow/palomino-pony-3004-8a"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 5,
+      "brandCode": "3002-7B",
+      "displayName": "Gleaming Tan",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/orange/gleaming-tan-3002-7b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 6,
+      "brandCode": "7003-16",
+      "displayName": "Polar White",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/polar-white-7003-16"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 7,
+      "brandCode": "5002-2A",
+      "displayName": "Beguile",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/gray/beguile-5002-2a"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 8,
+      "brandCode": "1007-9B",
+      "displayName": "Apache Clay",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/red/apache-clay-1007-9b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 9,
+      "brandCode": "7003-1",
+      "displayName": "Parlour Taupe",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/parlour-taupe-7003-1"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 10,
+      "brandCode": "6004-2A",
+      "displayName": "Aspen Gray",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/neutral/aspen-gray-6004-2a"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 11,
+      "brandCode": "4007-4C",
+      "displayName": "Night View",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/black/night-view-4007-4c"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 12,
+      "brandCode": "6002-1A",
+      "displayName": "Gilded Linen",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/neutral/gilded-linen-6002-1a"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 13,
+      "brandCode": "3003-10C",
+      "displayName": "Cream in My Coffee",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/neutral/cream-in-my-coffee-3003-10c"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 14,
+      "brandCode": "2006-10B",
+      "displayName": "Gallery Grey",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/neutral/gallery-grey-2006-10b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 15,
+      "brandCode": "7002-16",
+      "displayName": "Swiss Coffee",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/swiss-coffee-7002-16"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 16,
+      "brandCode": "7002-6",
+      "displayName": "Du Jour",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/du-jour-7002-6"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 17,
+      "brandCode": "4003-2B",
+      "displayName": "Rugged Suede",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/gray/rugged-suede-4003-2b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 18,
+      "brandCode": "4004-2B",
+      "displayName": "Ocean Storm",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/gray/ocean-storm-4004-2b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 19,
+      "brandCode": "3003-10B",
+      "displayName": "Hopsack",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/neutral/hopsack-3003-10b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 20,
+      "brandCode": "3003-9B",
+      "displayName": "Universal Umber",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/brown/universal-umber-3003-9b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 21,
+      "brandCode": "7003-6",
+      "displayName": "Ivory Lace",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/ivory-lace-7003-6"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 22,
+      "brandCode": "4005-1B",
+      "displayName": "Gravity",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/gray/gravity-4005-1b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 23,
+      "brandCode": "4006-2B",
+      "displayName": "Crucible",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/gray/crucible-4006-2b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 24,
+      "brandCode": "7006-24",
+      "displayName": "Ultra White",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/ultra-white-7006-24"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 25,
+      "brandCode": "2006-10A",
+      "displayName": "Free Wheeling",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/neutral/free-wheeling-2006-10a"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 26,
+      "brandCode": "4009-2",
+      "displayName": "Noir",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/black/noir-4009-2"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 27,
+      "brandCode": "4008-4B",
+      "displayName": "Cornflower Blue",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/blue/cornflower-blue-4008-4b"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 28,
+      "brandCode": "1008-7A",
+      "displayName": "Red Henna",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/red/red-henna-1008-7a"
+    },
+    {
+      "paletteSlug": "exterior-color-combinations",
+      "paletteTitle": "Exterior Paint Color Combinations for Pros | Valspar®",
+      "paletteUrl": "https://www.valspar.com/en/professionals/exterior-color-combinations",
+      "paletteOrder": 3,
+      "order": 29,
+      "brandCode": "7006-4",
+      "displayName": "Bistro White",
+      "colorUrl": "https://www.valspar.com/en/colors/browse-colors/lowes/white/bistro-white-7006-4"
+    }
+  ]
+}
