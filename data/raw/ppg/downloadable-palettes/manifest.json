@@ -1,0 +1,24 @@
+{
+  "capturedAt": "2026-04-21T21:08:40Z",
+  "pageUrl": "https://www.ppgpaints.com/designers/professional-color-tools/palette-downloads",
+  "assets": [
+    {
+      "url": "https://stppgpaints1prd01.blob.core.windows.net/masterbrand/libraries/masterbrand/assets/VOC-ColorNumber-2022.aco",
+      "filename": "VOC-ColorNumber-2022.aco",
+      "status": "error",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://stppgpaints1prd01.blob.core.windows.net/masterbrand/libraries/masterbrand/assets/VOC-ColorNumber-2022.ase",
+      "filename": "VOC-ColorNumber-2022.ase",
+      "status": "error",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://app-ppgpaints11-stg-01.azurewebsites.net/cms/pdfs/ppg-voice-of-colour-palette_rgb-and-lrv-values.xlsx",
+      "filename": "ppg-voice-of-colour-palette_rgb-and-lrv-values.xlsx",
+      "status": "error",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  ]
+}

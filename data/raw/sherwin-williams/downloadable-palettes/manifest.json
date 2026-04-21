@@ -1,0 +1,30 @@
+{
+  "capturedAt": "2026-04-21T21:08:37Z",
+  "pageUrl": "https://www.sherwin-williams.com/painting-contractors/color/color-tools/downloadable-color-palettes",
+  "assets": [
+    {
+      "key": "color-by-number-csp-ase",
+      "url": "https://images.sherwin-williams.com/content_images/sw-colors-number-csp-ase.ase",
+      "filename": "sw-colors-number-csp-ase.ase",
+      "bytes": 106662
+    },
+    {
+      "key": "color-by-number-ede-ase",
+      "url": "https://images.sherwin-williams.com/content_images/sw-colors-number-ede-ase.ase",
+      "filename": "sw-colors-number-ede-ase.ase",
+      "bytes": 13694
+    },
+    {
+      "key": "colorsnap-jpg-zip",
+      "url": "https://images.sherwin-williams.com/content_images/sw-colorsnap-coll-by-number.zip",
+      "filename": "sw-colorsnap-coll-by-number.zip",
+      "bytes": 5563189
+    },
+    {
+      "key": "designer-jpg-zip",
+      "url": "https://images.sherwin-williams.com/content_images/sw-ede-coll-by-number.zip",
+      "filename": "sw-ede-coll-by-number.zip",
+      "bytes": 1072913
+    }
+  ]
+}
