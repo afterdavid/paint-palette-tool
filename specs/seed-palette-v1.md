@@ -2,19 +2,19 @@
 
 ## Goal
 
-Define the first practical dataset that will drive the initial `.ase` swatch library.
+Define the first practical output palette that will drive the initial `.ase` swatch library.
 
-This is not the final universal paint catalog. It is the first usable palette for real mural work.
+This document no longer describes the canonical dataset for the whole project. The canonical dataset is now expected to grow toward full manufacturer catalogs.
+
+Instead, this document describes the first curated output subset generated from the larger catalog layer.
 
 ## Strategy
 
-Start with a curated palette, not a full ingest of every paint brand.
+Use a two-layer model:
+- full manufacturer catalogs as the canonical data layer
+- curated output palettes as the Illustrator UX layer
 
-Reasons:
-- faster to build
-- easier to validate in real design work
-- avoids getting blocked on perfect brand coverage
-- good enough to prove the workflow
+This keeps the long-term dataset complete without forcing artists to work from one giant wall of swatches.
 
 ## Size target
 
@@ -106,17 +106,19 @@ If the dataset uses approximated or hand-entered values, that should be explicit
 ## V1 sourcing plan
 
 Recommended order:
-1. manually curated starter set
-2. official brand references where easy to obtain
-3. reference/fallback sources only to fill specific gaps
+1. normalize manufacturer catalogs into canonical files
+2. preserve provenance for every record
+3. generate the first curated Illustrator subset from those catalogs
+4. use reference/fallback sources only to fill specific gaps
 
-This keeps the project moving without pretending the source data is perfect.
+This keeps the UX manageable while still aiming at full brand coverage.
 
 ## Acceptance criteria
 
 Seed Palette V1 is ready when:
-- there is a JSON file with 64 to 128 real entries
+- there is a curated JSON output file with 64 to 128 real entries
+- each entry is traceable back to the canonical catalog data
 - each entry validates against the schema
-- each entry has a category and provenance
+- each entry has category and provenance
 - the palette can be turned into an `.ase`
 - the resulting swatch library feels usable in Illustrator

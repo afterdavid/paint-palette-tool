@@ -5,8 +5,10 @@
   "required": [
     "id",
     "displayName",
+    "manufacturer",
     "brand",
     "brandCode",
+    "libraryType",
     "rgbHex",
     "lab",
     "source"
@@ -14,8 +16,13 @@
   "properties": {
     "id": { "type": "string" },
     "displayName": { "type": "string" },
+    "manufacturer": { "type": "string" },
     "brand": { "type": "string" },
     "brandCode": { "type": "string" },
+    "libraryType": {
+      "type": "string",
+      "enum": ["native", "universal", "competitor", "derived"]
+    },
     "rgbHex": {
       "type": "string",
       "pattern": "^#[0-9A-Fa-f]{6}$"
@@ -44,6 +51,22 @@
       "additionalProperties": false
     },
     "stockMatchable": { "type": "boolean" },
+    "availabilityNotes": { "type": ["string", "null"] },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "catalogOrder": { "type": ["number", "integer", "null"] },
+    "active": { "type": ["boolean", "null"] },
+    "sourceConfidence": {
+      "type": ["string", "null"],
+      "enum": ["high", "medium", "low", null]
+    },
+    "lastVerifiedAt": { "type": ["string", "null"] },
+    "regions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
     "tags": {
       "type": "array",
       "items": { "type": "string" }

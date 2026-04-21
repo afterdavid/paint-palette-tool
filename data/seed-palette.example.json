@@ -2,8 +2,10 @@
   {
     "id": "sw-sample-blue-01",
     "displayName": "Sample Sky Blue",
+    "manufacturer": "Sherwin-Williams",
     "brand": "Sherwin-Williams",
     "brandCode": "SW-SAMPLE-001",
+    "libraryType": "universal",
     "rgbHex": "#6EAEDB",
     "lab": { "l": 68.1, "a": -7.2, "b": -24.4 },
     "source": {
@@ -12,13 +14,22 @@
       "notes": "Placeholder example record for schema testing"
     },
     "stockMatchable": true,
+    "availabilityNotes": null,
+    "aliases": [],
+    "catalogOrder": null,
+    "active": true,
+    "sourceConfidence": "medium",
+    "lastVerifiedAt": null,
+    "regions": [],
     "tags": ["sky", "blue", "example"]
   },
   {
     "id": "bm-sample-neutral-01",
     "displayName": "Sample Warm Neutral",
+    "manufacturer": "Benjamin Moore",
     "brand": "Benjamin Moore",
     "brandCode": "BM-SAMPLE-001",
+    "libraryType": "universal",
     "rgbHex": "#CBBEAF",
     "lab": { "l": 78.2, "a": 3.4, "b": 10.8 },
     "source": {
@@ -27,6 +38,13 @@
       "notes": "Placeholder example record for schema testing"
     },
     "stockMatchable": true,
+    "availabilityNotes": null,
+    "aliases": [],
+    "catalogOrder": null,
+    "active": true,
+    "sourceConfidence": "medium",
+    "lastVerifiedAt": null,
+    "regions": [],
     "tags": ["neutral", "warm", "example"]
   }
 ]
