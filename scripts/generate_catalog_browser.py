@@ -121,67 +121,49 @@ def esc(s: str) -> str:
         .replace('"', '&quot;'))
 
 
-def axial_to_pixel(q: int, r: int, size: float):
-    x = size * math.sqrt(3) * (q + r / 2)
-    y = size * 1.5 * r
-    return x, y
+def assign_ring_slots(recs, ring_count=9):
+    # assign to concentric rings by chroma, then to nearest available angle slot
+    ring_slots = []
+    for ring in range(ring_count):
+        radius = (ring + 1) / ring_count
+        # more slots on outer rings
+        slots = max(10, int(round(12 + ring * 10)))
+        for i in range(slots):
+            angle = (i / slots) * 360.0
+            ring_slots.append({
+                'ring': ring,
+                'radius': radius,
+                'angle': angle,
+                'used': False,
+            })
 
-
-def hex_slots(radius: int):
-    slots = []
-    for q in range(-radius, radius + 1):
-        r1 = max(-radius, -q - radius)
-        r2 = min(radius, -q + radius)
-        for r in range(r1, r2 + 1):
-            dist = max(abs(q), abs(r), abs(-q - r))
-            slots.append((q, r, dist))
-    return slots
-
-
-def assign_to_hex(recs, size=11, max_radius=18):
-    slots = hex_slots(max_radius)
-    slot_entries = []
-    for q, r, dist in slots:
-        x, y = axial_to_pixel(q, r, size)
-        angle = (math.degrees(math.atan2(y, x)) + 360) % 360
-        slot_entries.append({
-            'q': q, 'r': r, 'dist': dist,
-            'x': x, 'y': y,
-            'angle': angle,
-        })
-
-    # sort records by target ring then hue; dark/lighter distinctions handled by lightness slices above
     decorated = []
     for rec in recs:
         L, C, h = rec['_lch']
-        target_ring = min(max_radius, int(round((C / 120.0) * max_radius)))
+        target_ring = min(ring_count - 1, max(0, int(round((min(C, 120) / 120.0) * (ring_count - 1)))))
         decorated.append((target_ring, h, -C, rec))
     decorated.sort(key=lambda t: (t[0], t[1], t[2]))
 
-    used = set()
     placed = []
     overflow = []
-
     for target_ring, target_h, _negC, rec in decorated:
+        best = None
         best_idx = None
-        best_score = None
-        for idx, slot in enumerate(slot_entries):
-            if idx in used:
+        for idx, slot in enumerate(ring_slots):
+            if slot['used']:
                 continue
-            ring_penalty = abs(slot['dist'] - target_ring)
+            ring_penalty = abs(slot['ring'] - target_ring)
             angle_delta = abs(slot['angle'] - target_h)
             angle_delta = min(angle_delta, 360 - angle_delta)
             score = (ring_penalty, angle_delta)
-            if best_score is None or score < best_score:
-                best_score = score
+            if best is None or score < best:
+                best = score
                 best_idx = idx
         if best_idx is None:
             overflow.append(rec)
             continue
-        used.add(best_idx)
-        slot = slot_entries[best_idx]
-        placed.append((slot, rec))
-
+        ring_slots[best_idx]['used'] = True
+        placed.append((ring_slots[best_idx], rec))
     return placed, overflow
 
 
@@ -208,7 +190,8 @@ def main():
     sections = []
     for slug, lo, hi in bands:
         recs = [r for r in items if (lo <= r['_lch'][0] < hi) or (hi == 100 and lo <= r['_lch'][0] <= hi)]
-        placed, overflow = assign_to_hex(recs)
+        recs.sort(key=lambda r: (r['_lch'][2], r['_lch'][1]))
+        placed, overflow = assign_ring_slots(recs)
         dots = []
         for slot, rec in placed:
             rgb = rec.get('rgbHex') or rec.get('rgb') or rec.get('hex')
@@ -217,19 +200,21 @@ def main():
             code = esc(rec.get('brandCode') or '')
             source = esc(rec.get('_source_file', ''))
             L, C, h = rec['_lch']
-            # convert from hex grid coords to percent in the viewport
-            x = 50 + (slot['x'] / 380.0) * 44
-            y = 50 + (slot['y'] / 380.0) * 44
+            angle = math.radians(slot['angle'] - 90)
+            radius = slot['radius'] * 44
+            x = 50 + math.cos(angle) * radius
+            y = 50 + math.sin(angle) * radius
+            size = 10 if C > 10 else 8
             tooltip = esc(f"{title}\n{brand} {code}\n{rgb}\nLCH: {L:.1f}, {C:.1f}, {h:.1f}\n{source}")
             dots.append(
-                f'<button class="hex-dot" style="left:{x:.2f}%; top:{y:.2f}%; background:{rgb};" '
+                f'<button class="dot" style="left:{x:.2f}%; top:{y:.2f}%; background:{rgb}; width:{size}px; height:{size}px;" '
                 f'data-name="{title}" data-brand="{brand}" data-code="{code}" data-hex="{rgb}" '
                 f'data-lch="L {L:.1f} · C {C:.1f} · H {h:.1f}" data-source="{source}" title="{tooltip}"></button>'
             )
         note = f' · {len(overflow)} overflow' if overflow else ''
         sections.append(
             f'<section id="{slug}"><h2>{slug} <span>{len(recs)} colors{note}</span></h2>'
-            f'<div class="hex-wrap"><div class="hex-axis axis-top">yellow / green</div><div class="hex-axis axis-right">red</div><div class="hex-axis axis-bottom">blue / purple</div><div class="hex-axis axis-left">cyan</div><div class="hex-field">{"".join(dots)}</div></div></section>'
+            f'<div class="wheel-wrap"><div class="wheel-axis axis-top">yellow / green</div><div class="wheel-axis axis-right">red</div><div class="wheel-axis axis-bottom">blue / purple</div><div class="wheel-axis axis-left">cyan</div><div class="wheel ring-wheel">{"".join(dots)}</div></div></section>'
         )
 
     html = f'''<!doctype html>
@@ -237,7 +222,7 @@ def main():
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Paint Palette Tool – Hex Browser</title>
+<title>Paint Palette Tool – Ring-Packed Radial Browser</title>
 <style>
 :root {{ --bg:#0f1114; --panel:#15191e; --panel2:#1b2027; --text:#eef2f7; --muted:#9aa6b2; --line:#2a3139; }}
 * {{ box-sizing:border-box; }}
@@ -255,13 +240,13 @@ header p {{ margin:0; color:var(--muted); max-width:820px; line-height:1.5; }}
 section {{ margin-bottom:40px; }}
 section h2 {{ margin:0 0 14px; padding-bottom:10px; font-size:20px; border-bottom:1px solid var(--line); }}
 section h2 span {{ color:var(--muted); font-size:14px; margin-left:8px; font-weight:400; }}
-.hex-wrap {{ position:relative; max-width:760px; aspect-ratio:1 / 1; margin:0 auto; }}
-.hex-field {{ position:absolute; inset:20px; clip-path: polygon(25% 3%, 75% 3%, 97% 50%, 75% 97%, 25% 97%, 3% 50%); border:1px solid rgba(255,255,255,.12); background:radial-gradient(circle at center, rgba(255,255,255,.03), rgba(255,255,255,.01) 45%, rgba(255,255,255,.00) 60%); }}
-.hex-field::before, .hex-field::after {{ content:''; position:absolute; inset:50% auto auto 10%; width:80%; height:1px; background:rgba(255,255,255,.05); transform:translateY(-50%); }}
-.hex-field::after {{ inset:10% auto auto 50%; width:1px; height:80%; transform:translateX(-50%); }}
-.hex-dot {{ position:absolute; transform:translate(-50%, -50%); border:none; width:10px; height:10px; border-radius:999px; cursor:pointer; box-shadow: inset 0 0 0 1px rgba(255,255,255,.25); }}
-.hex-dot:hover, .hex-dot:focus {{ z-index:2; box-shadow: inset 0 0 0 1px rgba(255,255,255,.8), 0 0 0 3px rgba(255,255,255,.10); }}
-.hex-axis {{ position:absolute; color:var(--muted); font-size:12px; }}
+.wheel-wrap {{ position:relative; max-width:760px; aspect-ratio:1 / 1; margin:0 auto; }}
+.wheel {{ position:absolute; inset:20px; border-radius:50%; border:1px solid rgba(255,255,255,.12); background:radial-gradient(circle at center, rgba(255,255,255,.03), rgba(255,255,255,.01) 45%, rgba(255,255,255,.00) 60%); }}
+.ring-wheel::before, .ring-wheel::after {{ content:''; position:absolute; inset:50% auto auto 0; width:100%; height:1px; background:rgba(255,255,255,.05); transform:translateY(-50%); }}
+.ring-wheel::after {{ inset:0 auto auto 50%; width:1px; height:100%; transform:translateX(-50%); }}
+.dot {{ position:absolute; transform:translate(-50%, -50%); border:none; border-radius:999px; cursor:pointer; box-shadow: inset 0 0 0 1px rgba(255,255,255,.25); }}
+.dot:hover, .dot:focus {{ z-index:2; box-shadow: inset 0 0 0 1px rgba(255,255,255,.8), 0 0 0 3px rgba(255,255,255,.10); }}
+.wheel-axis {{ position:absolute; color:var(--muted); font-size:12px; }}
 .axis-top {{ top:0; left:50%; transform:translateX(-50%); }}
 .axis-right {{ right:0; top:50%; transform:translateY(-50%); }}
 .axis-bottom {{ bottom:0; left:50%; transform:translateX(-50%); }}
@@ -280,7 +265,7 @@ aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; back
   .layout {{ grid-template-columns: 1fr; }}
   nav {{ position:relative; height:auto; border-right:none; border-bottom:1px solid var(--line); }}
   main {{ padding:18px; }}
-  .hex-wrap {{ max-width:100%; }}
+  .wheel-wrap {{ max-width:100%; }}
   #mobile-sheet {{ display:block; position:fixed; left:0; right:0; bottom:0; z-index:20; background:rgba(21,25,30,.98); border-top:1px solid var(--line); padding:14px 16px calc(14px + env(safe-area-inset-bottom)); transform:translateY(100%); transition:transform .18s ease; backdrop-filter: blur(8px); }}
   #mobile-sheet.open {{ transform:translateY(0); }}
   .sheet-head {{ display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }}
@@ -292,14 +277,14 @@ aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; back
 <body>
 <div class="layout">
 <nav>
-<h1>Hex LCH Browser</h1>
-<p>Experimental hex-packed view. Each section is a lightness slice. Hue still sweeps around the field and chroma expands outward, but colors are now assigned to discrete packed slots instead of free-floating scatter points.</p>
+<h1>Ring-Packed Radial Browser</h1>
+<p>Experimental radial view with slot assignment. Hue still runs around the wheel and chroma still expands outward, but swatches are placed on discrete rings so the natural adjacency stays while overlap drops.</p>
 {nav}
 </nav>
 <main>
 <header>
 <h1>Every Color We Have So Far</h1>
-<p>This version uses a hex-packed field: colors are assigned to discrete slots so the shape feels more orderly and less like a noisy scatter plot. Tap or click a swatch for details.</p>
+<p>This version keeps the radial LCH logic that felt good, but uses discrete ring slots instead of free-floating scatter points. That should preserve the nice color adjacency while reducing collisions.</p>
 </header>
 {''.join(sections)}
 </main>
@@ -312,7 +297,7 @@ aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; back
 <div class="detail-row"><strong>Hex:</strong> <span id="detail-hex" class="mono">—</span></div>
 <div class="detail-row"><strong>LCH:</strong> <span id="detail-lch" class="mono">—</span></div>
 <div class="detail-row"><strong>Source:</strong> <span id="detail-source">—</span></div>
-<p class="helper">This is an exploratory view. The point is not scientific purity; it is to see whether a packed, orderly field is easier to browse than the radial scatter.</p>
+<p class="helper">This is an exploratory view. If this works, it means the radial placement was right and only the free scatter needed correction.</p>
 </aside>
 </div>
 <div id="mobile-sheet">
@@ -362,7 +347,7 @@ function setDetail(tile) {{
   mobile.lch.textContent = tile.dataset.lch || '—';
   mobile.source.textContent = tile.dataset.source || '—';
 }}
-document.querySelectorAll('.hex-dot').forEach(tile => {{
+document.querySelectorAll('.dot').forEach(tile => {{
   tile.addEventListener('mouseenter', () => setDetail(tile));
   tile.addEventListener('focus', () => setDetail(tile));
   tile.addEventListener('click', () => {{
