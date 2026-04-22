@@ -10,12 +10,6 @@ CATALOG_DIR = ROOT / 'data' / 'catalogs'
 OUT = ROOT / 'output' / 'catalog-browser.html'
 DOCS = ROOT / 'docs' / 'index.html'
 
-COLOR_ORDER = [
-    'white', 'neutral', 'black',
-    'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'pink',
-    'brown', 'unknown'
-]
-
 
 def hex_to_rgb(h: str):
     h = h.lstrip('#')
@@ -72,95 +66,6 @@ def lab_to_lch(L: float, a: float, b: float):
     return L, C, h
 
 
-def family_for_lch(L: float, C: float, h: float):
-    if L >= 94 and C <= 8:
-        return 'white'
-    if L <= 22 and C <= 10:
-        return 'black'
-    if C <= 12:
-        return 'neutral'
-    if h < 20 or h >= 345:
-        return 'red'
-    if h < 45:
-        return 'orange'
-    if h < 75:
-        return 'yellow'
-    if h < 160:
-        return 'green'
-    if h < 190:
-        return 'teal'
-    if h < 270:
-        return 'blue'
-    if h < 320:
-        return 'purple'
-    if h < 345:
-        return 'pink'
-    return 'unknown'
-
-
-def remap_family(L: float, C: float, h: float, family: str):
-    if family in {'red', 'orange', 'yellow'} and L < 55 and C < 35:
-        return 'brown'
-    return family
-
-
-def normalize(v: float, lo: float, hi: float):
-    if hi <= lo:
-        return 0.5
-    return max(0.0, min(1.0, (v - lo) / (hi - lo)))
-
-
-def tile_position(family: str, L: float, C: float, h: float):
-    # Return x, y in [0,1] for 2D placement.
-    # y always reads top(light) -> bottom(dark)
-    y = 1.0 - normalize(L, 0, 100)
-
-    if family == 'neutral':
-        # cool -> warm using a/b balance
-        x = normalize(a_warmcool(L, C, h), -1, 1)
-        return x, y
-    if family == 'white':
-        x = normalize(C, 0, 12)
-        return x, y
-    if family == 'black':
-        x = normalize(C, 0, 16)
-        return x, y
-    if family == 'brown':
-        # keep earthy hues left->right with chroma as subtle spread
-        x = normalize(h if h <= 90 else 45, 20, 60)
-        x = (x * 0.8) + (normalize(C, 0, 60) * 0.2)
-        return x, y
-    # chromatic families: hue across, chroma adds slight spread
-    family_ranges = {
-        'red': (345, 380),
-        'orange': (20, 45),
-        'yellow': (45, 75),
-        'green': (75, 160),
-        'teal': (160, 190),
-        'blue': (190, 270),
-        'purple': (270, 320),
-        'pink': (320, 345),
-        'unknown': (0, 360),
-    }
-    lo, hi = family_ranges.get(family, (0, 360))
-    hue_val = h
-    if family == 'red' and h < 40:
-        hue_val = h + 360
-    x = normalize(hue_val, lo, hi)
-    # Compress very low chroma colors toward center so they don't stray too much.
-    chroma_bias = (normalize(C, 0, 80) - 0.5) * 0.18
-    x = max(0.0, min(1.0, x + chroma_bias))
-    return x, y
-
-
-def a_warmcool(L: float, C: float, h: float):
-    # neutrals: approximate warm/cool axis using hue around blue vs yellow/red sides
-    if C <= 1:
-        return 0.0
-    radians = math.radians(h)
-    return math.cos(radians)
-
-
 def load_catalogs():
     items = []
     for p in sorted(CATALOG_DIR.glob('*.json')):
@@ -180,13 +85,9 @@ def load_catalogs():
                 continue
             L, a, b = rgb_to_lab(rgb)
             L, C, h = lab_to_lch(L, a, b)
-            family = remap_family(L, C, h, family_for_lch(L, C, h))
-            x, y = tile_position(family, L, C, h)
             rec = dict(rec)
             rec['_source_file'] = p.name
-            rec['_family'] = family
             rec['_lch'] = (L, C, h)
-            rec['_pos'] = (x, y)
             items.append(rec)
     dlp = CATALOG_DIR / 'downloadable-palettes'
     if dlp.exists():
@@ -205,13 +106,9 @@ def load_catalogs():
                     continue
                 L, a, b = rgb_to_lab(rgb)
                 L, C, h = lab_to_lch(L, a, b)
-                family = remap_family(L, C, h, family_for_lch(L, C, h))
-                x, y = tile_position(family, L, C, h)
                 rec = dict(rec)
                 rec['_source_file'] = f'downloadable-palettes/{p.name}'
-                rec['_family'] = family
                 rec['_lch'] = (L, C, h)
-                rec['_pos'] = (x, y)
                 items.append(rec)
     return items
 
@@ -224,99 +121,54 @@ def esc(s: str) -> str:
         .replace('"', '&quot;'))
 
 
-def make_tiles_for_family(recs):
-    cols = 28
-    rows = 18
-    buckets = [[None for _ in range(cols)] for _ in range(rows)]
-    overflow = []
-
-    def place(rec):
-        x, y = rec['_pos']
-        c = min(cols - 1, max(0, int(round(x * (cols - 1)))))
-        r = min(rows - 1, max(0, int(round(y * (rows - 1)))))
-        # Spiral-ish nearest-open search
-        best = None
-        for radius in range(0, max(cols, rows)):
-            for rr in range(max(0, r - radius), min(rows, r + radius + 1)):
-                for cc in range(max(0, c - radius), min(cols, c + radius + 1)):
-                    if buckets[rr][cc] is None:
-                        dist = abs(rr - r) + abs(cc - c)
-                        cand = (dist, rr, cc)
-                        if best is None or cand < best:
-                            best = cand
-            if best is not None:
-                _, rr, cc = best
-                buckets[rr][cc] = rec
-                return
-        overflow.append(rec)
-
-    for rec in sorted(recs, key=lambda r: (r['_pos'][1], r['_pos'][0], -r['_lch'][1])):
-        place(rec)
-
-    html = []
-    for r in range(rows):
-        for c in range(cols):
-            rec = buckets[r][c]
-            if rec is None:
-                html.append('<div class="cell empty"></div>')
-                continue
-            rgb = rec.get('rgbHex') or rec.get('rgb') or rec.get('hex')
-            title = esc(rec.get('displayName') or rec.get('name') or 'Untitled')
-            brand = esc(rec.get('brand') or rec.get('manufacturer') or 'Unknown')
-            code = esc(rec.get('brandCode') or '')
-            source = esc(rec.get('_source_file', ''))
-            L, C, h = rec['_lch']
-            tooltip = esc(f"{title}\n{brand} {code}\n{rgb}\nLCH: {L:.1f}, {C:.1f}, {h:.1f}\n{source}")
-            html.append(
-                f'<button class="cell tile" style="background:{rgb}" '
-                f'data-name="{title}" data-brand="{brand}" data-code="{code}" '
-                f'data-hex="{rgb}" data-source="{source}" '
-                f'data-lch="L {L:.1f} · C {C:.1f} · H {h:.1f}" '
-                f'title="{tooltip}"></button>'
-            )
-    if overflow:
-        for rec in overflow:
-            rgb = rec.get('rgbHex') or rec.get('rgb') or rec.get('hex')
-            title = esc(rec.get('displayName') or rec.get('name') or 'Untitled')
-            brand = esc(rec.get('brand') or rec.get('manufacturer') or 'Unknown')
-            code = esc(rec.get('brandCode') or '')
-            source = esc(rec.get('_source_file', ''))
-            L, C, h = rec['_lch']
-            tooltip = esc(f"{title}\n{brand} {code}\n{rgb}\nLCH: {L:.1f}, {C:.1f}, {h:.1f}\n{source}")
-            html.append(
-                f'<button class="cell tile overflow" style="background:{rgb}" '
-                f'data-name="{title}" data-brand="{brand}" data-code="{code}" '
-                f'data-hex="{rgb}" data-source="{source}" '
-                f'data-lch="L {L:.1f} · C {C:.1f} · H {h:.1f}" '
-                f'title="{tooltip}"></button>'
-            )
-    return ''.join(html), rows, cols, len(overflow)
-
-
 def main():
     items = load_catalogs()
-    grouped = {k: [] for k in COLOR_ORDER}
-    for rec in items:
-        fam = rec['_family'] if rec['_family'] in grouped else 'unknown'
-        grouped.setdefault(fam, []).append(rec)
+
+    # lightness bands so the page stays navigable
+    bands = [
+        ('L90-100', 90, 100),
+        ('L80-90', 80, 90),
+        ('L70-80', 70, 80),
+        ('L60-70', 60, 70),
+        ('L50-60', 50, 60),
+        ('L40-50', 40, 50),
+        ('L30-40', 30, 40),
+        ('L20-30', 20, 30),
+        ('L0-20', 0, 20),
+    ]
 
     nav = '\n'.join(
-        f'<a href="#{fam}">{fam.title()} <span>{len(grouped.get(fam, []))}</span></a>'
-        for fam in COLOR_ORDER if grouped.get(fam)
+        f'<a href="#{slug}">{slug} <span>{sum(1 for r in items if lo <= r["_lch"][0] < hi or (hi == 100 and lo <= r["_lch"][0] <= hi))}</span></a>'
+        for slug, lo, hi in bands
     )
 
     sections = []
-    for fam in COLOR_ORDER:
-        recs = grouped.get(fam, [])
-        if not recs:
-            continue
-        tiles_html, rows, cols, overflow = make_tiles_for_family(recs)
-        note = f' · {overflow} overflow' if overflow else ''
+    for slug, lo, hi in bands:
+        recs = [r for r in items if (lo <= r['_lch'][0] < hi) or (hi == 100 and lo <= r['_lch'][0] <= hi)]
+        # sort for deterministic rendering / layering
+        recs.sort(key=lambda r: (r['_lch'][2], r['_lch'][1], -r['_lch'][0]))
+        pts = []
+        for r in recs:
+            rgb = r.get('rgbHex') or r.get('rgb') or r.get('hex')
+            title = esc(r.get('displayName') or r.get('name') or 'Untitled')
+            brand = esc(r.get('brand') or r.get('manufacturer') or 'Unknown')
+            code = esc(r.get('brandCode') or '')
+            source = esc(r.get('_source_file', ''))
+            L, C, h = r['_lch']
+            angle = math.radians(h - 90)
+            radius = min(1.0, C / 120.0)
+            x = 50 + math.cos(angle) * radius * 46
+            y = 50 + math.sin(angle) * radius * 46
+            size = 10 if C > 10 else 8
+            tooltip = esc(f"{title}\n{brand} {code}\n{rgb}\nLCH: {L:.1f}, {C:.1f}, {h:.1f}\n{source}")
+            pts.append(
+                f'<button class="dot" style="left:{x:.2f}%; top:{y:.2f}%; background:{rgb}; width:{size}px; height:{size}px;" '
+                f'data-name="{title}" data-brand="{brand}" data-code="{code}" data-hex="{rgb}" '
+                f'data-lch="L {L:.1f} · C {C:.1f} · H {h:.1f}" data-source="{source}" title="{tooltip}"></button>'
+            )
         sections.append(
-            f'<section id="{fam}"><h2>{fam.title()} <span>{len(recs)} colors{note}</span></h2>'
-            f'<div class="map-wrap"><div class="axis axis-top">hue / warm-cool drift →</div>'
-            f'<div class="axis axis-left">light → dark</div>'
-            f'<div class="swatch-map" style="grid-template-columns: repeat({cols}, 1fr);">{tiles_html}</div></div></section>'
+            f'<section id="{slug}"><h2>{slug} <span>{len(recs)} colors</span></h2>'
+            f'<div class="wheel-wrap"><div class="wheel-axis axis-top">yellow / green</div><div class="wheel-axis axis-right">red</div><div class="wheel-axis axis-bottom">blue / purple</div><div class="wheel-axis axis-left">cyan</div><div class="wheel">{"".join(pts)}</div></div></section>'
         )
 
     html = f'''<!doctype html>
@@ -324,34 +176,35 @@ def main():
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Paint Palette Tool – Catalog Browser</title>
+<title>Paint Palette Tool – Radial LCH Browser</title>
 <style>
 :root {{ --bg:#0f1114; --panel:#15191e; --panel2:#1b2027; --text:#eef2f7; --muted:#9aa6b2; --line:#2a3139; }}
 * {{ box-sizing:border-box; }}
 body {{ margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--text); }}
-.layout {{ display:grid; grid-template-columns: 250px 1fr 300px; min-height:100vh; }}
+.layout {{ display:grid; grid-template-columns: 240px 1fr 300px; min-height:100vh; }}
 nav {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; background:var(--panel); border-right:1px solid var(--line); }}
 nav h1 {{ font-size:16px; margin:0 0 10px; }}
 nav p {{ color:var(--muted); font-size:13px; line-height:1.45; }}
 nav a {{ display:flex; justify-content:space-between; gap:12px; padding:8px 10px; border-radius:8px; color:var(--text); text-decoration:none; font-size:14px; }}
 nav a:hover {{ background:var(--panel2); }}
 main {{ padding:24px; }}
-header {{ margin-bottom:20px; }}
+header {{ margin-bottom:22px; }}
 header h1 {{ margin:0 0 8px; font-size:28px; }}
-header p {{ margin:0; color:var(--muted); max-width:800px; line-height:1.5; }}
-section {{ margin-bottom:36px; }}
-section h2 {{ position:sticky; top:0; z-index:2; background:linear-gradient(to bottom, rgba(15,17,20,.98), rgba(15,17,20,.88)); backdrop-filter: blur(6px); margin:0 0 12px; padding:10px 0; font-size:20px; border-bottom:1px solid var(--line); }}
+header p {{ margin:0; color:var(--muted); max-width:820px; line-height:1.5; }}
+section {{ margin-bottom:40px; }}
+section h2 {{ margin:0 0 14px; padding-bottom:10px; font-size:20px; border-bottom:1px solid var(--line); }}
 section h2 span {{ color:var(--muted); font-size:14px; margin-left:8px; font-weight:400; }}
-.map-wrap {{ position:relative; padding-left:26px; padding-top:18px; }}
-.axis {{ color:var(--muted); font-size:11px; letter-spacing:.02em; }}
-.axis-top {{ margin:0 0 8px 0; }}
-.axis-left {{ position:absolute; left:0; top:42px; writing-mode:vertical-rl; transform: rotate(180deg); }}
-.swatch-map {{ display:grid; gap:4px; align-items:stretch; }}
-.cell {{ width:100%; aspect-ratio:1 / 1; border-radius:4px; }}
-.tile {{ appearance:none; border:none; cursor:pointer; box-shadow: inset 0 0 0 1px rgba(255,255,255,.10); transition: transform .05s ease, box-shadow .05s ease; }}
-.tile:hover, .tile:focus {{ transform: scale(1.1); position:relative; z-index:1; box-shadow: inset 0 0 0 1px rgba(255,255,255,.55), 0 0 0 2px rgba(255,255,255,.12); }}
-.empty {{ background: transparent; }}
-.overflow {{ outline: 1px dashed rgba(255,255,255,.18); }}
+.wheel-wrap {{ position:relative; max-width:760px; aspect-ratio:1 / 1; margin:0 auto; }}
+.wheel {{ position:absolute; inset:20px; border-radius:50%; border:1px solid rgba(255,255,255,.12); background:radial-gradient(circle at center, rgba(255,255,255,.03), rgba(255,255,255,.01) 45%, rgba(255,255,255,.00) 60%); }}
+.wheel::before, .wheel::after {{ content:''; position:absolute; inset:50% auto auto 0; width:100%; height:1px; background:rgba(255,255,255,.06); transform:translateY(-50%); }}
+.wheel::after {{ inset:0 auto auto 50%; width:1px; height:100%; transform:translateX(-50%); }}
+.dot {{ position:absolute; transform:translate(-50%, -50%); border:none; border-radius:999px; cursor:pointer; box-shadow: inset 0 0 0 1px rgba(255,255,255,.25); }}
+.dot:hover, .dot:focus {{ z-index:2; box-shadow: inset 0 0 0 1px rgba(255,255,255,.8), 0 0 0 3px rgba(255,255,255,.10); }}
+.wheel-axis {{ position:absolute; color:var(--muted); font-size:12px; }}
+.axis-top {{ top:0; left:50%; transform:translateX(-50%); }}
+.axis-right {{ right:0; top:50%; transform:translateY(-50%); }}
+.axis-bottom {{ bottom:0; left:50%; transform:translateX(-50%); }}
+.axis-left {{ left:0; top:50%; transform:translateY(-50%); }}
 aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; background:var(--panel); border-left:1px solid var(--line); }}
 .panel-title {{ margin:0 0 12px; font-size:16px; }}
 .detail-swatch {{ width:100%; aspect-ratio: 1.6 / 1; border-radius:12px; background:#444; border:1px solid rgba(255,255,255,.14); margin-bottom:14px; }}
@@ -366,9 +219,7 @@ aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; back
   .layout {{ grid-template-columns: 1fr; }}
   nav {{ position:relative; height:auto; border-right:none; border-bottom:1px solid var(--line); }}
   main {{ padding:18px; }}
-  .swatch-map {{ gap:3px; }}
-  .map-wrap {{ padding-left:18px; padding-top:16px; }}
-  .axis-left {{ top:36px; font-size:10px; }}
+  .wheel-wrap {{ max-width:100%; }}
   #mobile-sheet {{ display:block; position:fixed; left:0; right:0; bottom:0; z-index:20; background:rgba(21,25,30,.98); border-top:1px solid var(--line); padding:14px 16px calc(14px + env(safe-area-inset-bottom)); transform:translateY(100%); transition:transform .18s ease; backdrop-filter: blur(8px); }}
   #mobile-sheet.open {{ transform:translateY(0); }}
   .sheet-head {{ display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }}
@@ -380,14 +231,14 @@ aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; back
 <body>
 <div class="layout">
 <nav>
-<h1>Catalog Browser</h1>
-<p>Unmerged swatches from the imported catalogs. Families and positions are now derived from LAB/LCH-style color math, then placed into a real 2D map instead of a row-by-row sorted grid.</p>
+<h1>Radial LCH Browser</h1>
+<p>Experimental radial view. Each section is a lightness slice. Angle = hue, radius = chroma. This should make the overall color-space structure easier to understand than the family-by-family grids.</p>
 {nav}
 </nav>
 <main>
 <header>
 <h1>Every Color We Have So Far</h1>
-<p>Each family is now shown as a 2D color field. Lightness runs top to bottom, and horizontal drift follows hue or warm/cool logic depending on the family. On mobile, tap a swatch to open details.</p>
+<p>This version uses a radial LCH-style view: hue around the circle, chroma out from the center, and lightness split into separate bands. Tap or click a swatch for details.</p>
 </header>
 {''.join(sections)}
 </main>
@@ -400,7 +251,7 @@ aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; back
 <div class="detail-row"><strong>Hex:</strong> <span id="detail-hex" class="mono">—</span></div>
 <div class="detail-row"><strong>LCH:</strong> <span id="detail-lch" class="mono">—</span></div>
 <div class="detail-row"><strong>Source:</strong> <span id="detail-source">—</span></div>
-<p class="helper">This page is still unmerged. The goal now is to make the visual field itself coherent before we decide how aggressively to collapse near-duplicates into a working palette.</p>
+<p class="helper">This is an exploratory view. It may not be the final picker, but it should reveal whether the space itself feels more coherent when shown as hue around a wheel and chroma as radial distance.</p>
 </aside>
 </div>
 <div id="mobile-sheet">
@@ -450,7 +301,7 @@ function setDetail(tile) {{
   mobile.lch.textContent = tile.dataset.lch || '—';
   mobile.source.textContent = tile.dataset.source || '—';
 }}
-document.querySelectorAll('.tile').forEach(tile => {{
+document.querySelectorAll('.dot').forEach(tile => {{
   tile.addEventListener('mouseenter', () => setDetail(tile));
   tile.addEventListener('focus', () => setDetail(tile));
   tile.addEventListener('click', () => {{
