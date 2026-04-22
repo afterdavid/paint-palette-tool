@@ -121,52 +121,6 @@ def esc(s: str) -> str:
         .replace('"', '&quot;'))
 
 
-def assign_ring_slots(recs, ring_count=9):
-    # assign to concentric rings by chroma, then to nearest available angle slot
-    ring_slots = []
-    for ring in range(ring_count):
-        radius = (ring + 1) / ring_count
-        # more slots on outer rings
-        slots = max(10, int(round(12 + ring * 10)))
-        for i in range(slots):
-            angle = (i / slots) * 360.0
-            ring_slots.append({
-                'ring': ring,
-                'radius': radius,
-                'angle': angle,
-                'used': False,
-            })
-
-    decorated = []
-    for rec in recs:
-        L, C, h = rec['_lch']
-        target_ring = min(ring_count - 1, max(0, int(round((min(C, 120) / 120.0) * (ring_count - 1)))))
-        decorated.append((target_ring, h, -C, rec))
-    decorated.sort(key=lambda t: (t[0], t[1], t[2]))
-
-    placed = []
-    overflow = []
-    for target_ring, target_h, _negC, rec in decorated:
-        best = None
-        best_idx = None
-        for idx, slot in enumerate(ring_slots):
-            if slot['used']:
-                continue
-            ring_penalty = abs(slot['ring'] - target_ring)
-            angle_delta = abs(slot['angle'] - target_h)
-            angle_delta = min(angle_delta, 360 - angle_delta)
-            score = (ring_penalty, angle_delta)
-            if best is None or score < best:
-                best = score
-                best_idx = idx
-        if best_idx is None:
-            overflow.append(rec)
-            continue
-        ring_slots[best_idx]['used'] = True
-        placed.append((ring_slots[best_idx], rec))
-    return placed, overflow
-
-
 def main():
     items = load_catalogs()
 
@@ -190,31 +144,29 @@ def main():
     sections = []
     for slug, lo, hi in bands:
         recs = [r for r in items if (lo <= r['_lch'][0] < hi) or (hi == 100 and lo <= r['_lch'][0] <= hi)]
-        recs.sort(key=lambda r: (r['_lch'][2], r['_lch'][1]))
-        placed, overflow = assign_ring_slots(recs)
+        recs.sort(key=lambda r: (r['_lch'][2], r['_lch'][1], -r['_lch'][0]))
         dots = []
-        for slot, rec in placed:
-            rgb = rec.get('rgbHex') or rec.get('rgb') or rec.get('hex')
-            title = esc(rec.get('displayName') or rec.get('name') or 'Untitled')
-            brand = esc(rec.get('brand') or rec.get('manufacturer') or 'Unknown')
-            code = esc(rec.get('brandCode') or '')
-            source = esc(rec.get('_source_file', ''))
-            L, C, h = rec['_lch']
-            angle = math.radians(slot['angle'] - 90)
-            radius = slot['radius'] * 44
+        for r in recs:
+            rgb = r.get('rgbHex') or r.get('rgb') or r.get('hex')
+            title = esc(r.get('displayName') or r.get('name') or 'Untitled')
+            brand = esc(r.get('brand') or r.get('manufacturer') or 'Unknown')
+            code = esc(r.get('brandCode') or '')
+            source = esc(r.get('_source_file', ''))
+            L, C, h = r['_lch']
+            angle = math.radians(h - 90)
+            radius = min(1.0, C / 120.0) * 46
             x = 50 + math.cos(angle) * radius
             y = 50 + math.sin(angle) * radius
-            size = 10 if C > 10 else 8
+            size = 11 if C > 10 else 9
             tooltip = esc(f"{title}\n{brand} {code}\n{rgb}\nLCH: {L:.1f}, {C:.1f}, {h:.1f}\n{source}")
             dots.append(
                 f'<button class="dot" style="left:{x:.2f}%; top:{y:.2f}%; background:{rgb}; width:{size}px; height:{size}px;" '
                 f'data-name="{title}" data-brand="{brand}" data-code="{code}" data-hex="{rgb}" '
                 f'data-lch="L {L:.1f} · C {C:.1f} · H {h:.1f}" data-source="{source}" title="{tooltip}"></button>'
             )
-        note = f' · {len(overflow)} overflow' if overflow else ''
         sections.append(
-            f'<section id="{slug}"><h2>{slug} <span>{len(recs)} colors{note}</span></h2>'
-            f'<div class="wheel-wrap"><div class="wheel-axis axis-top">yellow / green</div><div class="wheel-axis axis-right">red</div><div class="wheel-axis axis-bottom">blue / purple</div><div class="wheel-axis axis-left">cyan</div><div class="wheel ring-wheel">{"".join(dots)}</div></div></section>'
+            f'<section id="{slug}"><h2>{slug} <span>{len(recs)} colors</span></h2>'
+            f'<div class="wheel-wrap"><div class="wheel-axis axis-top">yellow / green</div><div class="wheel-axis axis-right">red</div><div class="wheel-axis axis-bottom">blue / purple</div><div class="wheel-axis axis-left">cyan</div><div class="wheel">{"".join(dots)}</div></div></section>'
         )
 
     html = f'''<!doctype html>
@@ -222,7 +174,7 @@ def main():
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Paint Palette Tool – Ring-Packed Radial Browser</title>
+<title>Paint Palette Tool – Radial LCH Browser</title>
 <style>
 :root {{ --bg:#0f1114; --panel:#15191e; --panel2:#1b2027; --text:#eef2f7; --muted:#9aa6b2; --line:#2a3139; }}
 * {{ box-sizing:border-box; }}
@@ -241,11 +193,11 @@ section {{ margin-bottom:40px; }}
 section h2 {{ margin:0 0 14px; padding-bottom:10px; font-size:20px; border-bottom:1px solid var(--line); }}
 section h2 span {{ color:var(--muted); font-size:14px; margin-left:8px; font-weight:400; }}
 .wheel-wrap {{ position:relative; max-width:760px; aspect-ratio:1 / 1; margin:0 auto; }}
-.wheel {{ position:absolute; inset:20px; border-radius:50%; border:1px solid rgba(255,255,255,.12); background:radial-gradient(circle at center, rgba(255,255,255,.03), rgba(255,255,255,.01) 45%, rgba(255,255,255,.00) 60%); }}
-.ring-wheel::before, .ring-wheel::after {{ content:''; position:absolute; inset:50% auto auto 0; width:100%; height:1px; background:rgba(255,255,255,.05); transform:translateY(-50%); }}
-.ring-wheel::after {{ inset:0 auto auto 50%; width:1px; height:100%; transform:translateX(-50%); }}
-.dot {{ position:absolute; transform:translate(-50%, -50%); border:none; border-radius:999px; cursor:pointer; box-shadow: inset 0 0 0 1px rgba(255,255,255,.25); }}
-.dot:hover, .dot:focus {{ z-index:2; box-shadow: inset 0 0 0 1px rgba(255,255,255,.8), 0 0 0 3px rgba(255,255,255,.10); }}
+.wheel {{ position:absolute; inset:20px; border-radius:50%; border:1px solid rgba(255,255,255,.06); background:radial-gradient(circle at center, rgba(255,255,255,.03), rgba(255,255,255,.01) 45%, rgba(255,255,255,.00) 60%); }}
+.wheel::before, .wheel::after {{ content:''; position:absolute; inset:50% auto auto 0; width:100%; height:1px; background:rgba(255,255,255,.04); transform:translateY(-50%); }}
+.wheel::after {{ inset:0 auto auto 50%; width:1px; height:100%; transform:translateX(-50%); }}
+.dot {{ position:absolute; transform:translate(-50%, -50%); border:none; border-radius:999px; cursor:pointer; opacity:.98; }}
+.dot:hover, .dot:focus {{ z-index:2; box-shadow: 0 0 0 2px rgba(255,255,255,.18); }}
 .wheel-axis {{ position:absolute; color:var(--muted); font-size:12px; }}
 .axis-top {{ top:0; left:50%; transform:translateX(-50%); }}
 .axis-right {{ right:0; top:50%; transform:translateY(-50%); }}
@@ -277,14 +229,14 @@ aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; back
 <body>
 <div class="layout">
 <nav>
-<h1>Ring-Packed Radial Browser</h1>
-<p>Experimental radial view with slot assignment. Hue still runs around the wheel and chroma still expands outward, but swatches are placed on discrete rings so the natural adjacency stays while overlap drops.</p>
+<h1>Radial LCH Browser</h1>
+<p>Freer radial version restored. Hue runs around the circle and chroma moves outward. The aim here is to preserve the color adjacency that felt right, without over-constraining the layout. Borders are removed so the field reads more continuously.</p>
 {nav}
 </nav>
 <main>
 <header>
 <h1>Every Color We Have So Far</h1>
-<p>This version keeps the radial LCH logic that felt good, but uses discrete ring slots instead of free-floating scatter points. That should preserve the nice color adjacency while reducing collisions.</p>
+<p>This returns to the freer radial placement that felt most natural for how colors sit next to one another. Mobile tap details are kept, but the per-swatch borders are gone so the field reads more like continuous color.</p>
 </header>
 {''.join(sections)}
 </main>
@@ -297,7 +249,7 @@ aside {{ position:sticky; top:0; height:100vh; overflow:auto; padding:20px; back
 <div class="detail-row"><strong>Hex:</strong> <span id="detail-hex" class="mono">—</span></div>
 <div class="detail-row"><strong>LCH:</strong> <span id="detail-lch" class="mono">—</span></div>
 <div class="detail-row"><strong>Source:</strong> <span id="detail-source">—</span></div>
-<p class="helper">This is an exploratory view. If this works, it means the radial placement was right and only the free scatter needed correction.</p>
+<p class="helper">This is back to the freer radial layout. The goal is to keep the intuitive color relationships and only fix what was actually getting in the way.</p>
 </aside>
 </div>
 <div id="mobile-sheet">
